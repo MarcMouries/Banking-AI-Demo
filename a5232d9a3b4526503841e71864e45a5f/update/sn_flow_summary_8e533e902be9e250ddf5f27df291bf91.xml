@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_flow_summary">
+    <sn_flow_summary action="INSERT_OR_UPDATE">
+        <document>ce4d351e33c5ee504890955a7e5c7bb0</document>
+        <document_table>sys_hub_action_type_definition</document_table>
+        <domain>global</domain>
+        <generation_source/>
+        <summary>The "CheckBlocchi" action is designed to facilitate communication with an external system, specifically for account closure processes in the banking sector. It takes in a request body as input, which is used to send a POST request to the external system. The action is configured to use a specific connection alias for this purpose. It then processes the response from the external system and provides an output, which includes a stringified content section. This output can be used for further processing or analysis within the workflow. The action is intended to be used across all application scopes and does not have any specific protection or flow priority settings.
+</summary>
+        <sys_class_name>sn_flow_summary</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-12 18:06:13</sys_created_on>
+        <sys_id>8e533e902be9e250ddf5f27df291bf91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>The "CheckBlocchi" action is designed to facilitate communication with an external system, specifically for account closure processes in the banking sector. It takes in a request body as input, which is used to send a POST request to the external system. </sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sn_flow_summary_8e533e902be9e250ddf5f27df291bf91</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-12 18:06:13</sys_updated_on>
+        <updation_source/>
+    </sn_flow_summary>
+    <sys_translated_text action="delete_multiple" query="documentkey=8e533e902be9e250ddf5f27df291bf91"/>
+</record_update>

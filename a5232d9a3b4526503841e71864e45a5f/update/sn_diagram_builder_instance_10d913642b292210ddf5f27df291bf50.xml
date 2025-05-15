@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_diagram_builder_instance">
+    <sn_diagram_builder_instance action="INSERT_OR_UPDATE">
+        <builder_configuration display_value="Now Assist Skill Kit Diagram Configuration">24fef3e67f8c1210ce7cc46adc8665a9</builder_configuration>
+        <diagram_json>{"start":"start","variables":[],"node_arguments":[],"edge_arguments":[],"nodes":[{"name":"Email intent","node_id":"393a329f7fc012103f41c20e1f866555","key":"28d913642b292210ddf5f27df291bf53","resourceMappingId":"28d913642b292210ddf5f27df291bf53","resourceMapping":{"resourceName":"Email intent","scope":null,"outgoingResourceEdges":[],"resourceCapability":"04d91f242b292210ddf5f27df291bf2e","errorHandlerScript":null,"mappingId":"28d913642b292210ddf5f27df291bf53","conditionScript":"(function(currentInputs, context) {\n    /* @param {Object} currentInputs - Inputs provided for the current step.*/\n    /* @param {Object} context - Execution context, which may include:*/\n    /*\t\t\t\t\t\t   - Previous tool outputs/inputs (e.g., context['ToolName.attributeName'] or context.getValue('ToolName.attributeName')).*/\n    /*\t\t\t\t\t\t   - Additional context information (e.g., context.getAllValues()).*/\n    /* @returns {Boolean} - Return 'true' if the condition is met; otherwise 'false'.*/\n    return true;\n})(currentInputs, context);","metadata":{"diagramInstanceId":"10d913642b292210ddf5f27df291bf50"},"condition":"","active":true,"dependsOnList":[],"applicabilityType":"","applicabilityConditionExpression":"","incomingResourceEdges":[],"applicabilityFailedPolicy":"","errorPolicy":null,"parentCapability":"04d91f242b292210ddf5f27df291bf2e","applicabilityTable":"","resourceType":"SKILL"}},{"key":"start","name":"Start","node_id":"6ba9765f7fc012103f41c20e1f866518"},{"key":"end","name":"End","node_id":"901af65f7fc012103f41c20e1f866591"}],"edges":[{"edge_id":"242cb6137f0412103f41c20e1f866546","from":"28d913642b292210ddf5f27df291bf53","to":"end","add_button_visible":false},{"edge_id":"242cb6137f0412103f41c20e1f866546","from":"start","to":"28d913642b292210ddf5f27df291bf53"}]}</diagram_json>
+        <name>Email intent</name>
+        <read_only>false</read_only>
+        <state>draft</state>
+        <sys_class_name>sn_diagram_builder_instance</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-13 15:32:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>10d913642b292210ddf5f27df291bf50</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Email intent</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sn_diagram_builder_instance_10d913642b292210ddf5f27df291bf50</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-13 15:32:48</sys_updated_on>
+    </sn_diagram_builder_instance>
+</record_update>

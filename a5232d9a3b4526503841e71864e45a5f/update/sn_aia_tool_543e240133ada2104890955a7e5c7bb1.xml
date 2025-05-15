@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Get the Account Closure request given a record number and return the customer details (Customer name, NDG, Account Number to Close and Account Number for Balance Transfer) from the request record</description>
+        <input_schema>[{"name":"number","description":"The record number"}]</input_schema>
+        <name>Get Account Closure request</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+    var record_gr = new GlideRecord('x_mm_banking_account_closure_request');
+    record_gr.addQuery('number', inputs.number);
+    record_gr.query();
+
+    if (record_gr.next()) {
+        var ndg = record_gr.getValue('ndg') || 'Not provided';
+        var acctToClose = record_gr.getValue('acct_num_to_close') || 'Not provided';
+        var acctForTransfer = record_gr.getValue('acct_num_for_transfer') || 'Not provided';
+        var name = record_gr.getValue('customer_name') || 'Unknown';
+
+        var message = 
+            'Account closure request for ' + name + ' (NDG: ' + ndg + '):\n' +
+            '- Account to close: ' + acctToClose + '\n' +
+            '- Account for balance transfer: ' + acctForTransfer;
+
+        return message;
+    } else {
+        throw new Error('No record found with number ' + inputs.number);
+    }
+
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-14 16:19:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>543e240133ada2104890955a7e5c7bb1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Get Account Closure request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sn_aia_tool_543e240133ada2104890955a7e5c7bb1</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-15 14:19:33</sys_updated_on>
+        <target_document/>
+        <target_document_table/>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

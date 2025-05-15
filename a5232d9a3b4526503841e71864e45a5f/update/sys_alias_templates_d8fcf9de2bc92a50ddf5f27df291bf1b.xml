@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias_templates">
+    <sys_alias_templates action="INSERT_OR_UPDATE">
+        <default_data_template>{&#13;
+	"credential": {&#13;
+		"user_name": "&lt;user-name&gt;",&#13;
+        "password": "&lt;password&gt;",&#13;
+		"name": "&lt;provider-name&gt; Spoke Credential",&#13;
+		"table": "basic_auth_credentials"&#13;
+	},&#13;
+	"connection": {&#13;
+		"connection_url": "",&#13;
+		"name": "",&#13;
+		"table": "http_connection"&#13;
+	}&#13;
+}</default_data_template>
+        <dynamic_data_schema>{"credential_fields":[{"defaultValue":"","hint":"Username for outbound authentication","name":"credential.user_name","label":"User Name","type":"text","mandatory":true},{"defaultValue":"","hint":"Password for outbound authentication","name":"credential.password","label":"Password","type":"password","mandatory":true}],"connection_fields":[{"defaultValue":"&lt;provider-name&gt; Spoke Connection","hint":"Display name for the Connection","name":"connection.name","label":"Connection Name","type":"text","mandatory":true},{"defaultValue":"https://5d4dd0bc-dc8f-41d3-a175-cd42a5f40753.mock.pstmn.io/","hint":"Connection URL for provider","name":"connection.connection_url","label":"Connection URL","type":"text","mandatory":true}]}</dynamic_data_schema>
+        <name>Banking demo Configuration Template</name>
+        <on_edit_script><![CDATA[(function execute(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData) {
+   // aliasId: sys_id of the alias record
+   // connectionSysId: sys_id of the connection record created by using the default and dynamic data
+   // jsonDefaultData (String): The default JSON template data from template table
+   // e.g. var jsonDefaultParsed = JSON.parse(jsonDefaultData);
+   //      gs.info("default connection url = " + jsonDefaultParsed["connection"]["connection_url"]);
+   // jsonDynamicData (String): User input based on the key/values defined in "Dynamic Data"
+   // e.g. var jsonDynamicParsed = JSON.parse(jsonDynamicData);
+   //      gs.info("dynamic connection url = " + jsonDynamicParsed["connection.connection_url"]);
+})(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData);
+]]></on_edit_script>
+        <post_process_script><![CDATA[(function execute(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData) {
+   // aliasId: sys_id of the alias record
+   // connectionSysId: sys_id of the connection record created by using the default and dynamic data
+   // jsonDefaultData (String): The default JSON template data from template table
+   // e.g. var jsonDefaultParsed = JSON.parse(jsonDefaultData);
+   //      gs.info("default connection url = " + jsonDefaultParsed["connection"]["connection_url"]);
+   // jsonDynamicData (String): User input based on the key/values defined in "Dynamic Data"
+   // e.g. var jsonDynamicParsed = JSON.parse(jsonDynamicData);
+   //      gs.info("dynamic connection url = " + jsonDynamicParsed["connection.connection_url"]);
+})(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData);
+]]></post_process_script>
+        <pre_edit_script><![CDATA[(function execute(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData) {
+   // aliasId: sys_id of the alias record.
+   // connectionSysId: sys_id of the connection record created by using the default and dynamic data.
+   // jsonDefaultData (String): The default JSON template data from template table.
+   // e.g. var jsonDefaultParsed = JSON.parse(jsonDefaultData);
+   //      gs.info("default connection url = " + jsonDefaultParsed["connection"]["connection_url"]);
+   // jsonDynamicData (String): Current values of Connection and Credential fields (except Password fields) based on the key-value pairs defined in "Dynamic Data".
+   // e.g. var jsonDynamicParsed = JSON.parse(jsonDynamicData);
+   //      gs.info("dynamic connection url = " + jsonDynamicParsed["connection.connection_url"]);
+
+   //returns array of objects. Each object has name-value pairs for populating additional fields values in connections dashboard in the edit view.
+   //In this example script, additionalField1, additionalField2 are additional fields.
+   //Here we define calcAdditionalField1(), calcAdditionalField2() functions in the script
+   //to calculate current values for additionalField1, additionalField2.
+
+   //return [{
+   //         name: "additionalField1"
+   //         value: calcAdditionalField1(),
+   //    },
+   //    {
+   //         name: "additionalField2"
+   //         value: calcAdditionalField2(),
+   //    }
+   //];
+
+   return [];
+})(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData);
+]]></pre_edit_script>
+        <sys_class_name>sys_alias_templates</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-04-23 22:44:59</sys_created_on>
+        <sys_id>d8fcf9de2bc92a50ddf5f27df291bf1b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Banking demo Configuration Template</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_alias_templates_d8fcf9de2bc92a50ddf5f27df291bf1b</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-04-23 22:52:35</sys_updated_on>
+    </sys_alias_templates>
+</record_update>

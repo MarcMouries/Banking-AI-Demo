@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">f7e5ae1b933102102494bcd97bba1069</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-13 13:56:18</sys_created_on>
+        <sys_id>07b3c728336922104890955a7e5c7b87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-13 13:56:18</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

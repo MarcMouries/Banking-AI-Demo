@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <hint/>
+        <name>Banking AI Demo</name>
+        <order/>
+        <roles>x_mm_banking.account_closure_request_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-13 13:56:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>62b3c728336922104890955a7e5c7b15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Banking AI Demo</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_ui_application_62b3c728336922104890955a7e5c7b15</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-13 13:56:17</sys_updated_on>
+    </sys_ui_application>
+</record_update>

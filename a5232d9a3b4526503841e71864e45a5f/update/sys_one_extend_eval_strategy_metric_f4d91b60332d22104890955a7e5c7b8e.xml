@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_eval_strategy_metric">
+    <sys_one_extend_eval_strategy_metric action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <definition display_value="Correctness Metric (Now LLM)">cbf929b27fe242100a03b6257d866548</definition>
+        <eval_strategy display_value="Default">a0d913642b292210ddf5f27df291bf5b</eval_strategy>
+        <gen_ai_config display_value="OneExtend Capability Definition: Correctness Metric (Now LLM)">c834087d7f5202100a03b6257d866503</gen_ai_config>
+        <metric_name>Correctness Metric</metric_name>
+        <sys_class_name>sys_one_extend_eval_strategy_metric</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-05-13 15:32:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f4d91b60332d22104890955a7e5c7b8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Correctness Metric</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_one_extend_eval_strategy_metric_f4d91b60332d22104890955a7e5c7b8e</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-05-13 15:32:49</sys_updated_on>
+    </sys_one_extend_eval_strategy_metric>
+</record_update>

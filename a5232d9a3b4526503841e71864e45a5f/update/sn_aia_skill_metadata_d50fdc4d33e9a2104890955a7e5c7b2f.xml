@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_skill_metadata">
+    <sn_aia_skill_metadata action="INSERT_OR_UPDATE">
+        <description>Assess whether a customer's bank account can be closed by checking dependencies such as dependent active loans or insurance policies, annotations, and account restrictions.
+
+Based on the findings, this workflow will either respond with a summary of the closure timeline or explain why closure is not currently possible.
+
+It will draft a response for advisors to follow-up with the customer to explain the status of the request and if it makes sense it will draft a retention letter to the customer.</description>
+        <document_id>dcdb4c853369a2104890955a7e5c7ba6</document_id>
+        <document_table>sn_aia_usecase</document_table>
+        <internal_name>global.x_mm_banking.Account Closure Assistant</internal_name>
+        <name>Account Closure Assistant</name>
+        <sys_class_name>sn_aia_skill_metadata</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-14 15:13:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d50fdc4d33e9a2104890955a7e5c7b2f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Account Closure Assistant</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sn_aia_skill_metadata_d50fdc4d33e9a2104890955a7e5c7b2f</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-14 15:43:33</sys_updated_on>
+    </sn_aia_skill_metadata>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill_config">
+    <sys_gen_ai_skill_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <channels/>
+        <discoverable>true</discoverable>
+        <hint>Evaluate Account Closure Eligibility</hint>
+        <skill_id display_value="Assess whether a customer's bank account can be closed by checking dependencies such as dependent active loans or insurance policies, annotations, and account restrictions.&#10;&#10;Based on the findings, this workflow will either respond with a summary of the closure timeline or explain why closure is not currently possible.&#10;&#10;It will draft a response for advisors to follow-up with the customer to explain the status of the request and if it makes sense it will draft a retention letter to the customer.">150fdc4d33e9a2104890955a7e5c7b33</skill_id>
+        <supervision/>
+        <sys_class_name>sys_gen_ai_skill_config</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-14 15:13:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e50fdc4d33e9a2104890955a7e5c7bf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Evaluate Account Closure Eligibility</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_gen_ai_skill_config_e50fdc4d33e9a2104890955a7e5c7bf8</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-14 15:13:39</sys_updated_on>
+        <use_knowledge_graph>false</use_knowledge_graph>
+        <visible>true</visible>
+    </sys_gen_ai_skill_config>
+</record_update>

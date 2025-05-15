@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Account Closure Request</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Account Closure Request</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">7be5ae1b933102102494bcd97bba106c</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-13 13:56:18</sys_created_on>
+        <sys_id>cbb3c728336922104890955a7e5c7b7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Account Closure Request</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_wizard_answer_cbb3c728336922104890955a7e5c7b7c</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-13 13:56:18</sys_updated_on>
+        <table/>
+        <target_url>x_mm_banking_account_closure_request.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

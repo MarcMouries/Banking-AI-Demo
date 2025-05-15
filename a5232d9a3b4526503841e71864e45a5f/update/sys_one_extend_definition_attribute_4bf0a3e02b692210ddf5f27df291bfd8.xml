@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_definition_attribute">
+    <sys_one_extend_definition_attribute action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <apply_filter>false</apply_filter>
+        <attribute_label/>
+        <capability display_value="Banking Email Data Extraction">8bf0a3e02b692210ddf5f27df291bfa2</capability>
+        <choice_list/>
+        <contains_large_input>false</contains_large_input>
+        <data_type>string</data_type>
+        <default_value/>
+        <definition/>
+        <description/>
+        <group/>
+        <hidden>false</hidden>
+        <info/>
+        <label>NDG</label>
+        <mandatory>false</mandatory>
+        <name>ndg</name>
+        <order/>
+        <schema>{}</schema>
+        <sys_class_name>sys_one_extend_definition_attribute</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-13 16:04:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4bf0a3e02b692210ddf5f27df291bfd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ndg</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_one_extend_definition_attribute_4bf0a3e02b692210ddf5f27df291bfd8</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-13 16:04:06</sys_updated_on>
+        <translate>false</translate>
+        <truncate>false</truncate>
+        <type>output</type>
+        <user_query>false</user_query>
+    </sys_one_extend_definition_attribute>
+    <sys_translated_text action="delete_multiple" query="documentkey=4bf0a3e02b692210ddf5f27df291bfd8"/>
+</record_update>
