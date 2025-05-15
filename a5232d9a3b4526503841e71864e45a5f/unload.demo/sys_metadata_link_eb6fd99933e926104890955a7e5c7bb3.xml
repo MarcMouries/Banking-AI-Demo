@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload.demo</directory>
+        <documentkey>6b70180133a9a2104890955a7e5c7be3</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="x_mm_banking_account_closure_request">
+    <x_mm_banking_account_closure_request action="INSERT_OR_UPDATE">
+        <acct_num_for_transfer/>
+        <acct_num_to_close>06 010 00 0000011</acct_num_to_close>
+        <active>true</active>
+        <activity_due/>
+        <additional_assignee_list/>
+        <approval>not requested</approval>
+        <approval_history/>
+        <approval_set/>
+        <assigned_to/>
+        <assignment_group/>
+        <business_duration/>
+        <business_service/>
+        <calendar_duration/>
+        <close_notes/>
+        <closed_at/>
+        <closed_by/>
+        <cmdb_ci/>
+        <comments/>
+        <comments_and_work_notes/>
+        <company/>
+        <contact_type/>
+        <contract/>
+        <correlation_display/>
+        <correlation_id/>
+        <credit_cards/>
+        <customer_name>Rossi Mario</customer_name>
+        <delivery_plan/>
+        <delivery_task/>
+        <description/>
+        <due_date/>
+        <encrypted_by/>
+        <encryption_context/>
+        <escalation>0</escalation>
+        <expected_start/>
+        <follow_up/>
+        <group_list/>
+        <impact>3</impact>
+        <knowledge>false</knowledge>
+        <location/>
+        <made_sla>true</made_sla>
+        <ndg>900000123</ndg>
+        <number>AC0001001</number>
+        <opened_at>2025-05-14 14:10:09</opened_at>
+        <opened_by display_value="Marc Mouries">ac13175b937142102494bcd97bba1041</opened_by>
+        <order/>
+        <parent/>
+        <priority>4</priority>
+        <reassignment_count>0</reassignment_count>
+        <rejection_goto/>
+        <route_reason/>
+        <service_offering/>
+        <short_description/>
+        <skills/>
+        <sla_due/>
+        <sn_ai_sentiment/>
+        <ssns/>
+        <state>1</state>
+        <sys_class_name>x_mm_banking_account_closure_request</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-14 14:10:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6b70180133a9a2104890955a7e5c7be3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-14 14:14:32</sys_updated_on>
+        <task_effective_number>AC0001001</task_effective_number>
+        <time_worked/>
+        <universal_request/>
+        <upon_approval>proceed</upon_approval>
+        <upon_reject>cancel</upon_reject>
+        <urgency>3</urgency>
+        <user_input/>
+        <variables/>
+        <watch_list/>
+        <wf_activity/>
+        <work_end/>
+        <work_notes/>
+        <work_notes_list/>
+        <work_start/>
+    </x_mm_banking_account_closure_request>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-15 14:33:31</sys_created_on>
+        <sys_id>eb6fd99933e926104890955a7e5c7bb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AC0001001</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_metadata_link_eb6fd99933e926104890955a7e5c7bb3</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-15 14:33:31</sys_updated_on>
+        <tablename>x_mm_banking_account_closure_request</tablename>
+    </sys_metadata_link>
+</record_update>
