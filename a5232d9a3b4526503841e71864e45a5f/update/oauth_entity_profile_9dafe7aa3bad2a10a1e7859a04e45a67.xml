@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile">
+    <oauth_entity_profile action="INSERT_OR_UPDATE">
+        <default>false</default>
+        <grant_type>authorization_code</grant_type>
+        <jwt_provider/>
+        <name>Gmail Spoke Profile</name>
+        <oauth_entity display_value="Gmail OAuth">2fffdfee3b292a10a1e7859a04e45aaf</oauth_entity>
+        <saml2_assertion_producer/>
+        <sys_class_name>oauth_entity_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-19 22:16:49</sys_created_on>
+        <sys_id>9dafe7aa3bad2a10a1e7859a04e45a67</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Gmail Spoke Profile</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>oauth_entity_profile_9dafe7aa3bad2a10a1e7859a04e45a67</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-19 22:17:37</sys_updated_on>
+    </oauth_entity_profile>
+</record_update>
