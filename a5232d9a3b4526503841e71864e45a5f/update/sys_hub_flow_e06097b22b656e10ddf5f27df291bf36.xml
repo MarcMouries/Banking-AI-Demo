@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,intermediateFlowVersion=1.2,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=14508000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-yokohama-12-18-2024__patch3-04-17-2025_04-30-2025_1345.zip</compiler_build>
+        <copied_from>3d2f1ea933e9a6104890955a7e5c7b35</copied_from>
+        <copied_from_name>Look up Client's Assets</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>look_up_clients_related_assets</internal_name>
+        <label_cache>[{"name":"flow_variable.request","label":"Flow Variables➛request","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"38529981-7ba1-e210-f4a5-616f62d79128":["request_body"],"935d9e85-5b10-45cd-8de4-92569e66a2ee":["request_body"],"1c0e6ebd-0ee7-43c6-879f-34af7ad6be6d":["request_body"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d845079a-032e-45cc-9111-665703757db8"}},{"name":"38529981-7ba1-e210-f4a5-616f62d79128.output.stringified_content","label":"2 - GetClientByName➛output➛stringified_content","reference":"","reference_display":"stringified_content","type":"string","base_type":"string","usedInstances":{"3c529981-dea1-e210-5616-89498f011b29":["response-0"]},"attributes":{}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Look up Client's Related Assets</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-20 14:37:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e06097b22b656e10ddf5f27df291bf36</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Look up Client's Related Assets</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_hub_flow_e06097b22b656e10ddf5f27df291bf36</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-20 15:15:34</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e06097b22b656e10ddf5f27df291bf36"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e06097b22b656e10ddf5f27df291bf36"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_e06097b22b656e10ddf5f27df291bf36^id=e06097b22b656e10ddf5f27df291bf36"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e06097b22b656e10ddf5f27df291bf36"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e06097b22b656e10ddf5f27df291bf36^sys_idNOT IN206097b22b656e10ddf5f27df291bf39"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e06097b22b656e10ddf5f27df291bf36</id>
+        <name>Look up Client's Related Assets</name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-20 14:37:54</sys_created_on>
+        <sys_id>206097b22b656e10ddf5f27df291bf39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-20 14:37:54</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=206097b22b656e10ddf5f27df291bf39"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e06097b22b656e10ddf5f27df291bf36^sys_idNOT IN46f453ba2b656e10ddf5f27df291bfa0,cef453ba2b656e10ddf5f27df291bf9b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=015fc4b0-ae09-493a-8997-1d161fefb774</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>account_type</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Account Type</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Client's Related Assets">e06097b22b656e10ddf5f27df291bf36</model>
+        <model_id>e06097b22b656e10ddf5f27df291bf36</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e06097b22b656e10ddf5f27df291bf36</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-20 14:57:56</sys_created_on>
+        <sys_id>46f453ba2b656e10ddf5f27df291bfa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-20 14:57:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=46f453ba2b656e10ddf5f27df291bfa0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d8f09210-afff-4374-8dff-ebfe639065b7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>account_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Account Number</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Client's Related Assets">e06097b22b656e10ddf5f27df291bf36</model>
+        <model_id>e06097b22b656e10ddf5f27df291bf36</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e06097b22b656e10ddf5f27df291bf36</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-20 14:57:56</sys_created_on>
+        <sys_id>cef453ba2b656e10ddf5f27df291bf9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-20 14:57:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cef453ba2b656e10ddf5f27df291bf9b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e06097b22b656e10ddf5f27df291bf36^sys_idNOT IN3c6097b22b656e10ddf5f27df291bf8f"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=bad3b6d8-6098-482d-929f-d4799285ed68</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Client's Related Assets">e06097b22b656e10ddf5f27df291bf36</model>
+        <model_id>e06097b22b656e10ddf5f27df291bf36</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_e06097b22b656e10ddf5f27df291bf36</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-20 14:37:54</sys_created_on>
+        <sys_id>3c6097b22b656e10ddf5f27df291bf8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-20 14:37:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3c6097b22b656e10ddf5f27df291bf8f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e06097b22b656e10ddf5f27df291bf36"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e06097b22b656e10ddf5f27df291bf36"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e06097b22b656e10ddf5f27df291bf36^sys_idNOT IN0293933a2b656e10ddf5f27df291bf37"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="GetRelatedAsset">963dbdda33c5ee504890955a7e5c7bfd</action_type>
+        <action_type_parent display_value="GetRelatedAsset">8a3dbdda33c5ee504890955a7e5c7b6b</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Look up Client's Related Assets">e06097b22b656e10ddf5f27df291bf36</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-20 14:51:56</sys_created_on>
+        <sys_id>0293933a2b656e10ddf5f27df291bf37</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-20 15:09:17</sys_updated_on>
+        <ui_id>1c0e6ebd-0ee7-43c6-879f-34af7ad6be6d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41STWvjMBD9LzonxnHstM5tYSks7LbQbnspxYylUSKQJVcfab0h/70j28kh7KE36c3TvHlv9HpkSrAtk3W7rm7WULSbaoOrXAhZyeJGyKJetVLWbMEMdEhMh+8RfWhaKwZCD6Bjgo9Hqe1HcwCnoNWYzbTTiThC+V7D8PINKt8rLRwatn19W7AeHIkGdGx7vCqFocdGQ4uaOj4Fp8yOnn/Xy/nhlZn/W0xShPqziHUiTbRaMPwMaASSqATtccE6MAKCdQPbBhcJcAjiwejhwtgrE6gZS9xPr/5R59s8zxNTIrnjOFUv12ZOb4L53iqOD31Q1kxISBnORatjZ+4nEyl3lBB1OOdOSPTUD/s0dBpjnkk+7e3H41nwTpnR31zUloO+3CBQCm0M6NNKovp7lc2E/L7eC2rsSLHpoO8JaXpnD2pUoaG7bKfpko2/QqBXO5MBTw4zChOyO8J/jvDL/GX+UBt6nOSejaJl/Up7h6os8nXbLm/Ldb0seZlOfLWU1aYsagFY1Rt2GqNt3mMyNYU0x9FMiRLBc6f68INGOODs/PT2BfvhgxgqAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e06097b22b656e10ddf5f27df291bf36"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e06097b22b656e10ddf5f27df291bf36^sys_idNOT INb86097b22b656e10ddf5f27df291bf99,f86097b22b656e10ddf5f27df291bf97"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">bc52998133a1e2104890955a7e5c7b64</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Look up Client's Related Assets">e06097b22b656e10ddf5f27df291bf36</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>response</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-20 14:37:55</sys_created_on>
+        <sys_id>b86097b22b656e10ddf5f27df291bf99</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-20 15:15:34</sys_updated_on>
+        <ui_id>3c529981-dea1-e210-5616-89498f011b29</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/61TTW/iMBD9Lz6TKAkQEm6VVpUqtVupZXtZrSLHHoO1ju3aDpRF/PcdkwAVvexhj/M8H++9GR+I6YPtg1+ZO+/lWpPlzwORnCzJlJVZvWiLoi3nJeQZ52IuigUXRZ23ohJkQjTtADMdeGu0B0S2VPUROhym1byo6ypPFi3NEyjyLBEzOk/KvBRlwRd1XlTpMDz1wUm9lkICb5jRAXQ4HrEbl94qun/7r03ZRiruICr9NSGWOhQRwJHl4eYp7C00iragcPbrqRuW/6s358KXqzlf7YojEPHn5sbxyCSfEPhAwhxwmKDKw4R0VHMajNtfEAeUP2t1BTZSB+xGYvKHl3+wdZVlWcwUgLIYDK+XsBkNHmC2MZLBsw3S6AEJtFVjDTOq7/T3QUFcDQjaq3BeDSK9x35gI+tIY+QkXjdm93IeeC/1SeD4qAyj6hLRgDa0fQAfd9HL1Y05A/J4uxBQ0OHEpqPWItJYZ7byNAVJd+laYZAKZXbILl54SllUmKKbNL1H/NsJfqNORrlP2AaL47gfWr738BAX3lI+bUteJbj3KplVBU/qohYJny3quqjmwMuKHE/WNu99FDWYNNrRDI5igmdO2nCHFLYwKj/irUkdP+Fwd9uRyRhyYNIj4VXEHj7l8T0elGSfoZ1xv6PUK3b8C+JZIHTiAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e2255dc533a1e2104890955a7e5c7beb</block>
+        <comment>Build the request with the client name and NDG</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Look up Client's Related Assets">e06097b22b656e10ddf5f27df291bf36</flow>
+        <flow_variables_assigned>request</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-20 14:37:55</sys_created_on>
+        <sys_id>f86097b22b656e10ddf5f27df291bf97</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-20 15:15:34</sys_updated_on>
+        <ui_id>73813059-7e85-47d4-9293-57ac51f0fadc</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y32/bOAz+VwJhj2ngpEvS9i3YsGuBtSuarhhwGTxZolNhsuTpR7s08P8+yrKTXOq2dw/3lr7Uoijy40eKIrIm2rvSO3urZ9aKpSJnf3/vE6GCDL/XRNECyBkx8MuDdaRPHqj0QYKfXNhS0tXdVsLuheQGGjMlNXjagSFn670ttyohlTQDiQfnzgi1xOOC4wqSSXI6zUajbDKewDDhPB/noynPR6fDLD/OUa89uEX1DGZwgALbmtaGBxxJn8BvB4oDusqptNAnBVWcOm1WG4kByr8ouRXcC+VihAX9bcUTmj5JkiRo5oBBsSb+zTJtuGlp0YLBl9IJraLE0Uy2nGnpC3UVAwisQk69dDuseov2oAyoA4wGUz6/1483rcNPQtUBNptSMyo3K+qQhsw7sCETXtzukRMln/fTARIK9JgWtCxRkpZGP4jaC4IuBkuJi0Eu9SOiC8UzoCxEOEA26eATyj/W4jtqRAj3Es3g4eDuqxKYqIuQbn7yfpxMT+lRcjyCo/djxo5Oh8Ph0WQynibH0/GUZyekqqlNf/kQVCSpoSONjKKCZUaUboYQHjA4Zzy0shB0Wxn4+Zoi6jlvVO/HeqF6+LcgH7SUsKSBCD1jDOtInH+bX6c30eCCnPUa3agvrBPOO723ETeZ5lgIYWtBkuT4ZEG2GlV/14wBb2kmpHCrWZu9TpMfdSGU0K3NJFmQ/r7OleavK1xr6+gT5q7F1qHzARkwWzPjLj++uARr6XK5AfRyhE6U+kZgW0AWadQe/sMmcqmQrnA1ocmCE92KtE6MvsbCZaKkspuq4HFBer1g4d0652ldqNZndQ3HpjcIpjzWVWggVUeMyhfQ0vCmEVTOwFQvk9AAnwPT2ISM0FdeP3TXTkQf3L6B6j94uwOGCfjf/BmQ26p69TK8bCNqNX3uSTS53QO1IJZK3h1HvXNJ8XkrXo4nKuFFKt4MKgL6C9+2AKcTDJaEmBlk1oHDdkKl6EaGdwXZOcf3p41qfp52oGNUbeK+uLrtygdfdriIe/hi4w3quI/7se3G9xkbvu+8llFLYyuvb+ZuM3umlWMD2yB/1vDiJ/6rfpCqqr6H4SI+FXH2qMeBrsf9MIMcZpDDDHKYQQ4zyL+eQA7zx2H+OMwfb80fHJgIlNyGt+Ki/RUkbKzwdRdsV/Sozc9w47ay6g925cY4TxEAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e06097b22b656e10ddf5f27df291bf36"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e06097b22b656e10ddf5f27df291bf36^sys_idNOT INe06097b22b656e10ddf5f27df291bf3f"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d845079a-032e-45cc-9111-665703757db8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>request</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Client's Related Assets">e06097b22b656e10ddf5f27df291bf36</model>
+        <model_id>e06097b22b656e10ddf5f27df291bf36</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_e06097b22b656e10ddf5f27df291bf36</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-20 14:37:54</sys_created_on>
+        <sys_id>e06097b22b656e10ddf5f27df291bf3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-20 14:37:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>account_number</element>
+        <help/>
+        <hint/>
+        <label>Account Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e06097b22b656e10ddf5f27df291bf36</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-20 14:57:56</sys_created_on>
+        <sys_id>86f453ba2b656e10ddf5f27df291bf9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-20 14:57:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>account_type</element>
+        <help/>
+        <hint/>
+        <label>Account Type</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e06097b22b656e10ddf5f27df291bf36</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-20 14:57:56</sys_created_on>
+        <sys_id>c2f497ba2b656e10ddf5f27df291bf40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-20 14:57:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e06097b22b656e10ddf5f27df291bf36"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>Response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_e06097b22b656e10ddf5f27df291bf36</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-20 14:37:55</sys_created_on>
+        <sys_id>f06097b22b656e10ddf5f27df291bf93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-20 14:37:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e06097b22b656e10ddf5f27df291bf36"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e06097b22b656e10ddf5f27df291bf36"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e06097b22b656e10ddf5f27df291bf36"/>
+</record_update>

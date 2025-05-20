@@ -17,10 +17,11 @@
         var name = record_gr.getValue('customer_name') || 'Unknown';
 
         var message = 
-            'Account closure request for ' + name + ' (NDG: ' + ndg + '):\n' +
+            'Account closure request for: \n' +
+            '- Client\'s name  : ' + name + '\n' +
+            '- Client\'s NDG   : ' + ndg + '\n' +
             '- Account to close: ' + acctToClose + '\n' +
             '- Account for balance transfer: ' + acctForTransfer;
-
         return message;
     } else {
         throw new Error('No record found with number ' + inputs.number);
@@ -32,7 +33,7 @@
         <sys_created_on>2025-05-14 16:19:55</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>543e240133ada2104890955a7e5c7bb1</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Get Account Closure request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
@@ -40,7 +41,7 @@
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name>sn_aia_tool_543e240133ada2104890955a7e5c7bb1</sys_update_name>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-15 14:19:33</sys_updated_on>
+        <sys_updated_on>2025-05-20 14:06:49</sys_updated_on>
         <target_document/>
         <target_document_table/>
         <type>script</type>
