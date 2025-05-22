@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="fd968aef2be56250ddf5f27df291bf6b" label="Account Closure Form" max_length="40" name="x_mm_banking_account_closure_form" type="collection">
+        <element label="Check Range To" max_length="255" name="check_range_to" type="integer"/>
+        <element label="Check Range From" max_length="255" name="check_range_from" type="integer"/>
+        <element label="Request" max_length="32" name="request" reference="x_mm_banking_account_closure_request" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="request"/>
+        </index>
+    </element>
+</database>

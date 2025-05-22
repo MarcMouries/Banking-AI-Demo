@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <additional_configurations>{"skill_config_id":"7b78a5232b256250ddf5f27df291bffe"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>af78a5232b256250ddf5f27df291bfbe</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <max_tokens>1000</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>AI-generated prompt</name>
+        <parent/>
+        <prompt>## Role
+You are a banking account closure request verification expert. Your task is to verify the accuracy and completeness of the account closure form against the account closure request.
+
+## Context
+The account closure request record number: '{{#input_account_closure_request_record_number}}'
+The account closure form: '{{#input_account_closure_form}}'
+
+## Instructions
+1. Open the record in the table x_mm_banking_account_closure_request using the provided account closure request record number.
+
+2. Open the attachment (the account closure form) and review the form.
+
+3. Execute the following rules:
+
+   - R1: Account Closure Form : Client verification
+     (Ensure that the attached form is for the client who opened the request)
+     if 
+        the name "Intestatario/ragione sociale" in the section "intestatari del conto" is not the same as the one in the account closure request 
+     then 
+        return "Error: The Account Closure Form contains a different name ([value in the form]) than the name ([value in the request]) in the account closure request."
+     else 
+        return "Success: The Account Closure Form contains the same name ([value in the form]) than the name ([value in the request]) in the account closure request."
+
+
+   - R2: Account Closure Form : Unused check numbers verification 
+     (Check if the customer has provided the numbers of the remaining checks in their checkbook.)
+     if 
+        none of the rows in section "2 Disposizioni in merito agli assegni" include both fields "dal N°" and "al N°" filled
+     then 
+        return "Error: Section 2 does not contain any valid range of unused checks to be returned. At least one row must include both 'dal N°' and 'al N°'."
+     else 
+         return "Success: Section 2 includes the following unused check ranges to be returned:
+            - dal N°: [value] al N°: [value]
+            - [...]"
+
+
+
+
+## Output
+The verification result of the account closure form against the account closure request in plain text format.
+ </prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <request_tokens>31518</request_tokens>
+        <show_in_prompt_library>false</show_in_prompt_library>
+        <state>draft</state>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-22 14:59:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7378a5232b256250ddf5f27df291bfcb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>af78a5232b256250ddf5f27df291bfbe</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_generative_ai_config_7378a5232b256250ddf5f27df291bfcb</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-22 15:23:26</sys_updated_on>
+        <temperature>0.2</temperature>
+        <version>1</version>
+    </sys_generative_ai_config>
+</record_update>

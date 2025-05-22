@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_di_key_group">
+    <sys_di_key_group action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_details/>
+        <description>Unused check numbers</description>
+        <display_name>Unused check numbers</display_name>
+        <is_list>true</is_list>
+        <mandatory>true</mandatory>
+        <parent_key_group/>
+        <parent_mapping_to_field>request</parent_mapping_to_field>
+        <prediction_method/>
+        <stp_threshold/>
+        <sys_class_name>sys_di_key_group</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-22 15:52:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c194f56b2b656250ddf5f27df291bfcc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Unused check numbers</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_di_key_group_c194f56b2b656250ddf5f27df291bfcc</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-22 17:31:32</sys_updated_on>
+        <target_table>x_mm_banking_account_closure_form</target_table>
+        <task_definition display_value="Check Account Closure Form Data">becfa9af2b256250ddf5f27df291bfae</task_definition>
+        <type>table</type>
+    </sys_di_key_group>
+</record_update>

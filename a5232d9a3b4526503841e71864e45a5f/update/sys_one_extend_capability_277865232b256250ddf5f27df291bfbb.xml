@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_capability">
+    <sys_one_extend_capability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>1. Open a record in the table x_mm_banking_account_closure_request given a record number (for example AC0001003) 
+2. Open the attachment (it's a PDF form from an Italian Bank)
+3. Execute the following rules:
+
+R1: Account Closure Form : Client verification
+if the name "Intestatario/ragione sociale" in the section "intestatari del conto" is not the same as the one in the account closure request 
+then return "Error: The Account Closure Form contains a different name than the one in the account closure request."
+else return "Success: The Account Closure Form contains the same name than the one in the account closure request."
+
+R2: Account Closure Form : Check numbers verification
+The section "2 Disposizioni in merito agli assegni"
+check if the customer has provided the numbers of the remaining checks in their checkbook.
+
+R2: Account Closure Form : Unused Check Returns
+if none of the rows in section "2 Disposizioni in merito agli assegni" include both fields "dal N°" and "al N°" filled
+then return "Error: Section 2 does not contain any valid range of unused checks to be returned. At least one row must include both 'dal N°' and 'al N°'."
+else return "Success: Section 2 includes the following unused check ranges to be returned:
+- dal N°: [value] al N°: [value]
+- [...]" </description>
+        <external>true</external>
+        <metadata>{"isGuidedStep":false}</metadata>
+        <name>Check Account Closure Form Data</name>
+        <short_description/>
+        <sys_class_name>sys_one_extend_capability</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-22 14:59:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>277865232b256250ddf5f27df291bfbb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Check Account Closure Form Data</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_one_extend_capability_277865232b256250ddf5f27df291bfbb</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-22 15:02:09</sys_updated_on>
+        <type>skill</type>
+    </sys_one_extend_capability>
+    <sys_translated_text action="delete_multiple" query="documentkey=277865232b256250ddf5f27df291bfbb"/>
+</record_update>

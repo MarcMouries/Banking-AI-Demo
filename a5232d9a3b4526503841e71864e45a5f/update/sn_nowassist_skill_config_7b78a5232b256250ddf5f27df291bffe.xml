@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_nowassist_skill_config">
+    <sn_nowassist_skill_config action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <description><![CDATA[1. Open a record in the table x_mm_banking_account_closure_request given a record number (for example AC0001003) 
+2. Open the attachment (it&#39;s a PDF form from an Italian Bank)
+3. Execute the following rules:
+
+R1: Account Closure Form : Client verification
+if the name &#34;Intestatario/ragione sociale&#34; in the section &#34;intestatari del conto&#34; is not the same as the one in the account closure request 
+then return &#34;Error: The Account Closure Form contains a different name than the one in the account closure request.&#34;
+else return &#34;Success: The Account Closure Form contains the same name than the one in the account closure request.&#34;
+
+R2: Account Closure Form : Check numbers verification
+The section &#34;2 Disposizioni in merito agli assegni&#34;
+check if the customer has provided the numbers of the remaining checks in their checkbook.
+
+R2: Account Closure Form : Unused Check Returns
+if none of the rows in section &#34;2 Disposizioni in merito agli assegni&#34; include both fields &#34;dal N°&#34; and &#34;al N°&#34; filled
+then return &#34;Error: Section 2 does not contain any valid range of unused checks to be returned. At least one row must include both &#39;dal N°&#39; and &#39;al N°&#39;.&#34;
+else return &#34;Success: Section 2 includes the following unused check ranges to be returned:
+- dal N°: [value] al N°: [value]
+- [...]&#34; ]]></description>
+        <edited_in_nask>false</edited_in_nask>
+        <in_product_active>false</in_product_active>
+        <in_product_roles/>
+        <is_template>false</is_template>
+        <name>Check Account Closure Form Data</name>
+        <nap_skill_applicability/>
+        <order>100</order>
+        <parent/>
+        <skill_family display_value="Other">a5efaf1c93764210aa5730f16489186d</skill_family>
+        <skill_id>277865232b256250ddf5f27df291bfbb</skill_id>
+        <skill_table>sys_one_extend_capability</skill_table>
+        <state>0</state>
+        <success_message/>
+        <sys_class_name>sn_nowassist_skill_config</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-22 14:59:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7b78a5232b256250ddf5f27df291bffe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Check Account Closure Form Data</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sn_nowassist_skill_config_7b78a5232b256250ddf5f27df291bffe</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:59:27</sys_updated_on>
+    </sn_nowassist_skill_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=7b78a5232b256250ddf5f27df291bffe"/>
+</record_update>

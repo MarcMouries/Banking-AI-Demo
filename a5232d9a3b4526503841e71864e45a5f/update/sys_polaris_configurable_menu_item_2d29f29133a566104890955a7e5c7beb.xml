@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_polaris_configurable_menu_item">
+    <sys_polaris_configurable_menu_item action="INSERT_OR_UPDATE">
+        <application_id display_value="Banking AI Demo">aab38728336922104890955a7e5c7bfe</application_id>
+        <menu_id display_value="🚀 ">6ad8fa5133a566104890955a7e5c7b4c</menu_id>
+        <module_id/>
+        <order>20000</order>
+        <sys_class_name>sys_polaris_configurable_menu_item</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-05-15 21:06:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2d29f29133a566104890955a7e5c7beb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>6ad8fa5133a566104890955a7e5c7b4c</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_polaris_configurable_menu_item_2d29f29133a566104890955a7e5c7beb</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:11:01</sys_updated_on>
+        <type>application</type>
+    </sys_polaris_configurable_menu_item>
+</record_update>
