@@ -9,7 +9,7 @@
         <min_word_count>-1</min_word_count>
         <model>llm_generic_small</model>
         <name>Banking Email Data Extraction</name>
-        <parent display_value="OneExtend Capability Definition: Banking Email Data Extraction_Email intent (Now LLM Generic - Now LLM Generic)">2ed1d0fb2b392210ddf5f27df291bf31</parent>
+        <parent display_value="OneExtend Capability Definition: Banking Email Data Extraction_Email intent (Now LLM Generic - Now LLM Generic)">85660db72bbd2210ddf5f27df291bff3</parent>
         <prompt>## Role
 
 You are a banking domain expert AI assistant. Your task is to determine the intent behind an email based on its content and extract data.
@@ -43,29 +43,33 @@ You are given the subject: {{email_subject}} and body  {{email_body}} of an emai
 
 ## Output
 
-{ email_intent  : {{intent}}, customer_name : {{CustomerName}}, ndg : {{NDG}}, AccountNumberToClose: {{AccountNumberToClose}}, AccountNumberForBalanceTransfer : {{AccountNumberForBalanceTransfer}} }
-
-</prompt>
+{
+  "intent": "{{intent}}",
+  "CustomerName": "{{CustomerName}}",
+  "ndg": "{{NDG}}",
+  "AccountNumberToClose": "{{AccountNumberToClose}}",
+  "AccountNumberForBalanceTransfer": "{{AccountNumberForBalanceTransfer}}"
+}</prompt>
         <prompt_template_role>user</prompt_template_role>
         <request_tokens>31518</request_tokens>
-        <show_in_prompt_library>true</show_in_prompt_library>
-        <state>archived</state>
+        <show_in_prompt_library>false</show_in_prompt_library>
+        <state>draft</state>
         <sys_class_name>sys_generative_ai_config</sys_class_name>
         <sys_created_by>marc.mouries@snc</sys_created_by>
-        <sys_created_on>2025-06-04 14:03:24</sys_created_on>
+        <sys_created_on>2025-06-04 17:45:17</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>a158dc3b2b792210ddf5f27df291bf15</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>17f0e3e02b692210ddf5f27df291bf48</sys_name>
+        <sys_id>771bc9332bfd2210ddf5f27df291bfb6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Banking Email Data Extraction</sys_name>
         <sys_overrides/>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
-        <sys_update_name>sys_generative_ai_config_a158dc3b2b792210ddf5f27df291bf15</sys_update_name>
+        <sys_update_name>sys_generative_ai_config_771bc9332bfd2210ddf5f27df291bfb6</sys_update_name>
         <sys_updated_by>marc.mouries@snc</sys_updated_by>
-        <sys_updated_on>2025-06-04 17:41:22</sys_updated_on>
+        <sys_updated_on>2025-06-04 17:45:18</sys_updated_on>
         <temperature>0.2</temperature>
-        <version>4</version>
+        <version>6</version>
     </sys_generative_ai_config>
 </record_update>

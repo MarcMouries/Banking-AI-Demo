@@ -4,27 +4,32 @@
         <name>Extract fields from model response</name>
         <sys_class_name>sys_generative_ai_validator</sys_class_name>
         <sys_created_by>marc.mouries@snc</sys_created_by>
-        <sys_created_on>2025-06-04 14:03:25</sys_created_on>
+        <sys_created_on>2025-06-04 17:24:37</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>2158dc3b2b792210ddf5f27df291bf1e</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_id>c5664db72bbd2210ddf5f27df291bfd1</sys_id>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Extract fields from model response</sys_name>
         <sys_overrides/>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
-        <sys_update_name>sys_generative_ai_validator_2158dc3b2b792210ddf5f27df291bf1e</sys_update_name>
+        <sys_update_name>sys_generative_ai_validator_c5664db72bbd2210ddf5f27df291bfd1</sys_update_name>
         <sys_updated_by>marc.mouries@snc</sys_updated_by>
-        <sys_updated_on>2025-06-04 17:21:47</sys_updated_on>
+        <sys_updated_on>2025-06-04 17:40:54</sys_updated_on>
         <validator_script><![CDATA[(function(payload) {
     var response = JSON.parse(payload.response[0] || {});
-    var modelOutputRaw = response.model_output || '';
-    var cleaned = modelOutputRaw.replace(/```/g, '').trim();
+    var modelOutputString = response.model_output || '';
 
-    // Parse cleaned model output
-    var modelOutput = JSON.parse(cleaned);
-    response.email_intent = modelOutput.email_intent;
+    gs.info("@Post processing modelOutputString = " + JSON.stringify(modelOutputString));
+    var modelOutput = JSON.parse(modelOutputString);
+    //response.intent = modelOutput.intent;
+    for (var key in modelOutput) {
+            response[key] = modelOutput[key];
+    }
+
+
+
     payload.response[0] = JSON.stringify(response);
     return payload;
 })(payload);]]></validator_script>
