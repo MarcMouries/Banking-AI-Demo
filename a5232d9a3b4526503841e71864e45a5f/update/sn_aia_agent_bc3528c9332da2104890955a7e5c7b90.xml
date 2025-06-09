@@ -3,44 +3,59 @@
         <agent_type>internal</agent_type>
         <compiled_handbook>```markdown
 - **Step 1: Retrieve Account Closure Request Details**
-  - Use the 'Get Account Closure request' tool to retrieve the account closure request details. Provide the record number as input to this tool.
-  - Ensure the tool returns the following details: Client name, NDG, Account Number to Close, and Account Number for Balance Transfer.
-  - If the tool fails to retrieve the details, use the 'User Output' tool to inform the user: "I could not retrieve the account closure request details. Please verify the record number and try again."
-  - If the details are successfully retrieved, proceed to the next step.
+  - Use the 'Get Account Closure request' tool to retrieve the account closure request details.
+    - Input: Provide the record number of the request.
+    - Expected Output: The tool will return the following details:
+      - Client name
+      - NDG
+      - Account Number to Close
+      - Account Number for Balance Transfer
+  - If the tool fails to retrieve the details, use the 'User Output' tool to inform the user: "Unable to retrieve account closure request details. Please verify the record number and try again."
+  - Do not proceed until the account closure request details are successfully retrieved.
 
 - **Step 2: Verify Client Identity**
-  - Use the 'Look up Client' tool to verify the client identity. Provide the retrieved client name as input to this tool.
-  - If the tool fails to find the client, use the 'User Output' tool to inform the user: "The client could not be found. Please verify the client name and try again."
-  - If the client is successfully found, proceed to the next step.
+  - Use the 'Look up Client' tool to search for the client by their name.
+    - Input: Provide the client name retrieved in Step 1.
+    - Expected Output: The tool will return client details or indicate if no match is found.
+  - Use the 'Content Analysis' tool to analyze the output and determine if the client exists and matches the provided NDG.
+    - If no match is found, use the 'User Output' tool to display: "Verification failed: Client not found for the provided NDG."
+    - If multiple matches are found, use the 'User Output' tool to display: "Verification failed: Multiple NDG entries found for the client name. Additional input required to disambiguate the client."
+    - If exactly one match is found, proceed to the next step.
 
-- **Step 3: Check Client's Annotations**
-  - Use the 'Look up Client's Annotations' tool to check for any active annotations on the client. Provide the NDG retrieved in Step 1 as input to this tool.
-  - If the tool identifies active annotations, use the 'User Output' tool to inform the user: "The account closure process is blocked due to active annotations on the client. Please resolve the annotations before proceeding."
+- **Step 3: Look Up Client's Annotations**
+  - Use the 'Look up Client's Annotations' tool to check for any active annotations on the client's NDG.
+    - Input: Provide the NDG retrieved in Step 1.
+    - Expected Output: The tool will return any active annotations associated with the client.
+  - If active annotations are found, use the 'User Output' tool to inform the user: "Account closure may be blocked due to active annotations. Please review the annotations for further details."
   - If no active annotations are found, proceed to the next step.
 
-- **Step 4: Fetch Client's Assets**
-  - Use the 'Look up Client's Assets' tool to retrieve all assets linked to the client. Provide the NDG retrieved in Step 1 as input to this tool.
-  - If the tool fails to retrieve the assets, use the 'User Output' tool to inform the user: "I could not retrieve the client's assets. Please verify the NDG and try again."
-  - If the assets are successfully retrieved, proceed to the next step.
+- **Step 4: Look Up Client's Assets**
+  - Use the 'Look up Client's Assets' tool to retrieve all assets linked to the client's NDG.
+    - Input: Provide the NDG retrieved in Step 1.
+    - Expected Output: The tool will return a list of all assets associated with the client.
+  - If no assets are found, use the 'User Output' tool to inform the user: "No assets found for the client. Proceeding with account closure evaluation."
+  - If assets are found, use the 'Content Analysis' tool to analyze the assets and determine if any of them might block the account closure process.
 
-- **Step 5: Analyze Related Assets**
-  - Use the 'Look up client's related assets' tool to analyze the specific account to be closed. Provide the following inputs:
-    - Account Number: The account number to close (retrieved in Step 1).
-    - Account Type: The type of the account to close (determine based on the retrieved assets or annotations).
-  - If the tool identifies any dependencies or issues with the account, use the 'User Output' tool to inform the user: "The account closure process is blocked due to dependencies or issues with the account. Please resolve these before proceeding."
-  - If no issues are found, proceed to the next step.
+- **Step 5: Look Up Client's Related Assets**
+  - Use the 'Look up client's related assets' tool to check for any related assets tied to the account number to close.
+    - Input: Provide the account number to close and the account type (if available).
+    - Expected Output: The tool will return details of related assets.
+  - If related assets are found, use the 'User Output' tool to inform the user: "Account closure may be blocked due to related assets. Please review the related assets for further details."
+  - If no related assets are found, proceed to the next step.
 
-- **Step 6: Synthesize Findings**
-  - Use the 'Content Analysis' tool to synthesize all the retrieved information (client details, annotations, assets, and related assets) and determine if the account closure process can proceed.
-  - If the analysis indicates that the account closure is not possible, use the 'User Output' tool to inform the user: "The account closure process cannot proceed due to the identified issues. Please address these issues and try again."
-  - If the analysis indicates that the account closure can proceed, use the 'User Output' tool to inform the user: "The account is eligible for closure. You may proceed with the next steps."
+- **Step 6: Analyze Account Closure Eligibility**
+  - Use the 'Content Analysis' tool to synthesize all retrieved information (client details, annotations, assets, and related assets) and determine if the account is eligible for closure.
+    - Input: Provide a detailed analysis of all retrieved data to evaluate closure eligibility.
+    - Expected Output: A synthesized conclusion on whether the account can be closed or if there are blocking factors.
+  - If the analysis indicates that the account cannot be closed, use the 'User Output' tool to inform the user: "Account closure is not possible due to identified blocking factors. Please review the details and address the issues before proceeding."
+  - If the analysis indicates that the account can be closed, proceed to the next step.
 
-- **Step 7: User Feedback Collection**
-  - Use the 'User Input' tool to ask the user: "Do you need assistance with the next steps for account closure, or is there anything else I can help you with?"
-  - Based on the user's response, either provide further guidance or conclude the process.
+- **Step 7: Inform User of Closure Eligibility**
+  - Use the 'User Output' tool to inform the user of the final eligibility status for account closure.
+    - If eligible: "The account is eligible for closure. Please proceed with the necessary steps."
+    - If not eligible: "The account is not eligible for closure. Please address the identified issues before proceeding."
 
 - **Step 8: Completion**
-  - Once the user confirms that no further assistance is required, use the 'User Output' tool to display: "Thank you for using the Account Closure Evaluation Agent. Have a great day!"
   - Use the 'Finish' tool to conclude the execution.
 ```</compiled_handbook>
         <description>Responsible for checking whether a customer's bank account can be closed by evaluating active loans or insurance policies, annotations, and account restrictions. Returns findings with a summary of the closure timeline or explains why closure is not currently possible.</description>
@@ -55,19 +70,33 @@ Retrieve the following values from the request record:
 - Account Number for Balance Transfer
 
 #### Step 2: Verify Client Identity
-1. Look up the client using the client name provided in the request.</instructions>
+1. Look up the client using the client name provided in the request.
+2. Execute Rule R1: Verify Client
+   - If successful, proceed to the next step.  
+   - If not, return the appropriate error and stop the workflow.
+
+
+#### Business Rules
+
+##### Rule R1: Verify Client
+Search the datiAnagrafici array for entries where:
+codiceTipoNDG.codice is "PF" (indicating a natural person), 
+and personaFisica.intestazione equals ”{client's name}".
+
+If no match is found, return the message: "Verification failed: "Client not found for the provided NDG."
+
+If exactly one match is found, return the message: “Verification successful: client {name} exists with NDG {NDG}."
+
+If more than one match is found, return the message: "Verification failed: Multiple NDG entries found for ”{client's name} with codiceTipoNDG 'PF’. Additional input required to disambiguate the client.”</instructions>
         <internal_name>global.x_mm_banking.Account Closure Evaluation Agent</internal_name>
         <name>Account Closure Evaluation Agent</name>
         <processing_message/>
-        <proficiency>- The agent is capable of evaluating the eligibility of a bank account for closure by analyzing customer account details, linked financial products, and system annotations to identify any potential blocks or restrictions.
-- The agent is capable of retrieving and interpreting account closure request details, including client name, NDG, account number to close, and account number for balance transfer, to initiate the closure eligibility analysis.
-- The agent is capable of looking up a client by their name to verify their identity and ensure the account closure request is linked to the correct customer.
-- The agent is capable of retrieving information about a client's related financial assets by using the account number and account type, ensuring a comprehensive understanding of the client's financial portfolio.
-- The agent is capable of extracting detailed information from an account closure request record, including customer name, NDG, account number to close, and account number for balance transfer, to ensure accurate processing.
-- The agent is capable of retrieving and analyzing active annotations associated with a client's NDG to identify any restrictions or blocks that may impact the account closure process.
-- The agent is capable of retrieving a comprehensive list of a client's assets using their NDG to ensure all linked financial products are accounted for in the account closure eligibility analysis.
-- The agent is capable of verifying a client's identity and checking for active annotations in a single workflow to ensure the account closure request is valid and free of restrictions.
-- The agent is capable of performing a comprehensive analysis of a client's financial portfolio by combining general asset information with account-specific related assets to ensure all dependencies are considered before account closure.</proficiency>
+        <proficiency>- The agent is proficient in evaluating the eligibility for bank account closure by analyzing customer accounts, linked financial products, and system annotations to determine if closure is possible or blocked.
+- The agent can look up a client by name, using the 'Look up Client' tool, which requires the client's name as a mandatory input to verify identity and ensure the correct client is being processed for account closure.
+- The agent can look up a client's related assets using the 'Look up client's related assets' tool, requiring the account number and account type as mandatory inputs to assess linked financial products.
+- The agent can retrieve account closure request details using the 'Get Account Closure request' tool, which requires the record number to obtain customer details such as name, NDG, account number to close, and account number for balance transfer.
+- The agent can look up any active annotations using the 'Look up Client's Annotations' tool, which requires the NDG as a mandatory input to identify potential blocks or issues in the account closure process.
+- The agent can look up a client's assets using the 'Look up Client's Assets' tool, requiring the NDG as a mandatory input to evaluate the client's overall financial assets and their implications on account closure eligibility.</proficiency>
         <record_type>custom</record_type>
         <role>You are a bank account closure eligibility expert. Your job is to analyze the customer's account, linked financial products, and system annotations to determine if closure is possible or blocked.</role>
         <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
@@ -76,13 +105,13 @@ Retrieve the following values from the request record:
         <sys_created_on>2025-05-14 15:49:45</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>bc3528c9332da2104890955a7e5c7b90</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_name>Account Closure Evaluation Agent</sys_name>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name>sn_aia_agent_bc3528c9332da2104890955a7e5c7b90</sys_update_name>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-27 20:29:41</sys_updated_on>
+        <sys_updated_on>2025-06-06 22:47:42</sys_updated_on>
     </sn_aia_agent>
 </record_update>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_response_validator">
+    <sys_generative_ai_response_validator action="DELETE">
+        <active>true</active>
+        <definition>771bc9332bfd2210ddf5f27df291bfb6</definition>
+        <definition_table>sys_generative_ai_config</definition_table>
+        <order>100</order>
+        <sys_class_name>sys_generative_ai_response_validator</sys_class_name>
+        <sys_created_by>marc.mouries@snc</sys_created_by>
+        <sys_created_on>2025-06-04 17:45:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>731b0d332bfd2210ddf5f27df291bfa3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_generative_ai_response_validator_731b0d332bfd2210ddf5f27df291bfa3</sys_update_name>
+        <sys_updated_by>marc.mouries@snc</sys_updated_by>
+        <sys_updated_on>2025-06-04 17:45:18</sys_updated_on>
+        <validator display_value="Extract fields from model response">771b0d332bfd2210ddf5f27df291bfa0</validator>
+    </sys_generative_ai_response_validator>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</application>
+        <file_path/>
+        <instance_id>bed3c2091b56b11ce84d2f8dee4bcbd7</instance_id>
+        <instance_name>marco</instance_name>
+        <name>sys_generative_ai_response_validator_731b0d332bfd2210ddf5f27df291bfa3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_response_validator"><sys_generative_ai_response_validator action="INSERT_OR_UPDATE"><active>true</active><definition>771bc9332bfd2210ddf5f27df291bfb6</definition><definition_table>sys_generative_ai_config</definition_table><order>100</order><sys_class_name>sys_generative_ai_response_validator</sys_class_name><sys_created_by>marc.mouries@snc</sys_created_by><sys_created_on>2025-06-04 17:45:18</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>731b0d332bfd2210ddf5f27df291bfa3</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package><sys_policy/><sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope><sys_update_name>sys_generative_ai_response_validator_731b0d332bfd2210ddf5f27df291bfa3</sys_update_name><sys_updated_by>marc.mouries@snc</sys_updated_by><sys_updated_on>2025-06-04 17:45:18</sys_updated_on><validator display_value="Extract fields from model response">771b0d332bfd2210ddf5f27df291bfa0</validator></sys_generative_ai_response_validator></record_update>]]></payload>
+        <payload_hash>-1085033586</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>8889407b2bf52210ddf5f27df291bf1c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>marc.mouries@snc</sys_created_by>
+        <sys_created_on>2025-06-04 17:45:18</sys_created_on>
+        <sys_id>f71b0d332bfd2210ddf5f27df291bfa5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1973c0c246f0000001</sys_recorded_at>
+        <sys_updated_by>marc.mouries@snc</sys_updated_by>
+        <sys_updated_on>2025-06-04 17:45:18</sys_updated_on>
+        <type>Generative AI Response Validator</type>
+        <update_guid>fb1b0d3362fd2210644a7b20700eb8a4</update_guid>
+        <update_guid_history>fb1b0d3362fd2210644a7b20700eb8a4:-1085033586</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>marc.mouries@snc</sys_created_by>
+        <sys_created_on>2025-06-06 18:45:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_generative_ai_response_validator">sys_generative_ai_response_validator</sys_db_object>
+        <sys_id>0d595ef9a6944c748e8f185bd01eeb59</sys_id>
+        <sys_metadata>731b0d332bfd2210ddf5f27df291bfa3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_scope_delete display_value="">7deed9a6ce4348c0874db603c55ec671</sys_scope_delete>
+        <sys_update_name>sys_generative_ai_response_validator_731b0d332bfd2210ddf5f27df291bfa3</sys_update_name>
+        <sys_update_version display_value="sys_generative_ai_response_validator_731b0d332bfd2210ddf5f27df291bfa3">f71b0d332bfd2210ddf5f27df291bfa5</sys_update_version>
+        <sys_updated_by>marc.mouries@snc</sys_updated_by>
+        <sys_updated_on>2025-06-06 18:45:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
