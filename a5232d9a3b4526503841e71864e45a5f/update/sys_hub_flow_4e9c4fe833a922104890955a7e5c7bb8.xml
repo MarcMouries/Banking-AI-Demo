@@ -38,7 +38,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4e9c4fe833a922104890955a7e5c7bb8</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Email processing</sys_name>
         <sys_overrides/>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
@@ -46,7 +46,7 @@
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name>sys_hub_flow_4e9c4fe833a922104890955a7e5c7bb8</sys_update_name>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-04 20:57:22</sys_updated_on>
+        <sys_updated_on>2025-06-09 15:12:37</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
@@ -177,10 +177,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-13 16:13:55</sys_created_on>
         <sys_id>8333a7282b692210ddf5f27df291bf45</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
-        <sys_updated_by>marc.mouries@snc</sys_updated_by>
-        <sys_updated_on>2025-06-04 16:08:08</sys_updated_on>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 15:12:37</sys_updated_on>
         <ui_id>d7d0337d-43ef-4e8a-adaa-1702cb8e44fa</ui_id>
         <updation_source/>
         <values>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</values>
@@ -200,10 +200,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-13 19:08:33</sys_created_on>
         <sys_id>fc3b4430336162104890955a7e5c7b00</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-04 20:53:57</sys_updated_on>
+        <sys_updated_on>2025-06-09 15:12:37</sys_updated_on>
         <ui_id>924211e1-9a78-4c2d-ad05-488902edabb9</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VVyW7bMBD9lUBnwZXjOk58K1D41gRoi/SQpsSIGtlEKFLh4tg1/O8dipKXpE7doEBaFNCFs7x5M3wc3awSUSTjBEcDOBsMhsNBP8sG9OVlv7joZxfIh+ejIU/SREGFFOnA3jEHuUSyzUH6YFywqmI5qDuhpgw41145xqW23iAzeO/ROgovhK0lLK9/L4vPhCwMqmR8c5smNRgi4tAk49Ujl1vWyCTkKAn8c6B4chlIp0f3uJd8oOdQpbHRkamIr00RCGVpgguHqkCqV4K0mCYVqAKcNstk7Iwng0EorpRcbiJmQjkCTELsworvhH6ehbgSqTWO0bc5snaK0cxnWnC8qp3QKloiz+jU0lfqMjYR5o8leOm6+ZPFW8LDOlAOJFpG5aeZfvjYFZwI1XTXOqXmIDcncM6I3Du04T5yILyOQJgalUCJFYGzCuo6XHRt9Fw0gMSv6k0lHXql1A9ExIqp6gEPzfRoatCbkP19Y74GIwLwB4Kh5HUzEXbvA5fYW9sFi4OgAMuNqN07gptjS3idtoI/fVYMZ/n28kuBsmCN0u2O5Lm3TldoGgl89YRQrFZNG/OWaW8vZL3+porpzwPJQW56AY4pXzGnm1dwALV7KBSZE3YXvAtQarIbUJZu8CiQkJCDhCCvLnG9fvpi/4+mX7hwsKJROTyJw0qP1lkHMAlCi9n2oPy67dMWi47tBuo/v4FayzEr6GyYZa+0heKefPESep2Fs/OP+MXqKcvnJDEabe/+AYTbWTnZ0wfZIL9csjToN5MW4lhuXfKXSG6faivPXGuJoLa6PP1junz7j/4a/67f4O0P6jXOy/kJAAA=</values>
@@ -228,10 +228,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-13 14:35:02</sys_created_on>
         <sys_id>169c4fe833a922104890955a7e5c7bf7</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-04 20:57:22</sys_updated_on>
+        <sys_updated_on>2025-06-09 15:12:37</sys_updated_on>
         <ui_id>3747de8c-c33e-4f08-b5cb-6a677f648e5d</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6VSTW/bMAz9Lzonhj+CJM6twFCgh61AV/QyFAYt0YkwWdL0kdQz/N9HxU429LqTzUfy8T2RIzMx2Bj8q3nwXh41O/x4XzGpE0b/I9PQIzswGbD3bMXOoGKKx5ELsdvzLV/XRdGuNzVU63pXivWmQuiqXOxgz7MevYcjNlL4aaJ2Ib1VMLz9Hws/SSUcLmItONIY0LHD+CkVBouNghYVDXtBbpxIJqSgsKhFVxd5zatyW5V5Xu43Rbut2qIUFaDYUt2t82kx/+ktEjuF7s5Ln6SizFcMPwJqgTSoA+VxxXrQAoJxAzsEFwlwCOJZq+FecZI6EB1LtR9e/ibuIs9TYYfkiOOcvIfN8pgzzE9Gcny2QRo9IwFatfRwo2Kvv83y0xqwg6jCbQ2ERE98aJPmpGKR1H0/mcvLbeCj1Fd/S1IZDuoeQQhOtjGgT2tAhT0RNT1YK/Wxsc6c5bWZtPTZUVGQdcpcaGg6uwx4Ep7RE0H2SPiXK/wGTiYXX4mGmqer++ZXTHNnH4viZjZNBZ47acMD0Z1xETe9p7udmfx8GAK59DTwNWFPt2tPiYGWLPm/0MW4n0nqX2z6A/n6Ab43AwAA</values>
@@ -255,13 +255,13 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-04 12:03:28</sys_created_on>
         <sys_id>60ec3fe333b5e6104890955a7e5c7bc1</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-04 20:57:22</sys_updated_on>
+        <sys_updated_on>2025-06-09 15:12:37</sys_updated_on>
         <ui_id>81961053-0f49-411f-961a-24ca4e0e77a7</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1WXW/TMBT9K1aeYLRp1u92D6jAJpCASXTshUyR49y0BsfO/NGtTP3vXOejnYo0npHal8THvveec3xz1adAOVs6a27Uwhi+ksH8x10n4NJj+P4USFpAMA+YACohS6CgXCSpyrZBJ9hQ4fwmvmbclIJubw8IW3ORaWgyllRjIgs6mD8dbdltCYmgKQgMXFrN5QrDeYar8RDYIIfBYJCOYHweDaezaDYa0QmM2CSlQzzXBr6vCZJLT5C8qwm+RN6XxT3TFlQ68+yiTgCPFmQGSCCnwkAnKKjMqFV6u0c00OxaigOw5tLWugv6aPhvTD2NosifzAGlssaV/TJpHGvNUpzBdWm5kjViaSpaJ5Vwhfxaa/FeQ06dsM+8dgbzQelZexoNp3y5Vg/f2oJXXFYCm02hGBX7FbVoQ+osGH8/jt8cmVMjn48vCQQUWDEpaFkikpRabXhVBUkX4UrgIsyFekB2vrtCyrzCEN2k4RXiHyr4lmru5X7BNBjsy32X/N7BJ98EUzYeMUjH3bxPaXfYj2bd6WySdgez/mTcTyGfRnmwq6xN7p0XVZvU2JHUjuIBwzQv7QIpbFCc1Q5arGrKv5sE0Zdigt5ZLM/OFoyBMcTL6S0qfcTrI86gJcSugeRZUiEq/QnMhmRZJSCFM5ZosE5LQkn1MYXEZ7z2rUikK1J8cENUnhuwJN2SN+eES3KptdLkI3al8CWWULtakdkge+8lUVUzGdL0GXElEis1UvUxcRDGAaE5fpEtPR8Oj7QoBcyRjSZmrbTFG2IkdlE0yNqDIV7/agU6ZE5ja9mwOuivuNKFVS98rkbZPosHe7H0mQ8eH6dOhkmyAtvcQgYWHyY8nMckTd4DFmpAhQxe9eJYv41j2Vt1qrz9SYw/Wb++vgh2u92dn1p1t9XzrZoz/xgVpzl3mnOnOXeac//XnMuAcYMkb7xNn9p/dH5ji/OCs+fQg9K/fP8esN0foxbtZxsKAAA=</values>
+        <values>H4sIAAAAAAAA/+1VS28aMRD+K8inVoLNljfkUKWPSJHaRmpoLt3I8tqzYNVrb7w2hCL+e8f7AESl9NgLXLC/eX3zeUa7I8a7wrtyYW7KUi41mf986hKpA4bnHdEsBzInXAHTICjkTCqaGrElXbJmygcjHoUsC8W2j0eEr6QSFpqMBbOYyIEl892ZyW0LoIqloDDwwVmplxguBd7GQ+CDDAaDQTqC8bt4OJ3Fs9GITWDEJykbol8b+LEm2PkcCHY+1ARfIx/Koq1sCxorAru4S+DFgRaABDKmSuiSnGnBnLHbA2KBiXutjsBKalf3nbOXUv7G1NM4joNnBtgqb1Q5XGmjWCuWkRzuCyeNrhHHUtUqaZTP9be6l6A1ZMwrd6K1LzEfFIF1oNFwyh5WZvO9LXgrddVgY1SGM3W4MYcypN5BGd7Hy8WZODXy5fyRQEGOFWnOigIRWlizllUVJJ1HS4WXKFNmg+zCdEWMhw4jVJNFt4h/quBHZmVo9yumweBQ7oeWzx7uwhBM+XjEIR33sj5jvWE/nvWms0naG8z6k3E/hWwaZ2RfSUuffWiqFqmRg9aKokPJrSzcDVJYY3POemixaij/HhJEX4vB+bedo3sn8XE8EJ1M0Ko/OqR0Ca5JKMDhXxkd/a8TbcF5q09yRBZwKDi8uUoS+z5J9NWyW+XtTxL86fr49prs9/unsIC1cPWqVivzj6m/rOxlZS8r+x9XVgCXJQq6COrdtd/ZYNji6Et+Cm2M/RWe4ojt/wAuURLbsQcAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -282,10 +282,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-04 20:22:31</sys_created_on>
         <sys_id>ba1fedb72bb16210ddf5f27df291bfa6</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-04 20:57:22</sys_updated_on>
+        <sys_updated_on>2025-06-09 15:12:37</sys_updated_on>
         <ui_id>29a12dd2-2272-45e4-aaf5-943eb2ae7900</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1WTW/bMAz9K4JOLZYYjtMlXXoqMBTosDVA0/WyFIYs0YlWWXIluW0W+L+P8kebdF/AzrmZFPn4+EQR3lJT+bLy7sacOydXms6+3Q2o1MGH31uqWQF0Rt29VCptg+mAPjJVBTd+CulKxTa3rx6+lkpY6LBKZhHCg6Wz7ZsjvykhVSwDhYmfFvMrTJYCv3MBWTKajpMsG02SUSxE/j5PpiJPPoyyPM8xrk9bBGJk3hP7Pd1QCL3fndFoGSsCm3hA4dmDFoAlc6YcDGjBtGDe2M2LxwITc61eHWupfdtnwZ6d/IHAJ3Ech8gcsDXeqfBipp1CvThGcpiXXiKXxuNZpnrljKoKfdX2ELSFnFXK72hbOcSDMrAONDpO+WJtnq77ghdSNw12h8pwpl4s5r2VWeXBhfuo5M2eNK39ef9KQEGB1dKClaXUq7S05lE2FZBwEa0UGlGuzBMyCzMUMR66i1BJFl2g/2PjvmVWhla/IAwmh2JftXyo4DJceTYZnyYTYMNTkeTDE34aDxkXk2E2nbAR5/HJOBO0bmRNH6rQUCtQJ0XaqokBjltZ+nOk8IiNeVtB7wsN7w1GsP8SjVNuSZNwDa402sHCW7Ks4ngsSC7Spr90mqbwDBwVTZvYqAWPbJdzttS/4AxIYQSodmoxwNsN2S412Y/qS4VriPAZOTh6y+b4LGTtgP0rJ2piOwFCdk0483xNjuC4pWDBV1aTLQFrjZ2RJb1gUoEg3pAGsCVJ+v5CBHlHEBmcYysgdUBd6g5nt1Fa1/VdWB7tILQLpnnwf3y5h0VzWDSHRXNYNP+1aARw6XBAbsI0XPb/NOFgg89X8l3Xk7H3YbReffVPuh19uh0JAAA=</values>
@@ -309,10 +309,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-13 14:35:02</sys_created_on>
         <sys_id>d69c4fe833a922104890955a7e5c7bf5</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-04 20:57:22</sys_updated_on>
+        <sys_updated_on>2025-06-09 15:12:36</sys_updated_on>
         <ui_id>41e14e38-14ff-44af-8bc6-811110258397</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VW2vbMBT+L3pOjOPYTZynFkah0K6wZn0ZxRxLx4mYLLmSnDQL+e878iUt2WDvo2/Wp6PzXXSEj8y0vmm9W5sb5+RGs9WPlwmTOmD0fWQaamQr1jq03eeE7UC1ARJYm/pA+E5ydNebGqSKuKmpREjXKDg8/7uSb6USFgfeBixxeLRsdbzY8ocGCwUlKmr45K3UGzouBa14kvO0wuV8DnmSzOJ0mcd5lsECM74o+YzqxoMfbPxpLFAQ4sbmxoqgJJ4wfPOoBRJZBcrhhNWgBXhjD2fEIohHrd6BrdSeurFQ/ObkL2q9jOM4VFZItjj2u+dlMaTWw3xrKKzHxkuje8RDqYYz3Ki21l97ByFvrKBVfsybELJVCGyC6iBj0FQ9bc3+20h4K3VncNhUhoM6r8BTDGXr0YW7aOX6Ipweub+8EFRYE2NRQ9MQUjTW7GTHQqLraKNoEVXK7EldmLcIeHAYUZoQ3RL+pYOfwcpg94Ha0OFA913L1xbvwoUv5mUKsMimyxnm0xTm6TRPMjG9SipRlWmZXtGln7poi9c2mOpDGuIo+kSpwHErG39DEnY4OD+9hAnv2fsX0M3YXwfm8yV8voT/+yUI5NKRqnWQcDf+FcLGgUZF8o/Q3tifwc87dvoNM61M2F8GAAA=</values>
@@ -336,10 +336,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-13 19:06:28</sys_created_on>
         <sys_id>eebac4fc332162104890955a7e5c7ba3</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-04 20:57:22</sys_updated_on>
+        <sys_updated_on>2025-06-09 15:12:37</sys_updated_on>
         <ui_id>074a5cf5-becb-49ab-9d4a-4bee9d31c14e</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1U22rbQBD9laBnIXSJTOO3kBIotA00IS9tEKPdkb10tavuxY5r9O+d1cU2jUNL6GPftGd2Zs45e9A+0t513tkHfW2tWKlo+fUpjoQKGH3vIwUtRsuIacWFE1pVAxBHG5A+FOiTC9tJ2D0eEbYWkhucpnVgqMehiZb730pu12EloUZJjffOCLWidsHp1KTQZFcsY0W+KPI0zd9dZvWiqLOcF4BQ0L258WYmd/FxQOJXWYd9hNt5kzY80MrSOMJnh4ojrW5AWoyjFhQHp83ugBgEfqfkEVgL5UbFLTxb8ZNm52UZLjZIGtlkx+FYTVbNLmnB8K4LBEfEQS1nC7X0rfo86ggmYwNeuhOTvaV52AXSgcVEqblf6+2XeeGtUIPAqSg1A3k4gSMbau/QhodBiS0NqlroOjKn6ozeiKGZuLTJStIhaaTe0tKQlARYIJ6QR5DcEv5+gB/BiKDiE42h5pFmDVawakgVjXOGJPSDLdUPHwiNAicp1egGXbDMiM5d054NTqz7+GUkT9K43w8MNxOJBFsQkhbT07q+/+bTtODAmPbKXTCprTf4MsBvG/IvMn8FZVNmaXk+85eLc5k/k/bXg57/Iejhaf4y52ma/g/6adCFrcbATtqG5W/O+VMI9bjBjrnhyIQlIg8B+zD/oUNhRwEQ7BTaavM9SDhi/S8kmYrQ6wUAAA==</values>
@@ -363,13 +363,13 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-04 20:50:13</sys_created_on>
         <sys_id>fc7539b32bf16210ddf5f27df291bf56</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-04 20:57:22</sys_updated_on>
+        <sys_updated_on>2025-06-09 15:12:37</sys_updated_on>
         <ui_id>9b540adb-3229-4d66-8190-1c9a4815e890</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+2aXW/bNhSG/4qha9PQpyVlV1m7DAW2FFi93gyFcEiRCVFKVCkqaRb4v/dQH7ZrNB42eF2z6s48onjec/g+gH3gR093tulsu9GXbStvau/ij3dLT9Yuhp8fvRoq7l14vAKpCllbXltv6d2B6lwYP5aybRQ8vN1H2K1UpeHjWQ0YPMJy4108Hj2yDw0vFFCu8MU31sj6Bl+XpcuXpUmU0yikIliHgV+WIhFhWoowD6gIKe6bXvzJSVvspH1ZsEuF0XZKok3pFPlLj3/ELSXHpAJUy5deBXUJVpuHXcRwKF/Xah+4xXOHWiv42Mo/8ejM9323U3Asj42d2C2LsUtTg7Rk/HVjpa6HiAWqpu5p1VX19VCF6y8X0Cl70N+uxfN441Q7GaMm8eZW3/82JbySdV/g+FBpBmq3AottoJ3lrbuTTm6OmjNEfjm+GK54hRmLCpoGI0Vj9J3ss6DoanWjcLESSt+jOuelFTBX4Qq7CasrjL/sw2/BSFfur3gMvuzS/V7LDx1/1V88hDSiPpAwZILEAY1JDlFOIFqXmR9nKQPhbfvWFh86V9TQpLEdxdBR3NAyIxt7iRLusDhrOj7FXNGf2QPXp3ZjLtuZeiHKoi+lL/EOzKp9L5UqBoJWw1k/eNvtdrnDhnWt1RU3Rb/+Gtywk9zwA25ejNoW14O2JyTP5DwTckKa8ZinQBCRksQhCwgkCZAoYiXL1wkGkjOQ87k/zoLO5ER3dUcAAWO6Q3F1V1HMaXXBlG6/Dkr+KZSi8ACly0Hl4rpXudjoxYtR5V+WMeP1TPDyA2xkQBlJwiwnMcsRL5akJIWUizASQCM4A15POeUsoI0+HWy60b1JTwMntCkoKHBWsQbqVvSd+ffhi0/ClzwN35U2ix8HxYvNXvHfKm+G8plAmXCa+km4JizMMvy2uE5ILoKUBH6epVmSrek6Pj+UX3TN+QFFJ49Gnnx8xGpd3vz3v8Wi7IDF65c/71kb5M0sPROWSkETP6I5WWeQkDgTGaFxFJAoT5IwhCBNxTlYcq44CyvotZ6Hdw6BobBhZNGb9slJwDy6mAGaRxcnRhdH+MwjjJmgeYTxT0YYRyDNo4wZs28Ds//7KOM0ePNIY4bzG4bzOx1pHDE7jzZmpr7f0QYeNI02Ss5kiwVvXHWvpv9luAcP6EXJDkP32rx3B+5j20+RnTiK4SEAAA==</values>
+        <values>H4sIAAAAAAAA/+2abW/bNhDHv4qh16ahR0vKXmXtMhTYUmD1+mYIhCNFJkQpUaWopFng776jHmzXaDxs8Lpm0zvxRN7973g/wDr4ydOdbTrbbvRl28rb2rv47WbpydrZ8PnJq6Hi3oXHK5CqkLXltfWW3j2ozpnxsZRto+Dx/d7C7qQqDR99NWDQheXGu3g6emUfG14ooFzhwXfWyPoWj8vSxcvSJMppFFIRrMPAL0uRiDAtRZgHVIQU900Hf3DSFjtpXxbsQqG1nYJoUzpF/tLjn3BLyTGoANXypVdBXYLV5nFnMRzKt7XaG+7Q75BrBZ9a+Tu6znzfdzsFx/TYWIndshirNBVIS8bfNlbqerBYoGqqnlZdVV8PWbj6cgGdsgf17Vr0xxun2skYNYl3d/rhlynglaz7BMeXSjNQuxVYLAPtLG/dnXRyc1ScwfLT8cVwxSuMWFTQNGgpGqPvZR8FRVerW4WLlVD6AdW5XloBcxmusJqwukL76978Hox06f6MbvCwC/drLT92/E1/8RDSiPpAwpAJEgc0JjlEOYFoXWZ+nKUMhLftS1t87FxSQ5HGchRDRXFDy4xs7CVKuMfkrOn4ZHNJf9YeuD61G2PZztQLURZ9Kn2K92BW7QepVDEQtBp8fedtt9vlDhvWtVZX3BT9+mtww05yww+4eTVqW1wP2p6RPJPzQsgJacZjngJBREoShywgkCRAooiVLF8naEjOQM7n/XEWdKZOdFd3BBAwpjsUV3cVxZhWF0zp9uug5J9CKQoPULocVC6ue5WLjV68GlX+aRozXi8ELz/AQgaUkSTMchKzHPFiSUpSSLkIIwE0gjPg9VynnAW0sU+HNt3ovklPAye0KSgocK1iDdSt6Cvzz8MXn4QveR6+K20W3w+KF5u94r+U3gzlC4Ey4TT1k3BNWJhl+GtxnZBcBCkJ/DxLsyRb03V8fii/2DXnBxQ7eWzkqY+PWK3L23//WyzKDli8fv3jnrVB3szSC2GpFDTxI5qTdQYJiTORERpHAYnyJAlDCNJUnIMl1xVnYQUd9TzcOASGxIaRRd+0z04C5tHFDNA8ujgxujjCZx5hzATNI4y/M8I4AmkeZcyYfRuY/ddHGafBm0caM5zfMJz/05HGEbPzaGNmah5t3DgRTLaY8MZl92b6X4Z78Yi9KNmh6UGbD87h3rb9A/rJYGThIQAA</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=4e9c4fe833a922104890955a7e5c7bb8"/>
