@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="25834328336922104890955a7e5c7b64" extends="task" label="Account Closure Request" max_length="40" name="x_mm_banking_account_closure_request" type="collection">
+        <element label="Customer Email" max_length="50" name="customer_email" type="string"/>
         <element label="Form Intestato" max_length="40" name="form_intestato" type="string"/>
         <element label="Customer Name" max_length="50" name="customer_name" type="string"/>
         <element label="First account holder" max_length="40" name="first_account_holder" type="string"/>
