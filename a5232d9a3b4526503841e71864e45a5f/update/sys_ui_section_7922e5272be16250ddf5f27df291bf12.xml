@@ -4,13 +4,13 @@
             <element>short_description</element>
             <position>0</position>
             <sys_created_by>Marc.Mouries</sys_created_by>
-            <sys_created_on>2025-05-22 14:32:46</sys_created_on>
-            <sys_id>4562ad272be16250ddf5f27df291bf3b</sys_id>
+            <sys_created_on>2025-06-10 20:47:31</sys_created_on>
+            <sys_id>275ea8b92bce6610ddf5f27df291bf2f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_mm_banking_account_closure_request" sys_domain="global" view="Default view">7922e5272be16250ddf5f27df291bf12</sys_ui_section>
             <sys_updated_by>Marc.Mouries</sys_updated_by>
-            <sys_updated_on>2025-05-22 14:32:46</sys_updated_on>
+            <sys_updated_on>2025-06-10 20:47:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>description</element>
             <position>1</position>
             <sys_created_by>Marc.Mouries</sys_created_by>
-            <sys_created_on>2025-05-22 14:32:46</sys_created_on>
-            <sys_id>4d62ad272be16250ddf5f27df291bf3b</sys_id>
+            <sys_created_on>2025-06-10 20:47:31</sys_created_on>
+            <sys_id>635ea8b92bce6610ddf5f27df291bf30</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_mm_banking_account_closure_request" sys_domain="global" view="Default view">7922e5272be16250ddf5f27df291bf12</sys_ui_section>
             <sys_updated_by>Marc.Mouries</sys_updated_by>
-            <sys_updated_on>2025-05-22 14:32:46</sys_updated_on>
+            <sys_updated_on>2025-06-10 20:47:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,15 +32,29 @@
             <element>work_notes</element>
             <position>2</position>
             <sys_created_by>Marc.Mouries</sys_created_by>
-            <sys_created_on>2025-05-22 14:32:46</sys_created_on>
-            <sys_id>4562ad272be16250ddf5f27df291bf3c</sys_id>
+            <sys_created_on>2025-06-10 20:47:31</sys_created_on>
+            <sys_id>6b5ea8b92bce6610ddf5f27df291bf30</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_mm_banking_account_closure_request" sys_domain="global" view="Default view">7922e5272be16250ddf5f27df291bf12</sys_ui_section>
             <sys_updated_by>Marc.Mouries</sys_updated_by>
-            <sys_updated_on>2025-05-22 14:32:46</sys_updated_on>
+            <sys_updated_on>2025-06-10 20:47:31</sys_updated_on>
             <sys_user/>
             <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>3</position>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2025-06-10 20:47:32</sys_created_on>
+            <sys_id>635ea8b92bce6610ddf5f27df291bf31</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Details" display_value="Details" name="x_mm_banking_account_closure_request" sys_domain="global" view="Default view">7922e5272be16250ddf5f27df291bf12</sys_ui_section>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2025-06-10 20:47:32</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Details</caption>

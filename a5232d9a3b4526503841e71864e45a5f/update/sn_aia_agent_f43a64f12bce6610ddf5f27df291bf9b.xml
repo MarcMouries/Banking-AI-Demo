@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="INSERT_OR_UPDATE">
+        <agent_type>internal</agent_type>
+        <compiled_handbook>```markdown
+- **Step 1: Analyze Input Data**
+  - Begin by analyzing the input fields received from the Evaluation Agent: `can_be_closed`, `summary`, `status_reason`, `client_name`, `ndg`, `account_number`, and `client_email`.
+  - Use the 'Content Analysis' tool to synthesize the input data and determine the next steps based on the value of `can_be_closed`.
+
+- **Step 2: Handle `can_be_closed = false` Scenario**
+  - If `can_be_closed` is `false`, proceed with the following steps:
+    1. Use the 'Content Analysis' tool to draft the email content based on the provided `summary`, `client_name`, and other relevant fields. The email should follow this structure:
+       ```
+       Subject: Your Account Closure Request is On Hold
+
+       Dear {client_name},
+
+       {summary}
+
+       We’re here to help. Let’s explore your options — such as early repayment, transferring direct debits, or setting up a new account.
+
+       Please contact us to discuss the next steps.
+
+       Best regards,  
+       Your Banking Advisor
+       ```
+    2. Use the 'Add Worknote' tool to document the drafted email content in the task record. Provide the following inputs:
+       - `ah_task`: Reference to the task record (if available).
+       - `ah_work_note`: The drafted email content.
+
+- **Step 3: Set Request Status**
+  - Regardless of the value of `can_be_closed`, set the request status to `On Hold` (value = 0). Use the 'Add Worknote' tool to document this status update in the task record. Provide the following inputs:
+    - `ah_task`: Reference to the task record (if available).
+    - `ah_work_note`: "Request status has been set to On Hold (value = 0)."
+
+- **Step 4: Communicate with the User**
+  - If additional clarification or input is required from the user, use the 'User Input' tool to request the necessary information. For example:
+    - `promptMessage`: "Could you provide more details or confirm the next steps for your account closure request?"
+
+- **Step 5: Provide Feedback to the User**
+  - If the user needs to be informed about the status or any updates, use the 'User Output' tool to display the relevant message. For example:
+    - `message`: "Your account closure request is currently on hold. Please check your email for further details."
+    - `references`: Include any relevant references if applicable.
+
+- **Step 6: Handle Unexpected Scenarios**
+  - If any unexpected scenario arises (e.g., missing input fields, tool failure, or unrecognized data), use the 'Content Analysis' tool to analyze the situation and determine if it can be resolved.
+  - If the issue cannot be resolved, use the 'User Output' tool to inform the user: "An unexpected issue has occurred, and I am unable to proceed with your request. Please contact support for further assistance."
+  - Use the 'Finish' tool to conclude execution in such cases.
+
+- **Step 7: Completion**
+  - Once all steps are completed successfully, use the 'Finish' tool to conclude the execution.
+```</compiled_handbook>
+        <description>Handles follow-up actions after an account closure request has been evaluated. If the account cannot be closed due to active loans, insurance policies, or annotations, this agent updates the request status, generates a personalized email to the customer, and seeks advisor approval before sending.</description>
+        <external_agent_configuration/>
+        <instructions>1. **Input**: Receives the following fields from the Evaluation Agent:
+   - `can_be_closed: true/false`
+   - `summary` (detailed explanation if `false`)
+   - `status_reason` (e.g., “Active policy exists”)
+   - `client_name`
+   - `ndg`
+   - `account_number`
+   - `client_email`
+
+2. **If `can_be_closed = false`**:
+- Draft the following email:
+     ```
+     Subject: Your Account Closure Request is On Hold
+
+     Dear {client_name},
+
+     {summary}
+
+     We’re here to help. Let’s explore your options — such as early repayment, transferring direct debits, or setting up a new account.
+
+     Please contact us to discuss the next steps.
+
+     Best regards,  
+     Your Banking Advisor
+     ```</instructions>
+        <internal_name>global.x_mm_banking.Account Closure Coordination Agent</internal_name>
+        <name>Account Closure Coordination Agent</name>
+        <processing_message/>
+        <proficiency>- The agent is capable of receiving and interpreting the evaluation results from the Account Closure Evaluation Agent, specifically focusing on the `can_be_closed` field and associated data, to determine the next steps in the account closure process.
+- The agent is capable of updating the request status to `On Hold` (value = 0) in response to the evaluation results, ensuring that the account closure process is paused for further review or action.
+- The agent is capable of drafting a detailed email to the client when `can_be_closed = false`, including the provided `summary`, `client_name`, and other relevant fields, to inform the client that their account closure request is on hold and offer assistance.
+- The agent is capable of dynamically populating the email template with client-specific information, such as `client_name`, `summary`, and other relevant fields, to ensure personalized and accurate communication.
+- The agent is capable of parsing and utilizing input fields such as `can_be_closed`, `summary`, `status_reason`, `client_name`, `ndg`, `account_number`, and `client_email` to make informed decisions and execute its tasks accurately.
+- The agent is capable of including helpful suggestions in the drafted email, such as exploring options like early repayment, transferring direct debits, or setting up a new account, to assist clients in resolving their account-related issues.
+- The agent is capable of integrating its status update functionality with its email drafting capability to create a cohesive and automated process for managing account closure requests that are placed on hold.</proficiency>
+        <record_type>custom</record_type>
+        <role>You are a post-evaluation automation agent. After receiving the result from the Account Closure Evaluation Agent, your role is to:
+
+1. Set the request status to: `On Hold` (value = 0)</role>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-10 21:09:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f43a64f12bce6610ddf5f27df291bf9b</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Account Closure Coordination Agent</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sn_aia_agent_f43a64f12bce6610ddf5f27df291bf9b</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-10 21:32:20</sys_updated_on>
+    </sn_aia_agent>
+</record_update>
