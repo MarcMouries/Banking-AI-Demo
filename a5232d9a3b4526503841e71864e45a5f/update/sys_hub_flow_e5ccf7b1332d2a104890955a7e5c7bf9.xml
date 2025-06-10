@@ -15,7 +15,7 @@
         <flow_priority/>
         <generation_source/>
         <internal_name>test_web_services</internal_name>
-        <label_cache>[{"name":"37c731b3-3d77-4c1c-9bbd-55abe20e7e23.__action_status__","label":"6 - GetRelatedAsset➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{"36ff88d4-3379-435e-8f99-aba7d7fb6446":["log_message"]},"attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"33a22fff-fc08-4ffe-90b8-db1e00397d75"}},{"name":"cbef61fb-180b-46b3-88f4-7499374eed92.__action_status__","label":"4 - GetAssetsByNdg➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{"0e0e8c23-dae2-4629-bf42-580b0d8dca65":["log_message"]},"attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"0edc2c6a-8095-430e-90ee-35dc2a6d9389"}},{"name":"a46cd942-b623-4fdf-8152-53f64d691f0f.__action_status__","label":"2 - GetClientByName➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{"a96975a2-c7bf-445e-939b-4a6c2fe1fb9c":["log_message"]},"attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"9290ed44-7c25-4ca4-a635-af483bf20a16"}},{"name":"a46cd942-b623-4fdf-8152-53f64d691f0f.__action_status__.code","label":"2 - GetClientByName➛Action Status➛Code","reference":"","reference_display":"Code","type":"integer","base_type":"integer","usedInstances":{},"attributes":{}},{"name":"flow_variable.request_getclientbyname","label":"Flow Variables➛Request GetClientByName","type":"string","base_type":"string","usedInstances":{"a46cd942-b623-4fdf-8152-53f64d691f0f":["request_body"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"9fb463c1-98b3-4a10-bade-6b8a7092c034"}},{"name":"flow_variable.request_getassetsbyndg","label":"Flow Variables➛Request GetAssetsByNdg","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"cbef61fb-180b-46b3-88f4-7499374eed92":["request_body"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5a504a7e-6802-4f60-ad5a-9b2d805367aa"}},{"name":"flow_variable.request_getrelatedassets","label":"Flow Variables➛Request_GetRelatedAssets","type":"string","base_type":"string","usedInstances":{"37c731b3-3d77-4c1c-9bbd-55abe20e7e23":["request_body"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"188716c6-b9af-40d0-a059-d349448221bd"}},{"name":"flow_variable.request_checknote","label":"Flow Variables➛Request_ CheckNote","type":"string","base_type":"string","usedInstances":{"baf84c46-5e19-4650-ae66-33c67ca9f95c":["request_body"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"4661551b-2b49-4d3e-be61-d09e2f859303"}},{"name":"baf84c46-5e19-4650-ae66-33c67ca9f95c.__action_status__","label":"8 - CheckNote➛Action Status","type":"object","base_type":"object","usedInstances":{"1a9e52e4-985c-49af-85ec-267e70bf66fe":["log_message"]},"attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <label_cache>[{"name":"0d82a015-1ff0-4347-80d8-c592e0170bc1.response","label":"10 - CheckBlocchi➛Response","reference_display":"Response","type":"string","base_type":"string","usedInstances":{"e5fb61c2-46ef-4ab0-a093-5a0c8a9e880d":["log_message"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"7efb2e3d-b924-4add-9271-26949666144b"}},{"name":"flow_variable.request_checkblocchi","label":"Flow Variables➛Request_CheckBlocchi","type":"string","base_type":"string","usedInstances":{"0d82a015-1ff0-4347-80d8-c592e0170bc1":["request"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d4a5722c-0b7b-4136-90d9-5fba7fdbf5c6"}},{"name":"baf84c46-5e19-4650-ae66-33c67ca9f95c.__action_status__","label":"8 - CheckNote➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{"1a9e52e4-985c-49af-85ec-267e70bf66fe":["log_message"]},"attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"a1586d31-f01c-4f6d-beee-860eefa74f60"}},{"name":"flow_variable.request_checknote","label":"Flow Variables➛Request_ CheckNote","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"baf84c46-5e19-4650-ae66-33c67ca9f95c":["request_body","request"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4661551b-2b49-4d3e-be61-d09e2f859303"}},{"name":"flow_variable.request_getrelatedassets","label":"Flow Variables➛Request_GetRelatedAssets","type":"string","base_type":"string","usedInstances":{"37c731b3-3d77-4c1c-9bbd-55abe20e7e23":["request_body"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"188716c6-b9af-40d0-a059-d349448221bd"}},{"name":"flow_variable.request_getassetsbyndg","label":"Flow Variables➛Request GetAssetsByNdg","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"cbef61fb-180b-46b3-88f4-7499374eed92":["request_body"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5a504a7e-6802-4f60-ad5a-9b2d805367aa"}},{"name":"flow_variable.request_getclientbyname","label":"Flow Variables➛Request GetClientByName","type":"string","base_type":"string","usedInstances":{"a46cd942-b623-4fdf-8152-53f64d691f0f":["request_body"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"9fb463c1-98b3-4a10-bade-6b8a7092c034"}},{"name":"a46cd942-b623-4fdf-8152-53f64d691f0f.__action_status__.code","label":"2 - GetClientByName➛Action Status➛Code","reference":"","reference_display":"Code","type":"integer","base_type":"integer","usedInstances":{},"attributes":{}},{"name":"a46cd942-b623-4fdf-8152-53f64d691f0f.__action_status__","label":"2 - GetClientByName➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{"a96975a2-c7bf-445e-939b-4a6c2fe1fb9c":["log_message"]},"attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"9290ed44-7c25-4ca4-a635-af483bf20a16"}},{"name":"cbef61fb-180b-46b3-88f4-7499374eed92.__action_status__","label":"4 - GetAssetsByNdg➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{"0e0e8c23-dae2-4629-bf42-580b0d8dca65":["log_message"]},"attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"0edc2c6a-8095-430e-90ee-35dc2a6d9389"}},{"name":"37c731b3-3d77-4c1c-9bbd-55abe20e7e23.__action_status__","label":"6 - GetRelatedAsset➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{"36ff88d4-3379-435e-8f99-aba7d7fb6446":["log_message"]},"attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"33a22fff-fc08-4ffe-90b8-db1e00397d75"}}]</label_cache>
         <master_snapshot>50b0484a332d2a104890955a7e5c7be2</master_snapshot>
         <master_snapshot_digest/>
         <name>Test Web Services</name>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e5ccf7b1332d2a104890955a7e5c7bf9</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>Test Web Services</sys_name>
         <sys_overrides/>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name>sys_hub_flow_e5ccf7b1332d2a104890955a7e5c7bf9</sys_update_name>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-21 21:15:16</sys_updated_on>
+        <sys_updated_on>2025-06-09 21:07:21</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
@@ -150,7 +150,30 @@
         <trigger_type>run_once</trigger_type>
         <updation_source/>
     </sys_hub_trigger_instance_v2>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e5ccf7b1332d2a104890955a7e5c7bf9^sys_idNOT IN32fdbb35332d2a104890955a7e5c7bb7,3396977e2b656e10ddf5f27df291bf02,3b96977e2b656e10ddf5f27df291bf02,4960cc0a332d2a104890955a7e5c7bdb,4fe47d532badee10ddf5f27df291bfe4,6890444a332d2a104890955a7e5c7b3c,6db4f5532badee10ddf5f27df291bfdb,b88d3ff1332d2a104890955a7e5c7bdc"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e5ccf7b1332d2a104890955a7e5c7bf9^sys_idNOT IN32292b512b4ee210ddf5f27df291bf67,32fdbb35332d2a104890955a7e5c7bb7,3396977e2b656e10ddf5f27df291bf02,3b96977e2b656e10ddf5f27df291bf02,4960cc0a332d2a104890955a7e5c7bdb,4fe47d532badee10ddf5f27df291bfe4,6890444a332d2a104890955a7e5c7b3c,6db4f5532badee10ddf5f27df291bfdb,7e292b512b4ee210ddf5f27df291bf67,b88d3ff1332d2a104890955a7e5c7bdc"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="CheckBlocchi">6a4d751e33c5ee504890955a7e5c7b49</action_type>
+        <action_type_parent display_value="CheckBlocchi">ce4d351e33c5ee504890955a7e5c7bb0</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Test Web Services">e5ccf7b1332d2a104890955a7e5c7bf9</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 21:06:42</sys_created_on>
+        <sys_id>32292b512b4ee210ddf5f27df291bf67</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 21:07:21</sys_updated_on>
+        <ui_id>0d82a015-1ff0-4347-80d8-c592e0170bc1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/5VSTWvjMBD9LzonxnGSJs6tUAqF3S3061KKGUujWKwsqZKcNhvy33dkOymkl92TmDdf773R64EpwTZM5KvV1aoURZ0jFrNcCLmUxUrIopzVUgKbMAMtUqXH9w5DJGAHukvI4SC1/ah24BXUGrOxouIN8t+1tpw36nikBqGC07B/+d8+erXwaNjm9W3CHHhiEtGzzeEiFfcOKw01ahr/GL0yW2r/V4Gnxoezwm+S0wICwmm09SLxmE0YfkY0AmmVBB1wwlowAqL1+zPiEcS90V9Ao0ykaSwVfwb1h0av8zxPlRJJFMchew6r0cEB5o1VHO9dVNYMSEw+jkmru9b8GgQk71FCp+PJe0K6QPPQJdaJxshJPjb24+G08FaZXuCYpJuAPkcQyYa6ixjSJTr1dGHOgPy4PAdqbGlj1YJzhFTO253qtxDpNttqCrL+ZwgMamsy4ElhRm5Cdkv4TQ+/jN/mJ42h5rTu2Sg61F06N19jviyWYrrAYjFdlOVsur6al9N8wZEL+gnFfM6OvbXVe5dEDSaNdlSDo1QQuFcuXhOFHY7Kj29/AYwE2YM2AwAA</values>
+    </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
@@ -166,10 +189,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-17 15:23:11</sys_created_on>
         <sys_id>32fdbb35332d2a104890955a7e5c7bb7</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 15:05:08</sys_updated_on>
+        <sys_updated_on>2025-06-09 21:06:42</sys_updated_on>
         <ui_id>a96975a2-c7bf-445e-939b-4a6c2fe1fb9c</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/91U0WrbMBT9laLnOMR2nDZ5G+0Kg7WFFbqHUowsXScCWfJkOWkW8u+7smXHy8JItj0N/KLjo6tzrs7V644IThYkyViYMTZL4nAyifHL8pDPw8kcWHJzza/JiChaADKlXqYS1iARWlNZO0yoXOOSi6qUdPvi0U8tylZCcgOKLF7fRqSkButYMGSxO/pltyWkkmZYekFuV1owwO3nyus2fvbaTsh1ByDEutLacKdjMiLwbkFxwKNyKisYkYIqTq022x4xQPmTkgdgJZTFasSR3yvxHUtPJ46XA1pi0P7rl6nvTgu3Gio0vuuVB8HVo1ZwFQSD1g5k7kcHru/t0QV4ZjhkfqVGCbUckDeIHMjRkPzRGG0GVPBrz433eE0cclpLe3u5g/BsB9ElDuILHEydg7b5T6UVGqNHQhcNmkkvlmlZF+qxjQ/p/b4cZb1F705Gvq7wuqF0kXIZ8YHJn1d686XLw71QjSL/U2pGZb+i1hqR1db1d0dAQoGF0oKWJTYiLY1ei2Yzii3GS4mLcS71Bg+txFKNKXPWxphgOr5H/K6BX6gRzuYDlsHN+yac6bfandsa9YrTpi2OUDEjSvsBy63Bi3PNbmYyin83k5D8PIMFVBVdwuBmdjs6nTE+n0ZBNoviYJrzPLgJkyhI4nw25bN5mE/ycZq2btLKUltXabrf//rU/FWtP3ugnvGGmlCe24xu40PfiZPt8Y9U1ZXvZuefPVJRklz2SvWDctGc/O9j8PYDc/pcUDsHAAA=</values>
@@ -258,13 +281,13 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-21 21:15:16</sys_created_on>
         <sys_id>4fe47d532badee10ddf5f27df291bfe4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-21 21:15:16</sys_updated_on>
+        <sys_updated_on>2025-06-09 21:03:54</sys_updated_on>
         <ui_id>1a9e52e4-985c-49af-85ec-267e70bf66fe</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/91UUW/aMBD+K5WfCUoICYW3ql2lSWsrrRJ7qKrIcS5gybEzx4EyxH/fOXECZayCbU+T8uIvd+fvu/vOL1vCMzIjUcqClLE4CgPfD/FL8yCbBv4UWHQ9ySZkQCQtACOFWiQCViAQWlFRW4zLXOEx41Up6Gbu0M8typZcZBokmb28DkhJNdYxoMlse/TLbEpIBE2x9IzcLhVngOnn0usSvzhuJ+jaCxBiXWmlM8vDHxB4MyAzwKtyKioYkILKjBqlNz2igWZPUuyBJZcGqxEb/FbxH1h67Nu4HFASg/Zff0xcd1q45VCh8G3P3POuHpWEK887aO07sCO8G+yzXJePRuEig8PIb1RLLhcHwWtE9sGjw+BPWit9EAru7GLDHQ4sg5zWwtyeq+U3vD5UMLpEQXiBgrFV0I7hqTRcoQlJYE1CU+HIMiXqQj62RiK93vmR61v07qT56woHD6U1l3WLs07+vFTrr50z7rlsGLmfQjEq+hM1RvO0Nra/WwICCiyUFLQssRFJqdWKN8lIthguBB6GuVBrvLTiCzmkzEobopfp8B7xuwaeU82tzAcsg8m7xqbJ99re2wp1jJOmLTagYpqX5gbLrcCRs81utnMUfrSdEL3fxgKqii7gYDLbbUrz6zEbx14EwdQbx5HvUYhjLwxZPGF0mk8jNkySVk1SGWrqKkl2u18fnb+q9WdP1TNOqDHluc3oEh/6Tpxsj3uuqq58tzv/7LkaRdFl71W/KBftyf++Bq8/AfmbPHJFBwAA</values>
+        <values>H4sIAAAAAAAA/91U0W6bMBT9lcrPAYUQSJO3qV2lSWsrrVL2UFXImEtiydjMmKRZlH/fNRjCsmhKtj1N4sWH4+tzrs/1657wjCxIlLIgZSyOwmA8DvFL8yCbB+M5sOh2ls3IiEhaADKFWiUCNiAQ2lBRW4zLXOEy41Up6G7p0E8tytZcZBokWby+jUhJNdYxoMlif/LL7EpIBE2x9ILcrRVngNsvlddt/Oy0nZFrD0CIdaWVzqyO8YjAuwGZAR6VU1HBiBRUZtQovesRDTR7luIIrLk0WI1Y8nvFv2Pp6djyckBLDNp//TJx3WnhVkOFxve9cs+7eVISbjxv0NqBzMPoyHW9PbkAxwyGzK9USy5XA/IWkSN5MiR/1FrpARXc2nHDA15TBjmthbm73kFwsYPJNQ7CKxxMrYO2+c+l4QqjRwIbDZoKJ5YpURfyqY0P6f0uT7LeovdnI19XeN1Q2kjZjLjA5C9rtf3S5eGBy0aR+ykUo6JfUWM0T2tj+7snIKDAQklByxIbkZRabXizGcUW/krgws+F2uKhFV9JnzJrzccEU/8B8fsGXlLNrc1HLIObD004k2+1Pbc16hQnTVssoWKal+YDltuAE2eb3czkJPzdTEL08wwWUFV0BYOb2e9Tmt9O2TT2Igjm3jSOxh6FOPbCkMUzRuf5PGJ+krRukspQU1dJcjj8+tT8Va0/e6Be8IaaUF7ajG7jY9+Js+1xj1TVle9m5589UpMouu6V6gflqjn538fg7QdfAC4DOwcAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
@@ -304,13 +327,36 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-21 21:14:20</sys_created_on>
         <sys_id>6db4f5532badee10ddf5f27df291bfdb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 21:03:54</sys_updated_on>
+        <ui_id>baf84c46-5e19-4650-ae66-33c67ca9f95c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/5VSy27bMBD8F55tQVYcK/KtQBGgQNsASZtLEAgrcmkRpUiGDyeu4X/vUpJ9cC/tkbOzuzOzfDkyJdiWSVhtNp1oqq5ErFalEPJWVrWQVbPqZLdmC2ZgQGJ6fEsYIgF70Ckjx6PU9r3dg1fQaSxmRst75L+MjXg6EVuo4DQcnv+rifdKC4+GbV9eF8yBJw0RPdser0rx4LDV0KGm2U/RK7Oj9n+1dm58vHj7y2xeQEA4j7ZeZB2rBcOPiEYgrZKgAy7YAEZAtP7AttEnAjyCeDD6cGH0ykQaxjL3I6jfNPmuLMvMlEieOE7Vy7Od05tg3lvF8cFFZc2ExJzhXLQ6Deb7pD/njhKSjufcCUmB5qHLorOMWZN86u3743nhvTKjv7moLQd9eUGkFLoUMeRDJPXjKpsJ+Xp9DdQ40MZ2AOcIaZ23ezVuIdFDsdP0KMZfITConSmAZ4cFhQnFPeGfR/h5/jLfaAw153U/jaI7fcnXbqRYb+rmdik4v1uuO6iXzaYplzW/gfqmrKoakJ3GaNu3lE1NIc1xtFOiRAjcKxc/kYQ9zs5Pr38AmQa22y8DAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Test Web Services">e5ccf7b1332d2a104890955a7e5c7bf9</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 21:06:42</sys_created_on>
+        <sys_id>7e292b512b4ee210ddf5f27df291bf67</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-21 21:15:16</sys_updated_on>
-        <ui_id>baf84c46-5e19-4650-ae66-33c67ca9f95c</ui_id>
+        <sys_updated_on>2025-06-09 21:07:21</sys_updated_on>
+        <ui_id>e5fb61c2-46ef-4ab0-a093-5a0c8a9e880d</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/5VSy2rDMBD8F52DcUhNHrdCya0NNCWXEMxaWseisqRIch4N+feu/Ehp6aE97uzu7MxI2yuTgi3YVDyISTbGyYRniFn6MJun8yyDKWZ8WkzGbMQ01EiTDg8N+pAXRlwIPYJqIny9lsqc8iM4CYXCZBjjFfJ3bQLebjQtpLcKLpt/LfFKKuFQs8V2N2IWHAkJ6Nji+qMVLhZzBQUq4l4HJ/We1v/qb1jsjf1uN54g1A/kxomoJB0xPAfUAulYCcrjiNWgBQTjLnfEIYiVVl9AJXUgNhaHz15+EPUsTdM4WSLZ4th172XeB9jBvDKS48oGaXSHhBhj3zSqqfVL5yJGjyU0KgzRE9J44kMbVUcZvaZyXZnT63BwKXVrsG8qw0HdKwgUQ9EE9PEtUGFNRHkN1lI4uXXmKNtl0lIne0VF0r63QC/3OgEehScUEiRLwp9aeNN/hmeioWWSKd++hX5r88gPTVTSOes95F0MNOC5kzY80oEj9nJvu0/DsNwY7AIAAA==</values>
+        <values>H4sIAAAAAAAA/91UXWvbMBT9K0XPsfFHvHy8jXaFwdrCCtlDKUaWrxOBLHmynTQz+e+7smXHzcJIyp4GftHx0dU5V+fqpSE8JUsSJcxPGPsUhb7nhfglmZ8ufG8BLJrP0hmZEElzQKZQ61jAFgRCWypqg3GZKVymvCwE3a8s+rVD2YaLVIMky5fXCSmoxjoVaLJsTn5V+wJiQRMsvSS3G8UZ4PZL5fUbv1ltZ+SaAxBifWmlU6PDmxB4q0CmgEdlVJQwITmVKa2U3g+IBpo+SXEENlxWWI0Y8lvJf2HpqWd4GaAlBt2/YRnb7nRwp6FE482g3HFuHpWEG8cZtXYk8zA5cm1vTy7AMv0x8wfVksv1iLxD5EgOxuQvWis9ooJdW254wGtKIaO1qG6vd+Bf7CC4xkF4hYOpcdA1/6mouMLoEd9EgybCimVK1Ll87OJDBr+rk6x36N3ZyNclXjcUJlImIzYw2fNG7b73ebjnslVkfwrFqBhWtKo0T+rK9LchICDHQnFOiwIbERdabXm7GcXm7lrgws2E2uGhJV9LlzJjzcUEU/ce8bsWXlHNjc0HLIObD20445+1ObczahXHbVsMoWSaF9VnLLcFK840u53JIPzbTEL0fgZzKEu6htHNNI2XzgPq+ZHjZ5nnTMPpzJkj5rBoEYDnzzyceldDWSiJ5x7+fGE+UuJjz9Ez3kcbwUut9xsfBt9nm2GfpLIv30/KP3uSgii67k0axuKqqfjfQ//6G/rTtlIpBwAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="GetClientByName">8c5df51e33c5ee504890955a7e5c7b5d</action_type>
@@ -327,13 +373,13 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-17 15:21:09</sys_created_on>
         <sys_id>b88d3ff1332d2a104890955a7e5c7bdc</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 15:05:08</sys_updated_on>
+        <sys_updated_on>2025-06-09 21:03:54</sys_updated_on>
         <ui_id>a46cd942-b623-4fdf-8152-53f64d691f0f</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/51SS2vjMBD+Lzonxt7ESZPbQikU2ga2u72UYsbSOBHIkqpHWm/If9+RHzmEHpYe9c3je4xeT0wKtmWcl6IpC1wseIlY5subTb4pS1hjydf1KmczpqFF6nT4HtGHqjaiI/QIKib4dGqU+aiO4CTUCrOpbY+BK4k61F1acD7TjJDeKuhevjHKD1IJh5ptX99mzIKjQkDHtqerUugsVgpqVMTwHJzUexr/X6/T4Gjya+uJglA/LTdOJCXFjOFnQC2QyBpQHmesBS0gGNexbXCRAIcgdlp1l46D1IGWsdT76eVf2nyT53nqbJBccRyql2c1pjjA/GAkx50N0ugBCSnLsWhUbPXTYCLljw1EFab8CYme9qFNopOMUVPzfDAfvybCO6l7f2NRGQ7q8oJAKdQxoE+niPL3VTYD8nB9D1TYEmPVgrWEVNaZo+xZSHSb7RU9sv53CPRyrzPgyWFGYUJ2R/htD7+MX+eR1tBwovujJR3rPt274KtccFzOyfdyvqx/iDmAWM1hUxdYNIsyXwE799FW7zGZGkIa46iGRKnBcydt+EkSjjg6P7/9Aw1bXrVCAwAA</values>
+        <values>H4sIAAAAAAAA/51SSWvjMBT+K4POiXEW105uA0NhoAu0nV5KMU/ScyKQJVeS03pC/vs8eUkh9FDmqO8t3/L0cmRKsi0TIpNVtsDVSmSIWbouNukmyyDHTOT8KmUzZqBG6nT41qIPJbeyI/QAuo3w8Vhp+14ewCngGpOpbYdBaIUm8C4uOJ1oRirfaOie/2NU7JWWDg3bvrzOWAOOCgEd2x4vSqFrsNTAURPDY3DK7Gj8u16nwYdByo/R7NcRRCpC/URinYyKFjOGHwGNRCKtQHucsRqMhGBdd0Ycgrw3+hPYKxNoG4vNH179pdVFmqaxs0KyJ3Conp/lGOcAi71VAu+boKwZkBBDHYtWt7W5G1zEQ2AFrQ7TIQhpPe3DJqqOMkZN1ePevj9MhNfK9AbHorYC9PkFgWLgbUAfb9Kqp4twBuTm8jCosSbGsoamIaRsnD2onoVE18lO0yPpv4lEr3YmAREdJpQmJNeE/+rh5/EP3dIaGo50f4yia/2Ohy8kLzjy5VwuBJ+vhVjNi1ws5mm+Wa+Xy6scecpOfbTlWxtNDSGNcZRDotTghVNN+EkSDjg6P73+A8T9kYBLAwAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e5ccf7b1332d2a104890955a7e5c7bf9"/>
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e5ccf7b1332d2a104890955a7e5c7bf9^sys_idNOT IN14effff5332d2a104890955a7e5c7b40"/>
@@ -345,7 +391,7 @@
         <decision_table/>
         <display_text/>
         <flow display_value="Test Web Services">e5ccf7b1332d2a104890955a7e5c7bf9</flow>
-        <flow_variables_assigned>request_getclientbyname,request_getassetsbyndg,request_getrelatedassets,request_checknote</flow_variables_assigned>
+        <flow_variables_assigned>request_getclientbyname,request_getassetsbyndg,request_getrelatedassets,request_checknote,request_checkblocchi</flow_variables_assigned>
         <generation_source/>
         <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>1</order>
@@ -355,17 +401,17 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-17 15:31:29</sys_created_on>
         <sys_id>14effff5332d2a104890955a7e5c7b40</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-21 21:15:16</sys_updated_on>
+        <sys_updated_on>2025-06-09 21:07:21</sys_updated_on>
         <ui_id>d622f349-8bab-4a4a-9177-a136a7ac480c</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1cbW/iOBD+K1U+Q2VCEki/ce1ut9KWotKrTrqukGM71NoQs47DLlv1v984L5SSBLq3pSp3Tr8Qe+IZz8szY2vUB0ukap6q5EYMkoRPY+vk7y8ti8d6DH4/WJxaJ5bVsmI8Y/BLsm8pS9RkyhSJOItVsMxmWtYCR6mmeLiTd/ERPHfWIMZTiUNO8Hg0uc6/vLNOjlYkOVlMp5XRfAbWFJLpyTsL/tbmH1vP1+CxgsXxTy7igv76ajy+OLocXF9c3Vkb1ETJaCT5ApNlufgGBcWKDyS554oplUoc8QYREwZ6E/EnHNOo4Dz+NNlYr+CKY1zSXAxvammadFHVR6fbdTo+eq6WqmoK1oJywj7zeJri4vNa9mLOJFYrHh+Q5zndfi1pyCO+2g5CHbTDQIniKlWiQY25gOVimuWzxcqX7McjeBvlyTzCy1vjdMbp3szpwDIRlawAyTmWgHyKSevkYWNKLedsEuGAReCbYyVBBfB5BqW016VhNwRF2tTGHeT0feS7Lu4xl/QCgoCu/LBw3qNzpk4zrP1jOcyxdicYawGAIClZC0m1nKhlsR+KxZSBKCGOEtayZuBEWvvL1YhkmF7F0dPAPTh6ngVm+EfCf8LSfYSQpgwZbJqwfHb1OinCMx8m9wLUfDVX4LL5iMJBVHxDRJTO4mG+IR3YLMRppMrAhpE0gfXYXEutxShkCsf34vt1yfAjj7MNFpORIDhavWEFaghSiFVtqZTfbCgnH/m8aS4WsRlwnMzwfA4jk7kUC55xAaFnx9MIXo7DSHwH6XTqPMZE7/AYtImPP8L4WTZ8iyXX272EZeBjze7PmIPhLrQ7+GHgeF3Safv9oNt2wCHaAaas7QV93EO+TVDXsR4z1U6+pXpTuZIKdUxyjQJBQiSfqwGIsGDFzh9b29I3ThKmEvAYOq3P3p8hevCAEPAdPmJyeHb+6a+tkPp70bYRunE6Y1J8yG3AGwBTsjTBAWCCWg5KIzdwPxMzHnNRskeoFl+Ggu4iGYnnkF9PdQpSS7GOU3Xc0tklIDmeTleCbVeKBB8SslHDis9FrabWVfqSxLZgBABNnIpY1S/40vzpazWijt3dzg80qkThavmHt9X0uTOb5Aq45iC6TssNgufr3HAlInHGR1gqRvj8yaI7PHf7RrQAp/ccz7BqFHLfWX482qw9tlusarWe20OeY+81y58iu9/7l1n+F6pBA2IGxAyIGRBbe94riL3G6cINtp4uevWni0FWCsLpIisFd5WK5mxxIGcLF7vIAdO3vT6y207ooTamLm77gU37yO16PYz3c7aQLMKK0dxv6k8XpyKK2BRrLZSg+ZaZ+VCSLnJfJ+nWJJUqqIOjc5LBW2GdsmapkuLMZGIE/qwTT9SkvKds3qCUp3zesV1k29s2UTAdMyIAVyQXw1Qs9l5HVLje5oXFvvnqIHqdhJ5TFoD28ykrVaya4Ig27Subu4SQ5rNt+8vJIGBmL9pkLto5JDst2MHei+73RjSHs901xu9cmxs8Nnhs8NjgscHjt8Tj1zjzscD33F6P2YHneqyDKA3d0O7R0PY7QRh61TPfBM5813mJPihL9N1FvDn3Hci5r9Pv9zoe8dqBj8O2gyic+5Drt2nX8R2nb9udgO7h3EfuGfkaC9XQDJLdxGaCZyA6BEJTYOzvlvX9Y3R+rWp3nffSTeC7v36bv2mtX7tTrmx+kyXgw1RqAy0EBAyuWL6psK+klrpQ/qLjNAcS0+v1rkPl/912Y3q9jNOZXi/T63Xodbnp9WoIXdMmUaMU0yZh2iRMm4Tp9TIgZkDMgNjRxnPgIGZ6vczZwvR6mat/01vQtAnTW7C+kukteD/3oofSW2B6vdZIDB4bPDZ4bPDY9HqZXq//0rnP9HrVANuhFBim16uymYK56fV6ea+XiTsTd+uzJu72FHcv6qikjHBt6xudsy/K/6OnJ3S/DifrQ9+F/KoLgKexx38Ag5+us5FPAAA=</values>
+        <values>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</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=e5ccf7b1332d2a104890955a7e5c7bf9"/>
-    <sys_hub_flow_variable action="delete_multiple" query="model=e5ccf7b1332d2a104890955a7e5c7bf9^sys_idNOT IN5b3df3f1332d2a104890955a7e5c7bc7,61b4f5532badee10ddf5f27df291bfc3,d73df3f1332d2a104890955a7e5c7bc0,eb96577e2b656e10ddf5f27df291bff6"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e5ccf7b1332d2a104890955a7e5c7bf9^sys_idNOT IN5b3df3f1332d2a104890955a7e5c7bc7,61b4f5532badee10ddf5f27df291bfc3,d73df3f1332d2a104890955a7e5c7bc0,eb96577e2b656e10ddf5f27df291bff6,fa292b512b4ee210ddf5f27df291bf4c"/>
     <sys_hub_flow_variable action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -486,7 +532,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Request_ CheckNote</label>
+        <label>Request_CheckNote</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Test Web Services">e5ccf7b1332d2a104890955a7e5c7bf9</model>
@@ -512,14 +558,14 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-21 21:14:20</sys_created_on>
         <sys_id>61b4f5532badee10ddf5f27df291bfc3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-21 21:14:20</sys_updated_on>
+        <sys_updated_on>2025-06-09 21:06:42</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -686,6 +732,89 @@
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
         <sys_updated_on>2025-05-20 15:05:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d4a5722c-0b7b-4136-90d9-5fba7fdbf5c6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_checkblocchi</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Request_CheckBlocchi</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Test Web Services">e5ccf7b1332d2a104890955a7e5c7bf9</model>
+        <model_id>e5ccf7b1332d2a104890955a7e5c7bf9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_e5ccf7b1332d2a104890955a7e5c7bf9</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 21:06:42</sys_created_on>
+        <sys_id>fa292b512b4ee210ddf5f27df291bf4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 21:06:42</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

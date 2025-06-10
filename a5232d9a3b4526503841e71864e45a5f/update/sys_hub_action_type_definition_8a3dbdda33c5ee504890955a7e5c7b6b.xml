@@ -16,7 +16,7 @@
         <flow_priority/>
         <ih_action>true</ih_action>
         <internal_name>getrelatedasset</internal_name>
-        <label_cache>[{"name":"{{action.request_body}}","label":"action➛request_body","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[35314540-3237-4017-1496-704902374430].output}}","label":"step➛OpenAPI/Postman➛output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":null},{"name":"{{step[35314540-3237-4017-1496-704902374430].error_code}}","label":"step➛OpenAPI/Postman➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":null},{"name":"{{step[35314540-3237-4017-1496-704902374430].error_message}}","label":"step➛OpenAPI/Postman➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":null}]</label_cache>
+        <label_cache>[{"name":"{{action.request_body}}","label":"action➛request_body","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[d7d23b38-3f45-45e1-8af9-445da2e53a54].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}}]</label_cache>
         <master_snapshot>963dbdda33c5ee504890955a7e5c7bfd</master_snapshot>
         <master_snapshot_digest/>
         <name>GetRelatedAsset</name>
@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8a3dbdda33c5ee504890955a7e5c7b6b</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>GetRelatedAsset</sys_name>
         <sys_overrides/>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_8a3dbdda33c5ee504890955a7e5c7b6b</sys_update_name>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:14:34</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -53,10 +53,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-20 14:40:58</sys_created_on>
         <sys_id>ad111ff22b656e10ddf5f27df291bf65</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:42:24</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2025-06-09 16:03:36</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">61111ff22b656e10ddf5f27df291bf56</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -87,6 +87,18 @@
         <value>{{step[35314540-3237-4017-1496-704902374430].output}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>8a3dbdda33c5ee504890955a7e5c7b6b</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:04:30</sys_created_on>
+        <sys_id>88042ed12b86e210ddf5f27df291bf8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:04:30</sys_updated_on>
+        <table>var__m_sys_hub_action_output_8a3dbdda33c5ee504890955a7e5c7b6b</table>
+        <value>{{step[d7d23b38-3f45-45e1-8af9-445da2e53a54].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__action_status__</field>
         <id>8a3dbdda33c5ee504890955a7e5c7b6b</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
@@ -110,387 +122,338 @@
         <table>var__m_sys_hub_action_output_8a3dbdda33c5ee504890955a7e5c7b6b</table>
         <value/>
     </sys_element_mapping>
-    <sys_hub_step_instance action="delete_multiple" query="action=8a3dbdda33c5ee504890955a7e5c7b6b^sys_idNOT IN4e3dbdda33c5ee504890955a7e5c7b70"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=8a3dbdda33c5ee504890955a7e5c7b6b^sys_idNOT IN66c3a6d12b86e210ddf5f27df291bfd5"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="GetRelatedAsset">8a3dbdda33c5ee504890955a7e5c7b6b</action>
-        <cid>35314540-3237-4017-1496-704902374430</cid>
+        <cid>d7d23b38-3f45-45e1-8af9-445da2e53a54</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
         <extended_outputs/>
         <icon/>
         <inputs/>
         <inputs/>
-        <label>OpenAPI/Postman</label>
+        <label>REST step</label>
         <order>1</order>
         <outputs/>
         <section/>
-        <step_type display_value="OpenAPI/Postman">41ba6b7cc3a02110e6a899ccc840ddaa</step_type>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>4e3dbdda33c5ee504890955a7e5c7b70</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_created_on>2025-06-09 16:03:35</sys_created_on>
+        <sys_id>66c3a6d12b86e210ddf5f27df291bfd5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:50:33</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:09:01</sys_updated_on>
     </sys_hub_step_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=4e3dbdda33c5ee504890955a7e5c7b70"/>
+    <sys_variable_value action="delete_multiple" query="document_key=66c3a6d12b86e210ddf5f27df291bfd5"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>4e3dbdda33c5ee504890955a7e5c7b70</document_key>
-        <order>30</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>023dbdda33c5ee504890955a7e5c7b8a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:50:33</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":true,"omit_if_empty":false},"name":"Accept","value":"application/json"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
-        <variable display_value="Headers">5e433ff4c3e02110e6a899ccc840dd2b</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>4e3dbdda33c5ee504890955a7e5c7b70</document_key>
-        <order>16</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>063dbdda33c5ee504890955a7e5c7b89</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
-        <value>0ddcbdde2bc92a50ddf5f27df291bf3a</value>
-        <variable display_value="API Operation">d6ade3b0c3e02110e6a899ccc840dde6</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>4e3dbdda33c5ee504890955a7e5c7b70</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:40:58</sys_created_on>
-        <sys_id>21111ff22b656e10ddf5f27df291bf4c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:40:58</sys_updated_on>
-        <value>{}</value>
-        <variable display_value="REST Metadata">3e4fbbb0c3242110e6a899ccc840dd0b</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>4e3dbdda33c5ee504890955a7e5c7b70</document_key>
-        <order>15</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>423dbdda33c5ee504890955a7e5c7b89</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
-        <value>81dc3dde2bc92a50ddf5f27df291bf96</value>
-        <variable display_value="API Source">c1fee734c3e02110e6a899ccc840dde9</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>4e3dbdda33c5ee504890955a7e5c7b70</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>4a3dbdda33c5ee504890955a7e5c7b8a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:42:23</sys_updated_on>
-        <value>{"jpath":"$","children":[{"jpath":"$.stringified_content","children":[],"name":"stringified_content","type":"string","label":"stringified_content"}],"name":"output","type":"object","label":"output"}</value>
-        <variable display_value="Response Schema">d0d13362ff30211030686564593bf189</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>4e3dbdda33c5ee504890955a7e5c7b70</document_key>
-        <order>20</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>4e3dbdda33c5ee504890955a7e5c7b89</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
-        <value>GetRelatedAssets</value>
-        <variable display_value="Resource Path">2d5d7f70c3242110e6a899ccc840ddf0</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>4e3dbdda33c5ee504890955a7e5c7b70</document_key>
-        <order>15</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:40:58</sys_created_on>
-        <sys_id>65111ff22b656e10ddf5f27df291bf4b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:40:58</sys_updated_on>
-        <value>https://5d4dd0bc-dc8f-41d3-a175-cd42a5f40753.mock.pstmn.io</value>
-        <variable display_value="Base URL">179fa374c3e02110e6a899ccc840dd66</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>4e3dbdda33c5ee504890955a7e5c7b70</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:40:58</sys_created_on>
-        <sys_id>6d111ff22b656e10ddf5f27df291bf4b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:40:58</sys_updated_on>
-        <value>{}</value>
-        <variable display_value="OpenAPI Mappings">ccfb3b30c3242110e6a899ccc840dde5</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>4e3dbdda33c5ee504890955a7e5c7b70</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>863dbdda33c5ee504890955a7e5c7b8a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
-        <value>postman_collection</value>
-        <variable display_value="Creation Source">66e84c6e9fb30210ca19fd8e0b0a1cee</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>4e3dbdda33c5ee504890955a7e5c7b70</document_key>
+        <document_key>66c3a6d12b86e210ddf5f27df291bfd5</document_key>
         <order>10</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>8a3dbdda33c5ee504890955a7e5c7b89</sys_id>
+        <sys_created_on>2025-06-09 16:07:41</sys_created_on>
+        <sys_id>2eb462552b86e210ddf5f27df291bfc6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:07:41</sys_updated_on>
         <value>5cfc31122b0d2a50ddf5f27df291bf8f</value>
-        <variable display_value="Connection Alias">7a5277f4c3e02110e6a899ccc840dd95</variable>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>4e3dbdda33c5ee504890955a7e5c7b70</document_key>
+        <document_key>66c3a6d12b86e210ddf5f27df291bfd5</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:03:35</sys_created_on>
+        <sys_id>32c3a6d12b86e210ddf5f27df291bffc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:03:35</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>66c3a6d12b86e210ddf5f27df291bfd5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:03:35</sys_created_on>
+        <sys_id>36c3a6d12b86e210ddf5f27df291bffb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:03:35</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>66c3a6d12b86e210ddf5f27df291bfd5</document_key>
         <order>25</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>c23dbdda33c5ee504890955a7e5c7b8a</sys_id>
+        <sys_created_on>2025-06-09 16:04:29</sys_created_on>
+        <sys_id>37f32ed12b86e210ddf5f27df291bf64</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:04:29</sys_updated_on>
         <value>{"type":"ADV_NV","value":[]}</value>
-        <variable display_value="Query Parameters">156c7f30c3242110e6a899ccc840dd93</variable>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>4e3dbdda33c5ee504890955a7e5c7b70</document_key>
+        <document_key>66c3a6d12b86e210ddf5f27df291bfd5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:03:35</sys_created_on>
+        <sys_id>72c3a6d12b86e210ddf5f27df291bffb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:03:35</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>66c3a6d12b86e210ddf5f27df291bfd5</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:04:29</sys_created_on>
+        <sys_id>73f32ed12b86e210ddf5f27df291bf64</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:09:01</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>66c3a6d12b86e210ddf5f27df291bfd5</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:03:35</sys_created_on>
+        <sys_id>7ec3a6d12b86e210ddf5f27df291bffb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:03:35</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>66c3a6d12b86e210ddf5f27df291bfd5</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:03:35</sys_created_on>
+        <sys_id>bac3a6d12b86e210ddf5f27df291bffb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:03:35</sys_updated_on>
+        <value>GetRelatedAssets</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>66c3a6d12b86e210ddf5f27df291bfd5</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:07:41</sys_created_on>
+        <sys_id>eeb462552b86e210ddf5f27df291bfc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:07:41</sys_updated_on>
+        <value>https://5d4dd0bc-dc8f-41d3-a175-cd42a5f40753.mock.pstmn.io</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>66c3a6d12b86e210ddf5f27df291bfd5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:03:35</sys_created_on>
+        <sys_id>f2c3a6d12b86e210ddf5f27df291bffc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:03:35</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>66c3a6d12b86e210ddf5f27df291bfd5</document_key>
         <order>25</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>c63dbdda33c5ee504890955a7e5c7b89</sys_id>
+        <sys_created_on>2025-06-09 16:03:35</sys_created_on>
+        <sys_id>f6c3a6d12b86e210ddf5f27df291bffb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:03:35</sys_updated_on>
         <value>post</value>
-        <variable display_value="HTTP Method">27f33378c3e02110e6a899ccc840ddb5</variable>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_4e3dbdda33c5ee504890955a7e5c7b70^id=4e3dbdda33c5ee504890955a7e5c7b70"/>
-    <sys_element_mapping action="delete_multiple" query="id=4e3dbdda33c5ee504890955a7e5c7b70"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_66c3a6d12b86e210ddf5f27df291bfd5^id=66c3a6d12b86e210ddf5f27df291bfd5"/>
+    <sys_element_mapping action="delete_multiple" query="id=66c3a6d12b86e210ddf5f27df291bfd5"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>api_operation</field>
-        <id>4e3dbdda33c5ee504890955a7e5c7b70</id>
+        <field>application</field>
+        <id>66c3a6d12b86e210ddf5f27df291bfd5</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>8a3dbdda33c5ee504890955a7e5c7b87</sys_id>
+        <sys_created_on>2025-06-09 16:03:35</sys_created_on>
+        <sys_id>3ec3a6d12b86e210ddf5f27df291bffa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>api_source</field>
-        <id>4e3dbdda33c5ee504890955a7e5c7b70</id>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>c63dbdda33c5ee504890955a7e5c7b87</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:03:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>base_url</field>
-        <id>4e3dbdda33c5ee504890955a7e5c7b70</id>
+        <id>66c3a6d12b86e210ddf5f27df291bfd5</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:40:58</sys_created_on>
-        <sys_id>6d111ff22b656e10ddf5f27df291bf49</sys_id>
+        <sys_created_on>2025-06-09 16:07:41</sys_created_on>
+        <sys_id>aab462552b86e210ddf5f27df291bfc6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:40:58</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:07:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>body</field>
-        <id>4e3dbdda33c5ee504890955a7e5c7b70</id>
+        <id>66c3a6d12b86e210ddf5f27df291bfd5</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:42:23</sys_created_on>
-        <sys_id>966117362b656e10ddf5f27df291bf4f</sys_id>
+        <sys_created_on>2025-06-09 16:08:04</sys_created_on>
+        <sys_id>1cd426552b86e210ddf5f27df291bf41</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:42:23</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:08:04</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value>{{action.request_body}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>connection_alias</field>
-        <id>4e3dbdda33c5ee504890955a7e5c7b70</id>
+        <field>capabilities</field>
+        <id>66c3a6d12b86e210ddf5f27df291bfd5</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>023dbdda33c5ee504890955a7e5c7b88</sys_id>
+        <sys_created_on>2025-06-09 16:03:35</sys_created_on>
+        <sys_id>7ac3a6d12b86e210ddf5f27df291bffa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:03:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>creation_source</field>
-        <id>4e3dbdda33c5ee504890955a7e5c7b70</id>
+        <field>connection_alias</field>
+        <id>66c3a6d12b86e210ddf5f27df291bfd5</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>0e3dbdda33c5ee504890955a7e5c7b88</sys_id>
+        <sys_created_on>2025-06-09 16:07:41</sys_created_on>
+        <sys_id>e6b462552b86e210ddf5f27df291bfc6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:07:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>66c3a6d12b86e210ddf5f27df291bfd5</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:03:35</sys_created_on>
+        <sys_id>fec3a6d12b86e210ddf5f27df291bffa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:03:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>headers</field>
-        <id>4e3dbdda33c5ee504890955a7e5c7b70</id>
+        <id>66c3a6d12b86e210ddf5f27df291bfd5</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>863dbdda33c5ee504890955a7e5c7b88</sys_id>
+        <sys_created_on>2025-06-09 16:04:29</sys_created_on>
+        <sys_id>3ff32ed12b86e210ddf5f27df291bf63</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:04:29</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>66c3a6d12b86e210ddf5f27df291bfd5</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:03:35</sys_created_on>
+        <sys_id>7ec3a6d12b86e210ddf5f27df291bff9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:03:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>66c3a6d12b86e210ddf5f27df291bfd5</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:03:35</sys_created_on>
+        <sys_id>32c3a6d12b86e210ddf5f27df291bffa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:03:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>http_method</field>
-        <id>4e3dbdda33c5ee504890955a7e5c7b70</id>
+        <id>66c3a6d12b86e210ddf5f27df291bfd5</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>4e3dbdda33c5ee504890955a7e5c7b87</sys_id>
+        <sys_created_on>2025-06-09 16:03:35</sys_created_on>
+        <sys_id>f2c3a6d12b86e210ddf5f27df291bffa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>openapi_mappings</field>
-        <id>4e3dbdda33c5ee504890955a7e5c7b70</id>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:40:58</sys_created_on>
-        <sys_id>25111ff22b656e10ddf5f27df291bf4a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:40:58</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:03:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>query_params</field>
-        <id>4e3dbdda33c5ee504890955a7e5c7b70</id>
+        <id>66c3a6d12b86e210ddf5f27df291bfd5</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>4a3dbdda33c5ee504890955a7e5c7b88</sys_id>
+        <sys_created_on>2025-06-09 16:04:29</sys_created_on>
+        <sys_id>fff32ed12b86e210ddf5f27df291bf63</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:04:29</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>resource_path</field>
-        <id>4e3dbdda33c5ee504890955a7e5c7b70</id>
+        <id>66c3a6d12b86e210ddf5f27df291bfd5</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>c23dbdda33c5ee504890955a7e5c7b88</sys_id>
+        <sys_created_on>2025-06-09 16:03:35</sys_created_on>
+        <sys_id>b6c3a6d12b86e210ddf5f27df291bffa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:03:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>response_schema</field>
-        <id>4e3dbdda33c5ee504890955a7e5c7b70</id>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>ce3dbdda33c5ee504890955a7e5c7b88</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>rest_metadata</field>
-        <id>4e3dbdda33c5ee504890955a7e5c7b70</id>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:40:58</sys_created_on>
-        <sys_id>e5111ff22b656e10ddf5f27df291bf4a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:40:58</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_translated_text action="delete_multiple" query="documentkey=4e3dbdda33c5ee504890955a7e5c7b70"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=4e3dbdda33c5ee504890955a7e5c7b70"/>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=4e3dbdda33c5ee504890955a7e5c7b70^sys_idNOT IN063dbdda33c5ee504890955a7e5c7b77"/>
-    <sys_complex_object action="INSERT_OR_UPDATE">
-        <label/>
-        <name>FDd1b3573a74656e1055aaff29adcb7268</name>
-        <namespace>FlowDesigner</namespace>
-        <scope_name>a5232d9a3b4526503841e71864e45a5f</scope_name>
-        <serialized_content>{"FlowDesigner:FDd1b3573a74656e1055aaff29adcb7268":{"stringified_content":"String","stringified_content.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":null,\"label\":\"stringified_content\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FDd1b3573a74656e1055aaff29adcb7268.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":null,\"label\":\"output\",\"mandatory\":\"false\",\"isDynamicOutput\":\"true\",\"uiUniqueId\":\"ca33ce41-c6ec-42f8-8b5c-72a715c2015c\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDd1b3573a74656e1055aaff29adcb7268\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"0\"}"}}</serialized_content>
-        <sys_class_name>sys_complex_object</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:52:25</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>95b3573a2b656e10ddf5f27df291bf68</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_overrides/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:25</sys_updated_on>
-        <type>complex_object_schema</type>
-    </sys_complex_object>
+    <sys_translated_text action="delete_multiple" query="documentkey=66c3a6d12b86e210ddf5f27df291bfd5"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=66c3a6d12b86e210ddf5f27df291bfd5"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=66c3a6d12b86e210ddf5f27df291bfd5^sys_idNOT INaab462552b86e210ddf5f27df291bfb6"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FDd1b3573a74656e1055aaff29adcb7268,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isDynamicOutput=true,uiType=object,uiTypeLabel=Object,uiUniqueId=ca33ce41-c6ec-42f8-8b5c-72a715c2015c</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=14e0f15a-1b3f-4524-85eb-4d228325c40b</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -514,7 +477,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>output</element>
+        <element>sn_auth_token</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -522,14 +485,14 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>output</label>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
         <mandatory>false</mandatory>
-        <max_length>65000</max_length>
-        <model display_value="OpenAPI/Postman">4e3dbdda33c5ee504890955a7e5c7b70</model>
-        <model_id>4e3dbdda33c5ee504890955a7e5c7b70</model_id>
+        <max_length>255</max_length>
+        <model display_value="REST step">66c3a6d12b86e210ddf5f27df291bfd5</model>
+        <model_id>66c3a6d12b86e210ddf5f27df291bfd5</model_id>
         <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_output_4e3dbdda33c5ee504890955a7e5c7b70</name>
+        <name>var__m_sys_hub_step_ext_output_66c3a6d12b86e210ddf5f27df291bfd5</name>
         <next_element/>
         <order>1</order>
         <primary>false</primary>
@@ -547,16 +510,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>063dbdda33c5ee504890955a7e5c7b77</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_created_on>2025-06-09 16:07:41</sys_created_on>
+        <sys_id>aab462552b86e210ddf5f27df291bfb6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:25</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:08:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -569,19 +532,19 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=4e3dbdda33c5ee504890955a7e5c7b70"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=66c3a6d12b86e210ddf5f27df291bfd5"/>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>output</element>
+        <element>sn_auth_token</element>
         <help/>
         <hint/>
-        <label>output</label>
+        <label>Credential Value</label>
         <language>en</language>
-        <name>var__m_sys_hub_step_ext_output_4e3dbdda33c5ee504890955a7e5c7b70</name>
+        <name>var__m_sys_hub_step_ext_output_66c3a6d12b86e210ddf5f27df291bfd5</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:12</sys_created_on>
-        <sys_id>ca3dbdda33c5ee504890955a7e5c7b7e</sys_id>
+        <sys_created_on>2025-06-09 16:07:41</sys_created_on>
+        <sys_id>66b462552b86e210ddf5f27df291bfba</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
@@ -589,7 +552,7 @@
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:12</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:07:41</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -678,117 +641,7 @@
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1111dbf22b656e10ddf5f27df291bff2"/>
-    <sys_hub_action_output action="delete_multiple" query="model=8a3dbdda33c5ee504890955a7e5c7b6b^sys_idNOT IN563dbdda33c5ee504890955a7e5c7bc7,61111ff22b656e10ddf5f27df291bf56,ad111ff22b656e10ddf5f27df291bf5a"/>
-    <sys_complex_object action="INSERT_OR_UPDATE">
-        <label/>
-        <name>FD1e3dbdda65c5ee50e8c104b33cb92dc5</name>
-        <namespace>FlowDesigner</namespace>
-        <scope_name>a5232d9a3b4526503841e71864e45a5f</scope_name>
-        <serialized_content>{"FlowDesigner:FD1e3dbdda65c5ee50e8c104b33cb92dc5":{"stringified_content":"String","stringified_content.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"stringified_content\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"4a3dbdda02c5ee5042234b3caa2c0670\"}"}},"FlowDesigner:FD1e3dbdda65c5ee50e8c104b33cb92dc5.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"output\",\"mandatory\":\"false\",\"isDynamicOutput\":\"true\",\"uiUniqueId\":\"f6c2f514-1327-49a3-a57a-7819c2c210ac\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD1e3dbdda65c5ee50e8c104b33cb92dc5\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
-        <sys_class_name>sys_complex_object</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:13</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>9e3dbdda33c5ee504890955a7e5c7bc5</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name/>
-        <sys_overrides/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:26</sys_updated_on>
-        <type>complex_object_schema</type>
-    </sys_complex_object>
-    <sys_hub_action_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FD1e3dbdda65c5ee50e8c104b33cb92dc5,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isDynamicOutput=true,uiType=object,uiTypeLabel=Object,uiUniqueId=f6c2f514-1327-49a3-a57a-7819c2c210ac</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>output</element>
-        <element_prototype/>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_link/>
-        <internal_type display_value="String">string</internal_type>
-        <label>output</label>
-        <mandatory>false</mandatory>
-        <max_length>65000</max_length>
-        <model display_value="GetRelatedAsset">8a3dbdda33c5ee504890955a7e5c7b6b</model>
-        <model_id>8a3dbdda33c5ee504890955a7e5c7b6b</model_id>
-        <model_table>sys_hub_action_type_definition</model_table>
-        <name>var__m_sys_hub_action_output_8a3dbdda33c5ee504890955a7e5c7b6b</name>
-        <next_element/>
-        <order>1</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:13</sys_created_on>
-        <sys_id>563dbdda33c5ee504890955a7e5c7bc7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:40:58</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_action_output>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=563dbdda33c5ee504890955a7e5c7bc7"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=563dbdda33c5ee504890955a7e5c7bc7"/>
+    <sys_hub_action_output action="delete_multiple" query="model=8a3dbdda33c5ee504890955a7e5c7b6b^sys_idNOT IN61111ff22b656e10ddf5f27df291bf56,ad111ff22b656e10ddf5f27df291bf5a,bff32ed12b86e210ddf5f27df291bf75"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -854,14 +707,14 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-20 14:40:58</sys_created_on>
         <sys_id>61111ff22b656e10ddf5f27df291bf56</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:40:58</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:04:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -941,14 +794,14 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-20 14:40:58</sys_created_on>
         <sys_id>ad111ff22b656e10ddf5f27df291bf5a</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:26</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:14:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -963,6 +816,93 @@
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ad111ff22b656e10ddf5f27df291bf5a"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=ad111ff22b656e10ddf5f27df291bf5a"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=642480a1-6fa5-4348-b733-a33639a24f75</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_prototype display_value="Response Body" element="response_body" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a804c77347622200b4fad7527c9a7119</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="GetRelatedAsset">8a3dbdda33c5ee504890955a7e5c7b6b</model>
+        <model_id>8a3dbdda33c5ee504890955a7e5c7b6b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_8a3dbdda33c5ee504890955a7e5c7b6b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:04:29</sys_created_on>
+        <sys_id>bff32ed12b86e210ddf5f27df291bf75</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:14:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bff32ed12b86e210ddf5f27df291bf75"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bff32ed12b86e210ddf5f27df291bf75"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=8a3dbdda33c5ee504890955a7e5c7b6b"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=8a3dbdda33c5ee504890955a7e5c7b6b^sys_idNOT IN563dbdda33c5ee504890955a7e5c7bde"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
@@ -974,21 +914,7 @@
         <sys_updated_by>Marc.Mouries</sys_updated_by>
         <sys_updated_on>2025-04-23 22:46:13</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=563dbdda33c5ee504890955a7e5c7bde^sys_idNOT IN5a3dbdda33c5ee504890955a7e5c7bde"/>
-    <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2025-04-23 18:46:13">563dbdda33c5ee504890955a7e5c7bde</action_status_metadata_id>
-        <condition>{{step[35314540-3237-4017-1496-704902374430].error_code}}!=0</condition>
-        <dont_treat_as_error>false</dont_treat_as_error>
-        <label>OpenAPI step execution has failed</label>
-        <order>1</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[35314540-3237-4017-1496-704902374430].error_message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</status>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:13</sys_created_on>
-        <sys_id>5a3dbdda33c5ee504890955a7e5c7bde</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:40:58</sys_updated_on>
-    </sys_hub_status_condition>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=563dbdda33c5ee504890955a7e5c7bde"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>request_body</element>
         <help/>
@@ -1013,29 +939,6 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_8a3dbdda33c5ee504890955a7e5c7b6b"/>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>output</element>
-        <help/>
-        <hint/>
-        <label>output</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_output_8a3dbdda33c5ee504890955a7e5c7b6b</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:13</sys_created_on>
-        <sys_id>1e3dbdda33c5ee504890955a7e5c7bca</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:13</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__dont_treat_as_error__</element>
         <help/>
@@ -1082,22 +985,45 @@
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>Response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_8a3dbdda33c5ee504890955a7e5c7b6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:04:29</sys_created_on>
+        <sys_id>fff32ed12b86e210ddf5f27df291bf79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:04:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_8a3dbdda33c5ee504890955a7e5c7b6b"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=8a3dbdda33c5ee504890955a7e5c7b6b^sys_idNOT IN3e3dfdda33c5ee504890955a7e5c7b78"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="GetRelatedAsset">8a3dbdda33c5ee504890955a7e5c7b6b</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"3e3dfdda33c5ee504890955a7e5c7b78","name":"plan","plan_signature":null}}</plan>
-        <snapshot>02b3973a2b656e10ddf5f27df291bf36</snapshot>
+        <snapshot>e346e2192b86e210ddf5f27df291bfe9</snapshot>
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-04-23 22:46:15</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3e3dfdda33c5ee504890955a7e5c7b78</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:29</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:14:35</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1114,7 +1040,7 @@
         <description/>
         <flow_priority/>
         <internal_name>getrelatedasset</internal_name>
-        <label_cache>[{"name":"{{action.request_body}}","label":"action➛request_body","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[35314540-3237-4017-1496-704902374430].output}}","label":"step➛OpenAPI/Postman➛output","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":null},{"name":"{{step[35314540-3237-4017-1496-704902374430].error_code}}","label":"step➛OpenAPI/Postman➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":null},{"name":"{{step[35314540-3237-4017-1496-704902374430].error_message}}","label":"step➛OpenAPI/Postman➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":null}]</label_cache>
+        <label_cache>[{"name":"{{action.request_body}}","label":"action➛request_body","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[d7d23b38-3f45-45e1-8af9-445da2e53a54].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}}]</label_cache>
         <master>true</master>
         <name>GetRelatedAsset</name>
         <natlang/>
@@ -1127,7 +1053,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>963dbdda33c5ee504890955a7e5c7bfd</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1135,7 +1061,7 @@
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:27</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1149,10 +1075,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-20 14:52:28</sys_created_on>
         <sys_id>06b3973a2b656e10ddf5f27df291bf32</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2025-06-09 16:14:34</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">2e3dfdda33c5ee504890955a7e5c7b31</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1183,6 +1109,18 @@
         <value>{{step[35314540-3237-4017-1496-704902374430].output}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>963dbdda33c5ee504890955a7e5c7bfd</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:14:34</sys_created_on>
+        <sys_id>1346e2192b86e210ddf5f27df291bfe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:14:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_963dbdda33c5ee504890955a7e5c7bfd</table>
+        <value>{{step[d7d23b38-3f45-45e1-8af9-445da2e53a54].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>__action_status__</field>
         <id>963dbdda33c5ee504890955a7e5c7bfd</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
@@ -1206,387 +1144,338 @@
         <table>var__m_sys_hub_action_output_963dbdda33c5ee504890955a7e5c7bfd</table>
         <value/>
     </sys_element_mapping>
-    <sys_hub_step_instance action="delete_multiple" query="action=963dbdda33c5ee504890955a7e5c7bfd^sys_idNOT IN523dfdda33c5ee504890955a7e5c7b11"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=963dbdda33c5ee504890955a7e5c7bfd^sys_idNOT INc346e2192b86e210ddf5f27df291bf90"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="GetRelatedAsset">963dbdda33c5ee504890955a7e5c7bfd</action>
-        <cid>35314540-3237-4017-1496-704902374430</cid>
+        <cid>d7d23b38-3f45-45e1-8af9-445da2e53a54</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
         <extended_outputs/>
         <icon/>
         <inputs/>
         <inputs/>
-        <label>OpenAPI/Postman</label>
+        <label>REST step</label>
         <order>1</order>
         <outputs/>
         <section/>
-        <step_type display_value="OpenAPI/Postman">41ba6b7cc3a02110e6a899ccc840ddaa</step_type>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>523dfdda33c5ee504890955a7e5c7b11</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>c346e2192b86e210ddf5f27df291bf90</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
     </sys_hub_step_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=523dfdda33c5ee504890955a7e5c7b11"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c346e2192b86e210ddf5f27df291bf90"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>523dfdda33c5ee504890955a7e5c7b11</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:52:28</sys_created_on>
-        <sys_id>0eb3973a2b656e10ddf5f27df291bf1b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
-        <value>{}</value>
-        <variable display_value="REST Metadata">3e4fbbb0c3242110e6a899ccc840dd0b</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>523dfdda33c5ee504890955a7e5c7b11</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>2a3dfdda33c5ee504890955a7e5c7b28</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
-        <value>postman_collection</value>
-        <variable display_value="Creation Source">66e84c6e9fb30210ca19fd8e0b0a1cee</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>523dfdda33c5ee504890955a7e5c7b11</document_key>
+        <document_key>c346e2192b86e210ddf5f27df291bf90</document_key>
         <order>10</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>2e3dfdda33c5ee504890955a7e5c7b27</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>0346e2192b86e210ddf5f27df291bfac</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
         <value>5cfc31122b0d2a50ddf5f27df291bf8f</value>
-        <variable display_value="Connection Alias">7a5277f4c3e02110e6a899ccc840dd95</variable>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>523dfdda33c5ee504890955a7e5c7b11</document_key>
-        <order>25</order>
+        <document_key>c346e2192b86e210ddf5f27df291bf90</document_key>
+        <order>15</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>663dfdda33c5ee504890955a7e5c7b28</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>0f46e2192b86e210ddf5f27df291bfac</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[]}</value>
-        <variable display_value="Query Parameters">156c7f30c3242110e6a899ccc840dd93</variable>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <value>https://5d4dd0bc-dc8f-41d3-a175-cd42a5f40753.mock.pstmn.io</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>523dfdda33c5ee504890955a7e5c7b11</document_key>
-        <order>25</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>6a3dfdda33c5ee504890955a7e5c7b27</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
-        <value>post</value>
-        <variable display_value="HTTP Method">27f33378c3e02110e6a899ccc840ddb5</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>523dfdda33c5ee504890955a7e5c7b11</document_key>
+        <document_key>c346e2192b86e210ddf5f27df291bf90</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:52:28</sys_created_on>
-        <sys_id>86b3973a2b656e10ddf5f27df291bf1b</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>4746e2192b86e210ddf5f27df291bfad</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
-        <value>{}</value>
-        <variable display_value="OpenAPI Mappings">ccfb3b30c3242110e6a899ccc840dde5</variable>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>523dfdda33c5ee504890955a7e5c7b11</document_key>
+        <document_key>c346e2192b86e210ddf5f27df291bf90</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>4b46e2192b86e210ddf5f27df291bfac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c346e2192b86e210ddf5f27df291bf90</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>4f46e2192b86e210ddf5f27df291bfab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c346e2192b86e210ddf5f27df291bf90</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>8346e2192b86e210ddf5f27df291bfad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c346e2192b86e210ddf5f27df291bf90</document_key>
         <order>30</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>a23dfdda33c5ee504890955a7e5c7b28</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":true,"omit_if_empty":false},"name":"Accept","value":"application/json"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
-        <variable display_value="Headers">5e433ff4c3e02110e6a899ccc840dd2b</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>523dfdda33c5ee504890955a7e5c7b11</document_key>
-        <order>16</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>a63dfdda33c5ee504890955a7e5c7b27</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>8746e2192b86e210ddf5f27df291bfac</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
-        <value>0ddcbdde2bc92a50ddf5f27df291bf3a</value>
-        <variable display_value="API Operation">d6ade3b0c3e02110e6a899ccc840dde6</variable>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>523dfdda33c5ee504890955a7e5c7b11</document_key>
-        <order>15</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:52:28</sys_created_on>
-        <sys_id>c2b3973a2b656e10ddf5f27df291bf1b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
-        <value>https://5d4dd0bc-dc8f-41d3-a175-cd42a5f40753.mock.pstmn.io</value>
-        <variable display_value="Base URL">179fa374c3e02110e6a899ccc840dd66</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>523dfdda33c5ee504890955a7e5c7b11</document_key>
-        <order>15</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>e23dfdda33c5ee504890955a7e5c7b27</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
-        <value>81dc3dde2bc92a50ddf5f27df291bf96</value>
-        <variable display_value="API Source">c1fee734c3e02110e6a899ccc840dde9</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>523dfdda33c5ee504890955a7e5c7b11</document_key>
+        <document_key>c346e2192b86e210ddf5f27df291bf90</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>ea3dfdda33c5ee504890955a7e5c7b28</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>8b46e2192b86e210ddf5f27df291bfab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
-        <value>{"jpath":"$","children":[{"jpath":"$.stringified_content","children":[],"name":"stringified_content","type":"string","label":"stringified_content"}],"name":"output","type":"object","label":"output"}</value>
-        <variable display_value="Response Schema">d0d13362ff30211030686564593bf189</variable>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>523dfdda33c5ee504890955a7e5c7b11</document_key>
+        <document_key>c346e2192b86e210ddf5f27df291bf90</document_key>
         <order>20</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>ee3dfdda33c5ee504890955a7e5c7b27</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>c346e2192b86e210ddf5f27df291bfac</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
         <value>GetRelatedAssets</value>
-        <variable display_value="Resource Path">2d5d7f70c3242110e6a899ccc840ddf0</variable>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_523dfdda33c5ee504890955a7e5c7b11^id=523dfdda33c5ee504890955a7e5c7b11"/>
-    <sys_element_mapping action="delete_multiple" query="id=523dfdda33c5ee504890955a7e5c7b11"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>api_operation</field>
-        <id>523dfdda33c5ee504890955a7e5c7b11</id>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c346e2192b86e210ddf5f27df291bf90</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>2e3dfdda33c5ee504890955a7e5c7b25</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>c746e2192b86e210ddf5f27df291bfab</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>api_source</field>
-        <id>523dfdda33c5ee504890955a7e5c7b11</id>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c346e2192b86e210ddf5f27df291bf90</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>6a3dfdda33c5ee504890955a7e5c7b25</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>cf46e2192b86e210ddf5f27df291bfac</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_c346e2192b86e210ddf5f27df291bf90^id=c346e2192b86e210ddf5f27df291bf90"/>
+    <sys_element_mapping action="delete_multiple" query="id=c346e2192b86e210ddf5f27df291bf90"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>c346e2192b86e210ddf5f27df291bf90</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>cf46e2192b86e210ddf5f27df291bfaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>base_url</field>
-        <id>523dfdda33c5ee504890955a7e5c7b11</id>
+        <id>c346e2192b86e210ddf5f27df291bf90</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:52:28</sys_created_on>
-        <sys_id>86b3973a2b656e10ddf5f27df291bf1a</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>0f46e2192b86e210ddf5f27df291bfaa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>body</field>
-        <id>523dfdda33c5ee504890955a7e5c7b11</id>
+        <id>c346e2192b86e210ddf5f27df291bf90</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:52:28</sys_created_on>
-        <sys_id>42b3973a2b656e10ddf5f27df291bf1a</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>c746e2192b86e210ddf5f27df291bfa9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value>{{action.request_body}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>connection_alias</field>
-        <id>523dfdda33c5ee504890955a7e5c7b11</id>
+        <field>capabilities</field>
+        <id>c346e2192b86e210ddf5f27df291bf90</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>a23dfdda33c5ee504890955a7e5c7b26</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>4b46e2192b86e210ddf5f27df291bfaa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>creation_source</field>
-        <id>523dfdda33c5ee504890955a7e5c7b11</id>
+        <field>connection_alias</field>
+        <id>c346e2192b86e210ddf5f27df291bf90</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>ae3dfdda33c5ee504890955a7e5c7b26</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>0346e2192b86e210ddf5f27df291bfaa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>c346e2192b86e210ddf5f27df291bf90</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>4746e2192b86e210ddf5f27df291bfab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>headers</field>
-        <id>523dfdda33c5ee504890955a7e5c7b11</id>
+        <id>c346e2192b86e210ddf5f27df291bf90</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>2a3dfdda33c5ee504890955a7e5c7b26</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>8746e2192b86e210ddf5f27df291bfaa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>c346e2192b86e210ddf5f27df291bf90</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>0746e2192b86e210ddf5f27df291bfa9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>c346e2192b86e210ddf5f27df291bf90</id>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>8b46e2192b86e210ddf5f27df291bfa9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>http_method</field>
-        <id>523dfdda33c5ee504890955a7e5c7b11</id>
+        <id>c346e2192b86e210ddf5f27df291bf90</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>ee3dfdda33c5ee504890955a7e5c7b25</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>4f46e2192b86e210ddf5f27df291bfa9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>openapi_mappings</field>
-        <id>523dfdda33c5ee504890955a7e5c7b11</id>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:52:28</sys_created_on>
-        <sys_id>4ab3973a2b656e10ddf5f27df291bf1a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>query_params</field>
-        <id>523dfdda33c5ee504890955a7e5c7b11</id>
+        <id>c346e2192b86e210ddf5f27df291bf90</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>ea3dfdda33c5ee504890955a7e5c7b26</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>8346e2192b86e210ddf5f27df291bfab</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>resource_path</field>
-        <id>523dfdda33c5ee504890955a7e5c7b11</id>
+        <id>c346e2192b86e210ddf5f27df291bf90</id>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>663dfdda33c5ee504890955a7e5c7b26</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>c346e2192b86e210ddf5f27df291bfaa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>response_schema</field>
-        <id>523dfdda33c5ee504890955a7e5c7b11</id>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>623dfdda33c5ee504890955a7e5c7b27</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>rest_metadata</field>
-        <id>523dfdda33c5ee504890955a7e5c7b11</id>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:52:28</sys_created_on>
-        <sys_id>8eb3973a2b656e10ddf5f27df291bf1a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_41ba6b7cc3a02110e6a899ccc840ddaa</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_translated_text action="delete_multiple" query="documentkey=523dfdda33c5ee504890955a7e5c7b11"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=523dfdda33c5ee504890955a7e5c7b11"/>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=523dfdda33c5ee504890955a7e5c7b11^sys_idNOT INa63dfdda33c5ee504890955a7e5c7b19"/>
-    <sys_complex_object action="INSERT_OR_UPDATE">
-        <label/>
-        <name>FDaa3dfdda37c5ee501f5d3fc6c4c00918</name>
-        <namespace>FlowDesigner</namespace>
-        <scope_name>a5232d9a3b4526503841e71864e45a5f</scope_name>
-        <serialized_content>{"FlowDesigner:FDaa3dfdda37c5ee501f5d3fc6c4c00918":{"stringified_content":"String","stringified_content.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"stringified_content\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}},"FlowDesigner:FDaa3dfdda37c5ee501f5d3fc6c4c00918.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"output\",\"mandatory\":\"false\",\"isDynamicOutput\":\"true\",\"uiUniqueId\":\"ca33ce41-c6ec-42f8-8b5c-72a715c2015c\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDaa3dfdda37c5ee501f5d3fc6c4c00918\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
-        <sys_class_name>sys_complex_object</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>2e3dfdda33c5ee504890955a7e5c7b18</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_overrides/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
-        <type>complex_object_schema</type>
-    </sys_complex_object>
+    <sys_translated_text action="delete_multiple" query="documentkey=c346e2192b86e210ddf5f27df291bf90"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=c346e2192b86e210ddf5f27df291bf90"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=c346e2192b86e210ddf5f27df291bf90^sys_idNOT IN8746e2192b86e210ddf5f27df291bf9a"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FDaa3dfdda37c5ee501f5d3fc6c4c00918,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isDynamicOutput=true,uiType=object,uiTypeLabel=Object,uiUniqueId=ca33ce41-c6ec-42f8-8b5c-72a715c2015c</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=14e0f15a-1b3f-4524-85eb-4d228325c40b</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1610,7 +1499,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>output</element>
+        <element>sn_auth_token</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -1618,14 +1507,14 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>output</label>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
         <mandatory>false</mandatory>
-        <max_length>65000</max_length>
-        <model display_value="OpenAPI/Postman">523dfdda33c5ee504890955a7e5c7b11</model>
-        <model_id>523dfdda33c5ee504890955a7e5c7b11</model_id>
+        <max_length>255</max_length>
+        <model display_value="REST step">c346e2192b86e210ddf5f27df291bf90</model>
+        <model_id>c346e2192b86e210ddf5f27df291bf90</model_id>
         <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_output_523dfdda33c5ee504890955a7e5c7b11</name>
+        <name>var__m_sys_hub_step_ext_output_c346e2192b86e210ddf5f27df291bf90</name>
         <next_element/>
         <order>1</order>
         <primary>false</primary>
@@ -1643,16 +1532,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>a63dfdda33c5ee504890955a7e5c7b19</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>8746e2192b86e210ddf5f27df291bf9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1665,19 +1554,19 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=523dfdda33c5ee504890955a7e5c7b11"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c346e2192b86e210ddf5f27df291bf90"/>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>output</element>
+        <element>sn_auth_token</element>
         <help/>
         <hint/>
-        <label>output</label>
+        <label>Credential Value</label>
         <language>en</language>
-        <name>var__m_sys_hub_step_ext_output_523dfdda33c5ee504890955a7e5c7b11</name>
+        <name>var__m_sys_hub_step_ext_output_c346e2192b86e210ddf5f27df291bf90</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>263dfdda33c5ee504890955a7e5c7b1c</sys_id>
+        <sys_created_on>2025-06-09 16:14:32</sys_created_on>
+        <sys_id>0f46e2192b86e210ddf5f27df291bf9d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
@@ -1685,7 +1574,7 @@
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:14:32</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1774,117 +1663,7 @@
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f9b3573a2b656e10ddf5f27df291bff9"/>
-    <sys_hub_action_output action="delete_multiple" query="model=963dbdda33c5ee504890955a7e5c7bfd^sys_idNOT IN2a3dfdda33c5ee504890955a7e5c7b2d,2e3dfdda33c5ee504890955a7e5c7b31,e63dfdda33c5ee504890955a7e5c7b35"/>
-    <sys_complex_object action="INSERT_OR_UPDATE">
-        <label/>
-        <name>FD2e3dfdda36c5ee505ad70bdc1a0ffe2c</name>
-        <namespace>FlowDesigner</namespace>
-        <scope_name>a5232d9a3b4526503841e71864e45a5f</scope_name>
-        <serialized_content>{"FlowDesigner:FD2e3dfdda36c5ee505ad70bdc1a0ffe2c":{"stringified_content":"String","stringified_content.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"stringified_content\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"4a3dbdda02c5ee5042234b3caa2c0670\"}"}},"FlowDesigner:FD2e3dfdda36c5ee505ad70bdc1a0ffe2c.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"output\",\"mandatory\":\"false\",\"isDynamicOutput\":\"true\",\"uiUniqueId\":\"f6c2f514-1327-49a3-a57a-7819c2c210ac\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD2e3dfdda36c5ee505ad70bdc1a0ffe2c\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
-        <sys_class_name>sys_complex_object</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>ae3dfdda33c5ee504890955a7e5c7b2c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_overrides/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
-        <type>complex_object_schema</type>
-    </sys_complex_object>
-    <sys_hub_action_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FD2e3dfdda36c5ee505ad70bdc1a0ffe2c,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isDynamicOutput=true,uiType=object,uiTypeLabel=Object,uiUniqueId=f6c2f514-1327-49a3-a57a-7819c2c210ac</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>output</element>
-        <element_prototype/>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_link/>
-        <internal_type display_value="String">string</internal_type>
-        <label>output</label>
-        <mandatory>false</mandatory>
-        <max_length>65000</max_length>
-        <model display_value="GetRelatedAsset">963dbdda33c5ee504890955a7e5c7bfd</model>
-        <model_id>963dbdda33c5ee504890955a7e5c7bfd</model_id>
-        <model_table>sys_hub_action_type_snapshot</model_table>
-        <name>var__m_sys_hub_action_output_963dbdda33c5ee504890955a7e5c7bfd</name>
-        <next_element/>
-        <order>1</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>2a3dfdda33c5ee504890955a7e5c7b2d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_action_output>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2a3dfdda33c5ee504890955a7e5c7b2d"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=2a3dfdda33c5ee504890955a7e5c7b2d"/>
+    <sys_hub_action_output action="delete_multiple" query="model=963dbdda33c5ee504890955a7e5c7bfd^sys_idNOT IN2e3dfdda33c5ee504890955a7e5c7b31,5346e2192b86e210ddf5f27df291bfc9,e63dfdda33c5ee504890955a7e5c7b35"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1976,6 +1755,93 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=642480a1-6fa5-4348-b733-a33639a24f75</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_prototype display_value="Response Body" element="response_body" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a804c77347622200b4fad7527c9a7119</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="GetRelatedAsset">963dbdda33c5ee504890955a7e5c7bfd</model>
+        <model_id>963dbdda33c5ee504890955a7e5c7bfd</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_963dbdda33c5ee504890955a7e5c7bfd</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-09 16:14:33</sys_created_on>
+        <sys_id>5346e2192b86e210ddf5f27df291bfc9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-09 16:14:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5346e2192b86e210ddf5f27df291bfc9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5346e2192b86e210ddf5f27df291bfc9"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
         <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=9929ed22-5773-4891-ba6b-e0d07adaa49c,visible_in_ui=false</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
@@ -2037,14 +1903,14 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-04-23 22:46:14</sys_created_on>
         <sys_id>e63dfdda33c5ee504890955a7e5c7b35</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:14:33</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2070,21 +1936,7 @@
         <sys_updated_by>Marc.Mouries</sys_updated_by>
         <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=2a3dfdda33c5ee504890955a7e5c7b41^sys_idNOT IN4ab3973a2b656e10ddf5f27df291bf34"/>
-    <sys_hub_status_condition action="INSERT_OR_UPDATE">
-        <action_status_metadata_id display_value="Created 2025-04-23 18:46:14">2a3dfdda33c5ee504890955a7e5c7b41</action_status_metadata_id>
-        <condition>{{step[35314540-3237-4017-1496-704902374430].error_code}}!=0</condition>
-        <dont_treat_as_error>false</dont_treat_as_error>
-        <label>OpenAPI step execution has failed</label>
-        <order>1</order>
-        <status>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[35314540-3237-4017-1496-704902374430].error_message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</status>
-        <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-20 14:52:28</sys_created_on>
-        <sys_id>4ab3973a2b656e10ddf5f27df291bf34</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-20 14:52:28</sys_updated_on>
-    </sys_hub_status_condition>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=2a3dfdda33c5ee504890955a7e5c7b41"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>request_body</element>
         <help/>
@@ -2156,17 +2008,17 @@
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>output</element>
+        <element>response</element>
         <help/>
         <hint/>
-        <label>output</label>
+        <label>Response</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_963dbdda33c5ee504890955a7e5c7bfd</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-04-23 22:46:14</sys_created_on>
-        <sys_id>ee3dfdda33c5ee504890955a7e5c7b30</sys_id>
+        <sys_created_on>2025-06-09 16:14:33</sys_created_on>
+        <sys_id>d346e2192b86e210ddf5f27df291bfcd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
@@ -2174,7 +2026,7 @@
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-04-23 22:46:14</sys_updated_on>
+        <sys_updated_on>2025-06-09 16:14:33</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2182,6 +2034,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>8a3dbdda33c5ee504890955a7e5c7b6b</sys_id>
         <latest_snapshot>963dbdda33c5ee504890955a7e5c7bfd</latest_snapshot>
-        <compiler_build>glide-yokohama-12-18-2024__patch3-04-17-2025_04-30-2025_1345.zip</compiler_build>
+        <compiler_build>glide-yokohama-12-18-2024__patch4-05-14-2025_06-04-2025_1836.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>
