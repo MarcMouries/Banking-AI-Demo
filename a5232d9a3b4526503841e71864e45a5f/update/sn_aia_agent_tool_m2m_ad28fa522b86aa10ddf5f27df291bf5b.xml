@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Account Closure Coordination Agent">f43a64f12bce6610ddf5f27df291bf9b</agent>
+        <description>This action sends an email to the specified recipient using the provided subject and body. The email will be attached to the designated request, and a work note will be added to that request to document the action.</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Send email</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <pre_message>Sending email to customer</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-12 20:06:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>ad28fa522b86aa10ddf5f27df291bf5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_ad28fa522b86aa10ddf5f27df291bf5b</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-12 20:06:27</sys_updated_on>
+        <tool display_value="Send email">1528fa522b86aa10ddf5f27df291bf55</tool>
+        <tool_attributes>{}</tool_attributes>
+    </sn_aia_agent_tool_m2m>
+</record_update>
