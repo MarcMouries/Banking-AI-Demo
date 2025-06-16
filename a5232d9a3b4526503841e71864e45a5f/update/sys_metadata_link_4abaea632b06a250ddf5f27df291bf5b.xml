@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>82b8226f2bc2a250ddf5f27df291bfd3</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="kb_knowledge_base">
+    <kb_knowledge_base action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</application>
+        <approval_description/>
+        <article_validity/>
+        <card_color/>
+        <checklist/>
+        <data_policy/>
+        <description>Business Rules for the Banking AI Agents</description>
+        <disable_category_editing>false</disable_category_editing>
+        <disable_commenting>true</disable_commenting>
+        <disable_mark_as_helpful>false</disable_mark_as_helpful>
+        <disable_rating>false</disable_rating>
+        <disable_suggesting>true</disable_suggesting>
+        <enable_socialqa>false</enable_socialqa>
+        <icon/>
+        <kb_managers/>
+        <kb_version>3</kb_version>
+        <mandatory_fields/>
+        <order/>
+        <owner display_value="Marc Mouries">ac13175b937142102494bcd97bba1041</owner>
+        <question_annotation/>
+        <retire_workflow display_value="Knowledge - Instant Retire">3d18ef12c30031000096dfdc64d3aeb6</retire_workflow>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-16 16:18:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>82b8226f2bc2a250ddf5f27df291bfd3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-16 16:20:02</sys_updated_on>
+        <table>kb_knowledge</table>
+        <template>taxonomy_topic=^EQ</template>
+        <title>Banking AI Agent Business Rules</title>
+        <workflow display_value="Knowledge - Instant Publish">fbe441019f112100d8f8700c267fcf1a</workflow>
+    </kb_knowledge_base>
+    <sys_translated_text action="delete_multiple" query="documentkey=82b8226f2bc2a250ddf5f27df291bfd3"/>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-16 16:20:11</sys_created_on>
+        <sys_id>4abaea632b06a250ddf5f27df291bf5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Banking AI Agent Business Rules</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_metadata_link_4abaea632b06a250ddf5f27df291bf5b</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-16 16:20:11</sys_updated_on>
+        <tablename>kb_knowledge_base</tablename>
+    </sys_metadata_link>
+</record_update>
