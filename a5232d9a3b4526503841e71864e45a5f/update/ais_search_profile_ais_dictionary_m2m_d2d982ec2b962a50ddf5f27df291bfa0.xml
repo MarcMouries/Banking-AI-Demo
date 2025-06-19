@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m">
+    <ais_search_profile_ais_dictionary_m2m action="INSERT_OR_UPDATE">
+        <dictionary display_value="sn_mab_api_mab_stop_word_dictionary">cb707b8253d2021054dfddeeff7b1280</dictionary>
+        <dictionary_reference_qualifier/>
+        <marked_for_deletion>false</marked_for_deletion>
+        <profile display_value="Banking Rules">ded942ec2b962a50ddf5f27df291bf78</profile>
+        <sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-19 16:30:29</sys_created_on>
+        <sys_id>d2d982ec2b962a50ddf5f27df291bfa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_mab_api_mab_stop_word_dictionary.Banking Rules</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_d2d982ec2b962a50ddf5f27df291bfa0</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-19 16:30:29</sys_updated_on>
+    </ais_search_profile_ais_dictionary_m2m>
+</record_update>
