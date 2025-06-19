@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_source">
+    <ais_search_source action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="kb_knowledge">kb_knowledge_base=82b8226f2bc2a250ddf5f27df291bfd3<item display_table="kb_knowledge_base" display_value="Banking AI Agent Business Rules" endquery="false" field="kb_knowledge_base" goto="false" newquery="false" operator="=" or="false" value="82b8226f2bc2a250ddf5f27df291bfd3"/>
+        </condition>
+        <datasource display_value="">kb_knowledge</datasource>
+        <has_dynamic_filters>false</has_dynamic_filters>
+        <name>Banking AI Agent Business Rules</name>
+        <sys_class_name>ais_search_source</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-19 16:33:44</sys_created_on>
+        <sys_id>4fe946ec2b962a50ddf5f27df291bf89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Banking AI Agent Business Rules</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>ais_search_source_4fe946ec2b962a50ddf5f27df291bf89</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-19 16:33:44</sys_updated_on>
+    </ais_search_source>
+</record_update>
