@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="canvas_user" name="canvas_user">8536f54bc713330072b211d4d8c26080</contains>
+        <role display_value="x_mm_banking.account_closure_request_user" name="x_mm_banking.account_closure_request_user">26b34728336922104890955a7e5c7b47</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 21:00:18</sys_created_on>
+        <sys_id>e031d4c53356a6104890955a7e5c7b5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>canvas_user.x_mm_banking.account_closure_request_user</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_user_role_contains_e031d4c53356a6104890955a7e5c7b5e</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:00:18</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>39566f9e2bcaaa10ddf5f27df291bf13</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>Parse Client's Assets JSON</sys_name>
         <sys_overrides/>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_39566f9e2bcaaa10ddf5f27df291bf13</sys_update_name>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 18:36:05</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:35:56</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -53,10 +53,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:17</sys_created_on>
         <sys_id>86566f9e2bcaaa10ddf5f27df291bf93</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-12 23:28:47</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD02566f9ef4caaa10cd04c5e0763eec71":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD02566f9ef4caaa10cd04c5e0763eec71.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"7d762396-3b56-49ba-a6ac-0981c14e54b6\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD02566f9ef4caaa10cd04c5e0763eec71\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2025-06-20 20:43:57</sys_updated_on>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FD02566f9ef4caaa10cd04c5e0763eec71":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD02566f9ef4caaa10cd04c5e0763eec71.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"7d762396-3b56-49ba-a6ac-0981c14e54b6\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD02566f9ef4caaa10cd04c5e0763eec71\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
         <variable display_value="Action Status">86566f9e2bcaaa10ddf5f27df291bf77</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -73,6 +73,20 @@
         <value>0</value>
         <variable display_value="Don't Treat as Error">ca566f9e2bcaaa10ddf5f27df291bf7b</variable>
     </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>39566f9e2bcaaa10ddf5f27df291bf13</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 21:15:40</sys_created_on>
+        <sys_id>edb454413396a6104890955a7e5c7b7d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:35:48</sys_updated_on>
+        <value/>
+        <variable display_value="client_assets">ce566f9e2bcaaa10ddf5f27df291bf71</variable>
+    </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=39566f9e2bcaaa10ddf5f27df291bf13"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>client_assets</field>
@@ -80,9 +94,9 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:17</sys_created_on>
         <sys_id>ca566f9e2bcaaa10ddf5f27df291bf92</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 15:16:03</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:35:48</sys_updated_on>
         <table>var__m_sys_hub_action_output_39566f9e2bcaaa10ddf5f27df291bf13</table>
         <value>{{step[53b3e68b-0082-4c61-b5ee-e20d984438b1].root.products}}</value>
     </sys_element_mapping>
@@ -427,10 +441,10 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:16</sys_created_on>
         <sys_id>f9566f9e2bcaaa10ddf5f27df291bf3d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 15:14:48</sys_updated_on>
+        <sys_updated_on>2025-06-20 20:45:13</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f9566f9e2bcaaa10ddf5f27df291bf3d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -441,10 +455,10 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:16</sys_created_on>
         <sys_id>3d566f9e2bcaaa10ddf5f27df291bf4a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 15:13:42</sys_updated_on>
-        <value>{"name":"root","children":[{"name":"products","children":[{"name":"products_object","children":[{"name":"number","children":[],"type":"string","jpath":"$.products[*].number","previewValue":"06 010 00 0000022"},{"name":"description","children":[],"type":"string","jpath":"$.products[*].description","previewValue":"Zurich Bank Conto Welcome"}],"type":"object","jpath":"$.products[*]","previewValue":""}],"type":"array.object","jpath":"$.products[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <sys_updated_on>2025-06-20 20:45:13</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"products","children":[{"name":"products_object","children":[{"name":"number","children":[],"type":"string","jpath":"$.products[*].number","previewValue":"06 010 00 0000022"},{"name":"description","children":[],"type":"string","jpath":"$.products[*].description","previewValue":"Zurich Bank Conto Welcome"},{"name":"type","children":[],"type":"string","jpath":"$.products[*].type","previewValue":"current_account"}],"type":"object","jpath":"$.products[*]","previewValue":""}],"type":"array.object","jpath":"$.products[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
         <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -455,21 +469,24 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:16</sys_created_on>
         <sys_id>fd566f9e2bcaaa10ddf5f27df291bf4a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 15:14:48</sys_updated_on>
+        <sys_updated_on>2025-06-20 20:44:54</sys_updated_on>
         <value>{
   "products": [
     {
       "number": "06 010 00 0000022",
-      "description": "Zurich Bank Conto Welcome"
+      "description": "Zurich Bank Conto Welcome",
+      "type": "current_account"
     },
     {
       "number": "68 010 00 0000011",
-      "description": "Zurich Finanziamento"
+      "description": "Zurich Finanziamento",
+      "type": "policy"
     }
   ]
-}</value>
+}
+</value>
         <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_f9566f9e2bcaaa10ddf5f27df291bf3d^id=f9566f9e2bcaaa10ddf5f27df291bf3d"/>
@@ -515,17 +532,17 @@ outputs.number_of_products = inputs.product_list.length;&#13;
     <sys_hub_step_ext_output action="delete_multiple" query="model=f9566f9e2bcaaa10ddf5f27df291bf3d^sys_idNOT IN3d566f9e2bcaaa10ddf5f27df291bf41"/>
     <sys_complex_object action="INSERT_OR_UPDATE">
         <label/>
-        <name>FDc3febee232422e101f5bfc9c36e639f6</name>
+        <name>FD36ad008d3816a6109f20a89c8d6ec9f8</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>a5232d9a3b4526503841e71864e45a5f</scope_name>
-        <serialized_content>{"FlowDesigner:FDc3febee232422e101f5bfc9c36e639f6":{"products":[{"$0_products":{"number":"String","number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"53f7f29f-9039-4d80-872c-d4067da6a94a\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"69d493c5-f2ff-4923-916c-a93f115a1806\"}"}}}],"products.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"products\",\"mandatory\":\"false\",\"child_name\":\"products_object\",\"uiUniqueId\":\"5ffdb7aa-bc44-4fb8-bc56-41e58f394ae5\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"product\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"d3d8e49d-ecb1-42e5-bc29-70be1e04ab92\"}"}},"FlowDesigner:FDc3febee232422e101f5bfc9c36e639f6.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"ed48221c-d967-4181-b7f8-c92332c81160\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDc3febee232422e101f5bfc9c36e639f6\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FD36ad008d3816a6109f20a89c8d6ec9f8":{"products":[{"$0_products":{"number":"String","number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8c393320-3540-46a2-b4ac-22bd891c6b2e\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"3aac5d7d-4c68-49f7-9212-9edba97ebace\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"b1e06e0d-6aa6-4467-805d-d95d49b34b7a\"}"}}}],"products.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"products\",\"mandatory\":\"false\",\"child_name\":\"products_object\",\"uiUniqueId\":\"60691be2-4260-42f6-beec-00cb07d84ba0\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"products_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"63eb25a9-b49a-48f4-bc20-74227d0c671c\"}"}},"FlowDesigner:FD36ad008d3816a6109f20a89c8d6ec9f8.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"f700fa01-6f70-4bbe-acfd-bc8d4e3c22fc\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD36ad008d3816a6109f20a89c8d6ec9f8\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-06-13 15:14:48</sys_created_on>
+        <sys_created_on>2025-06-20 20:44:54</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>87febee22b422e10ddf5f27df291bff6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_id>f6ad008d3316a6104890955a7e5c7bf8</sys_id>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -533,14 +550,14 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 18:36:01</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:35:53</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FDc3febee232422e101f5bfc9c36e639f6,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=ed48221c-d967-4181-b7f8-c92332c81160</attributes>
+        <attributes>co_type_name=FD36ad008d3816a6109f20a89c8d6ec9f8,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=f700fa01-6f70-4bbe-acfd-bc8d4e3c22fc</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -599,14 +616,14 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:16</sys_created_on>
         <sys_id>3d566f9e2bcaaa10ddf5f27df291bf41</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 15:14:48</sys_updated_on>
+        <sys_updated_on>2025-06-20 20:44:54</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -754,7 +771,7 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c2566f9e2bcaaa10ddf5f27df291bf71</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -762,7 +779,7 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 18:36:01</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:35:54</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -917,14 +934,14 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:17</sys_created_on>
         <sys_id>ca566f9e2bcaaa10ddf5f27df291bf7b</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 18:36:02</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:35:54</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -941,17 +958,17 @@ outputs.number_of_products = inputs.product_list.length;&#13;
     <sys_hub_input_scripts action="delete_multiple" query="instance=ca566f9e2bcaaa10ddf5f27df291bf7b"/>
     <sys_complex_object action="INSERT_OR_UPDATE">
         <label/>
-        <name>FD86566f9eeacaaa1085d792d71cc31070</name>
+        <name>FD69b45441f696a610639e150dbac00246</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>a5232d9a3b4526503841e71864e45a5f</scope_name>
-        <serialized_content>{"FlowDesigner:FD86566f9eeacaaa1085d792d71cc31070":{"$COCollectionField":[{"products_object":{"number":"String","number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"53f7f29f-9039-4d80-872c-d4067da6a94a\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"69d493c5-f2ff-4923-916c-a93f115a1806\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"53b3e68b-0082-4c61-b5ee-e20d984438b1\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"client_assets\",\"mandatory\":\"false\",\"child_name\":\"products_object\",\"uiUniqueId\":\"4832d7b8-8888-4701-abd2-36b555313860\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD86566f9eeacaaa1085d792d71cc31070\",\"child_label\":\"product\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"de039978-eb4f-4947-b597-e0faea4db817\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"d3d8e49d-ecb1-42e5-bc29-70be1e04ab92\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD86566f9eeacaaa1085d792d71cc31070.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"53b3e68b-0082-4c61-b5ee-e20d984438b1\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"client_assets\",\"mandatory\":\"false\",\"child_name\":\"products_object\",\"uiUniqueId\":\"4832d7b8-8888-4701-abd2-36b555313860\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD86566f9eeacaaa1085d792d71cc31070\",\"child_label\":\"product\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"de039978-eb4f-4947-b597-e0faea4db817\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"d3d8e49d-ecb1-42e5-bc29-70be1e04ab92\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FD69b45441f696a610639e150dbac00246":{"$COCollectionField":[{"products_object":{"number":"String","number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8c393320-3540-46a2-b4ac-22bd891c6b2e\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"3aac5d7d-4c68-49f7-9212-9edba97ebace\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"b1e06e0d-6aa6-4467-805d-d95d49b34b7a\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"53b3e68b-0082-4c61-b5ee-e20d984438b1\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"client_assets\",\"mandatory\":\"false\",\"child_name\":\"products_object\",\"uiUniqueId\":\"eec7e0ae-97f7-462d-8a0e-4d44cfbc7655\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD69b45441f696a610639e150dbac00246\",\"child_label\":\"products_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"60691be2-4260-42f6-beec-00cb07d84ba0\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"63eb25a9-b49a-48f4-bc20-74227d0c671c\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD69b45441f696a610639e150dbac00246.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"53b3e68b-0082-4c61-b5ee-e20d984438b1\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"client_assets\",\"mandatory\":\"false\",\"child_name\":\"products_object\",\"uiUniqueId\":\"eec7e0ae-97f7-462d-8a0e-4d44cfbc7655\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD69b45441f696a610639e150dbac00246\",\"child_label\":\"products_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"60691be2-4260-42f6-beec-00cb07d84ba0\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"63eb25a9-b49a-48f4-bc20-74227d0c671c\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-06-12 23:28:17</sys_created_on>
+        <sys_created_on>2025-06-20 21:15:40</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>4a566f9e2bcaaa10ddf5f27df291bf70</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_id>2db454413396a6104890955a7e5c7b46</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -959,14 +976,14 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 18:36:01</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:35:54</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=product,child_name=products_object,child_type=object,child_type_label=Object,child_uiUniqueId=d3d8e49d-ecb1-42e5-bc29-70be1e04ab92,co_type_name=FD86566f9eeacaaa1085d792d71cc31070,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=53b3e68b-0082-4c61-b5ee-e20d984438b1,sourceType=step,sourceUiUniqueId=de039978-eb4f-4947-b597-e0faea4db817,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=4832d7b8-8888-4701-abd2-36b555313860</attributes>
+        <attributes>child_label=products_object,child_name=products_object,child_type=object,child_type_label=Object,child_uiUniqueId=63eb25a9-b49a-48f4-bc20-74227d0c671c,co_type_name=FD69b45441f696a610639e150dbac00246,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=53b3e68b-0082-4c61-b5ee-e20d984438b1,sourceType=step,sourceUiUniqueId=60691be2-4260-42f6-beec-00cb07d84ba0,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=eec7e0ae-97f7-462d-8a0e-4d44cfbc7655</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1027,14 +1044,14 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:17</sys_created_on>
         <sys_id>ce566f9e2bcaaa10ddf5f27df291bf71</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 15:16:02</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:35:48</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1159,17 +1176,17 @@ outputs.number_of_products = inputs.product_list.length;&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Parse Client's Assets JSON">39566f9e2bcaaa10ddf5f27df291bf13</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"0a76e3de2bcaaa10ddf5f27df291bf54","name":"plan","plan_signature":null}}</plan>
-        <snapshot>230d27ea2b462e10ddf5f27df291bf78</snapshot>
+        <snapshot>6a59140d3396a6104890955a7e5c7b7b</snapshot>
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:50</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0a76e3de2bcaaa10ddf5f27df291bf54</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 18:36:07</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:35:58</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1221,11 +1238,25 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:49</sys_created_on>
         <sys_id>3576a3de2bcaaa10ddf5f27df291bff9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-12 23:28:49</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2025-06-20 20:45:21</sys_updated_on>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
         <variable display_value="Action Status">f176a3de2bcaaa10ddf5f27df291bfea</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>ad76a3de2bcaaa10ddf5f27df291bf97</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 21:15:51</sys_created_on>
+        <sys_id>48c4d4413396a6104890955a7e5c7bac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:35:56</sys_updated_on>
+        <value/>
+        <variable display_value="client_assets">6d76a3de2bcaaa10ddf5f27df291bfe4</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_type_snapshot</document>
@@ -1248,9 +1279,9 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:49</sys_created_on>
         <sys_id>7976a3de2bcaaa10ddf5f27df291bff8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 18:36:05</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:35:56</sys_updated_on>
         <table>var__m_sys_hub_action_output_ad76a3de2bcaaa10ddf5f27df291bf97</table>
         <value>{{step[53b3e68b-0082-4c61-b5ee-e20d984438b1].root.products}}</value>
     </sys_element_mapping>
@@ -1595,10 +1626,10 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:48</sys_created_on>
         <sys_id>e576a3de2bcaaa10ddf5f27df291bfb1</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 18:36:04</sys_updated_on>
+        <sys_updated_on>2025-06-20 20:45:21</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e576a3de2bcaaa10ddf5f27df291bfb1"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1609,21 +1640,24 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:48</sys_created_on>
         <sys_id>6976a3de2bcaaa10ddf5f27df291bfbe</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 18:36:04</sys_updated_on>
+        <sys_updated_on>2025-06-20 20:45:21</sys_updated_on>
         <value>{
   "products": [
     {
       "number": "06 010 00 0000022",
-      "description": "Zurich Bank Conto Welcome"
+      "description": "Zurich Bank Conto Welcome",
+      "type": "current_account"
     },
     {
       "number": "68 010 00 0000011",
-      "description": "Zurich Finanziamento"
+      "description": "Zurich Finanziamento",
+      "type": "policy"
     }
   ]
-}</value>
+}
+</value>
         <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1634,10 +1668,10 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:48</sys_created_on>
         <sys_id>a576a3de2bcaaa10ddf5f27df291bfbe</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 18:36:04</sys_updated_on>
-        <value>{"name":"root","children":[{"name":"products","children":[{"name":"products_object","children":[{"name":"number","children":[],"type":"string","jpath":"$.products[*].number","previewValue":"06 010 00 0000022"},{"name":"description","children":[],"type":"string","jpath":"$.products[*].description","previewValue":"Zurich Bank Conto Welcome"}],"type":"object","jpath":"$.products[*]","previewValue":""}],"type":"array.object","jpath":"$.products[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <sys_updated_on>2025-06-20 20:45:21</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"products","children":[{"name":"products_object","children":[{"name":"number","children":[],"type":"string","jpath":"$.products[*].number","previewValue":"06 010 00 0000022"},{"name":"description","children":[],"type":"string","jpath":"$.products[*].description","previewValue":"Zurich Bank Conto Welcome"},{"name":"type","children":[],"type":"string","jpath":"$.products[*].type","previewValue":"current_account"}],"type":"object","jpath":"$.products[*]","previewValue":""}],"type":"array.object","jpath":"$.products[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
         <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_e576a3de2bcaaa10ddf5f27df291bfb1^id=e576a3de2bcaaa10ddf5f27df291bfb1"/>
@@ -1686,14 +1720,14 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <name>FDe576a3de1ecaaa1008806ee2e48e3fb4</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>a5232d9a3b4526503841e71864e45a5f</scope_name>
-        <serialized_content>{"FlowDesigner:FDe576a3de1ecaaa1008806ee2e48e3fb4":{"products":[{"$0_products":{"number":"String","number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"53f7f29f-9039-4d80-872c-d4067da6a94a\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"69d493c5-f2ff-4923-916c-a93f115a1806\"}"}}}],"products.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"products\",\"mandatory\":\"false\",\"child_name\":\"products_object\",\"uiUniqueId\":\"5ffdb7aa-bc44-4fb8-bc56-41e58f394ae5\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"product\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"d3d8e49d-ecb1-42e5-bc29-70be1e04ab92\"}"}},"FlowDesigner:FDe576a3de1ecaaa1008806ee2e48e3fb4.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"ed48221c-d967-4181-b7f8-c92332c81160\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe576a3de1ecaaa1008806ee2e48e3fb4\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FDe576a3de1ecaaa1008806ee2e48e3fb4":{"products":[{"$0_products":{"number":"String","number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8c393320-3540-46a2-b4ac-22bd891c6b2e\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"3aac5d7d-4c68-49f7-9212-9edba97ebace\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"b1e06e0d-6aa6-4467-805d-d95d49b34b7a\"}"}}}],"products.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"products\",\"mandatory\":\"false\",\"child_name\":\"products_object\",\"uiUniqueId\":\"60691be2-4260-42f6-beec-00cb07d84ba0\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"products_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"63eb25a9-b49a-48f4-bc20-74227d0c671c\"}"}},"FlowDesigner:FDe576a3de1ecaaa1008806ee2e48e3fb4.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"f700fa01-6f70-4bbe-acfd-bc8d4e3c22fc\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe576a3de1ecaaa1008806ee2e48e3fb4\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:48</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a976a3de2bcaaa10ddf5f27df291bfb4</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1701,14 +1735,14 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 18:36:04</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:35:55</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>co_type_name=FDe576a3de1ecaaa1008806ee2e48e3fb4,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=ed48221c-d967-4181-b7f8-c92332c81160</attributes>
+        <attributes>co_type_name=FDe576a3de1ecaaa1008806ee2e48e3fb4,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=f700fa01-6f70-4bbe-acfd-bc8d4e3c22fc</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1767,14 +1801,14 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:48</sys_created_on>
         <sys_id>a576a3de2bcaaa10ddf5f27df291bfb5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 18:36:04</sys_updated_on>
+        <sys_updated_on>2025-06-20 20:45:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1915,14 +1949,14 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <name>FDad76a3de44caaa10eefb5ecda0ac71e3</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>a5232d9a3b4526503841e71864e45a5f</scope_name>
-        <serialized_content>{"FlowDesigner:FDad76a3de44caaa10eefb5ecda0ac71e3":{"$COCollectionField":[{"products_object":{"number":"String","number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"53f7f29f-9039-4d80-872c-d4067da6a94a\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"69d493c5-f2ff-4923-916c-a93f115a1806\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"53b3e68b-0082-4c61-b5ee-e20d984438b1\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"client_assets\",\"mandatory\":\"false\",\"child_name\":\"products_object\",\"uiUniqueId\":\"4832d7b8-8888-4701-abd2-36b555313860\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDad76a3de44caaa10eefb5ecda0ac71e3\",\"child_label\":\"product\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"de039978-eb4f-4947-b597-e0faea4db817\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"d3d8e49d-ecb1-42e5-bc29-70be1e04ab92\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDad76a3de44caaa10eefb5ecda0ac71e3.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"53b3e68b-0082-4c61-b5ee-e20d984438b1\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"client_assets\",\"mandatory\":\"false\",\"child_name\":\"products_object\",\"uiUniqueId\":\"4832d7b8-8888-4701-abd2-36b555313860\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDad76a3de44caaa10eefb5ecda0ac71e3\",\"child_label\":\"product\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"de039978-eb4f-4947-b597-e0faea4db817\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"d3d8e49d-ecb1-42e5-bc29-70be1e04ab92\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FDad76a3de44caaa10eefb5ecda0ac71e3":{"$COCollectionField":[{"products_object":{"number":"String","number.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8c393320-3540-46a2-b4ac-22bd891c6b2e\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"3aac5d7d-4c68-49f7-9212-9edba97ebace\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"b1e06e0d-6aa6-4467-805d-d95d49b34b7a\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"53b3e68b-0082-4c61-b5ee-e20d984438b1\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"client_assets\",\"mandatory\":\"false\",\"child_name\":\"products_object\",\"uiUniqueId\":\"eec7e0ae-97f7-462d-8a0e-4d44cfbc7655\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDad76a3de44caaa10eefb5ecda0ac71e3\",\"child_label\":\"products_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"60691be2-4260-42f6-beec-00cb07d84ba0\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"63eb25a9-b49a-48f4-bc20-74227d0c671c\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDad76a3de44caaa10eefb5ecda0ac71e3.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"53b3e68b-0082-4c61-b5ee-e20d984438b1\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"client_assets\",\"mandatory\":\"false\",\"child_name\":\"products_object\",\"uiUniqueId\":\"eec7e0ae-97f7-462d-8a0e-4d44cfbc7655\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDad76a3de44caaa10eefb5ecda0ac71e3\",\"child_label\":\"products_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"60691be2-4260-42f6-beec-00cb07d84ba0\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"63eb25a9-b49a-48f4-bc20-74227d0c671c\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:48</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6176a3de2bcaaa10ddf5f27df291bfe4</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1930,14 +1964,14 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 18:36:05</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:35:56</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=product,child_name=products_object,child_type=object,child_type_label=Object,child_uiUniqueId=d3d8e49d-ecb1-42e5-bc29-70be1e04ab92,co_type_name=FDad76a3de44caaa10eefb5ecda0ac71e3,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=53b3e68b-0082-4c61-b5ee-e20d984438b1,sourceType=step,sourceUiUniqueId=de039978-eb4f-4947-b597-e0faea4db817,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=4832d7b8-8888-4701-abd2-36b555313860</attributes>
+        <attributes>child_label=products_object,child_name=products_object,child_type=object,child_type_label=Object,child_uiUniqueId=63eb25a9-b49a-48f4-bc20-74227d0c671c,co_type_name=FDad76a3de44caaa10eefb5ecda0ac71e3,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=53b3e68b-0082-4c61-b5ee-e20d984438b1,sourceType=step,sourceUiUniqueId=60691be2-4260-42f6-beec-00cb07d84ba0,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=eec7e0ae-97f7-462d-8a0e-4d44cfbc7655</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1998,14 +2032,14 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:48</sys_created_on>
         <sys_id>6d76a3de2bcaaa10ddf5f27df291bfe4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 18:36:05</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:35:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2172,14 +2206,14 @@ outputs.number_of_products = inputs.product_list.length;&#13;
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-12 23:28:48</sys_created_on>
         <sys_id>f576a3de2bcaaa10ddf5f27df291bfee</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 18:36:05</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:35:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

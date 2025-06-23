@@ -3,61 +3,57 @@
         <agent_type>internal</agent_type>
         <compiled_handbook>```markdown
 - **Step 1: Retrieve Account Closure Request Details**
-  - Use the `Get Account Closure request` tool to retrieve the account closure request details. Provide the record number as input.
+  - Use the `Get Account Closure request` tool to retrieve the account closure request details. Provide the `number` input as the record number of the request.
   - If the tool successfully retrieves the details, proceed to the next step.
   - If the tool fails to retrieve the details, use the `User Output` tool to inform the user: "Unable to retrieve account closure request details. Please verify the record number and try again." Then, use the `Finish` tool to conclude the execution.
 
 - **Step 2: Verify Client Identity**
-  - Use the `Look up Client` tool to verify the client’s identity. Provide the `client_name` and `NDG` retrieved from the account closure request as inputs.
-  - If the tool successfully verifies the client, proceed to the next step.
-  - If the tool fails to verify the client, use the `User Output` tool to display the appropriate error message based on Rule R2:
-    - If no match is found: "Verification failed: Client not found for the provided NDG."
-    - If multiple matches are found: "Verification failed: Multiple NDG entries found for {client_name} with codiceTipoNDG 'PF'. Additional input required."
-  - Use the `Finish` tool to conclude the execution if verification fails.
+  - Use the `Look up Client` tool to search for the client using the `client_name` retrieved in Step 1.
+  - Once the client is found, apply **Rule R2: Verify Client**:
+    - If one match is found, proceed to the next step.
+    - If no match is found, use the `User Output` tool to inform the user: "Verification failed: Client not found for the provided NDG." Then, use the `Finish` tool to conclude the execution.
+    - If multiple matches are found, use the `User Output` tool to inform the user: "Verification failed: Multiple NDG entries found for the client. Additional input required." Then, use the `Finish` tool to conclude the execution.
 
-- **Step 3: Look Up Client Assets**
-  - Use the `Look up Client's Assets` tool to retrieve the client’s assets. Provide the `NDG` as input.
-  - Parse the response to extract the `formatoGenerico` (as `number`) and `prodotto.descrizioneProdotto` (as `description`) for each asset.
-  - Apply Rule R1: Account Classification to classify the asset type based on the first two digits of `number`. Store the results in a JSON object named `${client_assets}`.
-  - Use the `User Output` tool to display the client’s assets in the following format:
+- **Step 3: Look Up Client's Assets**
+  - Use the `Look up Client's Assets` tool with the `NDG` retrieved in Step 1 to fetch the client's assets.
+  - For each item in the `accordi` array from the response:
+    - Extract `formatoGenerico` as `number`.
+    - Extract `prodotto.descrizioneProdotto` as `description`.
+    - Apply **Rule R1: Account Classification** to classify the asset type based on the first two digits of `number`.
+  - Store the resulting list of client assets in `${client_assets}` as a valid JSON object with the structure:
+    ```json
+    { "products": [ { "number": "{number}", "description": "{description}", "type": "{type}" }, ... ] }
     ```
-    The customer owns the following assets:
-    - {description} ({number})
-    - ...
-    ```
-  - If the tool fails to retrieve the assets, use the `User Output` tool to inform the user: "Unable to retrieve client assets. Please verify the NDG and try again." Then, use the `Finish` tool to conclude the execution.
+  - Use the `User Output` tool to inform the user: "The customer owns the following assets:
+    - {type} {description} ({number})
+    - ..."
+  - Use the `Add Client's Asset to the Request` tool to add the client's assets to the request. Provide the `request_number` and `client_assets` as inputs.
 
 - **Step 4: Evaluate Account Eligibility**
-  - Apply Rule R4: Account closure is not allowed if an active loan or policy exists. Check the `${client_assets}` list for any active loans or policies (`type` is `"loan"` or `"policy"`) with `dataEstinzioneAccordo` later than today.
-    - If a blocking condition is found, use the `User Output` tool to display: "An active {type} ({number}) is present for NDG {NDG}. Account closure is not allowed. &gt; Reason: Rule R4."
-    - Use the `Finish` tool to conclude the execution.
-  - If no blocking condition is found, apply Rule R3: An account must be of type 0040 to be considered for closure. Check the `accordi` array for an account with `tipoProdotto.codice = '0040'` and `personaFisica.intestazione` matching the client’s name.
-    - If a matching account is found, extract the required details and proceed to the next step.
-    - If no match is found, use the `User Output` tool to display: "Error: No account found for {client's name} and NDG {NDG}. Need further specification of the desired account." Then, use the `Finish` tool to conclude the execution.
-    - If multiple matches are found, use the `User Output` tool to display: "Error: Multiple accounts found. Need further specification of the desired account." Then, use the `Finish` tool to conclude the execution.
+  - Apply **Rule R4: Account closure is not allowed if an active loan or policy exists**:
+    - If any asset in `${client_assets}` has `dataEstinzioneAccordo` later than today and `type` is `"Loan"` or `"Policy"`, use the `User Output` tool to inform the user: "An active {type} ({number}) is present for NDG {NDG}. Account closure is not allowed." Then, use the `Finish` tool to conclude the execution.
+  - If no blocking condition is found, apply **Rule R3: An account must be of type 0040 to be considered for closure**:
+    - Use the original `accordi` response to check if the account is of type 0040.
+    - If a matching account is found, proceed to the next step.
+    - If no match is found, use the `User Output` tool to inform the user: "Error: No account found for the client and NDG. Need further specification of the desired account." Then, use the `Finish` tool to conclude the execution.
+    - If multiple matches are found, use the `User Output` tool to inform the user: "Error: Multiple accounts found. Need further specification of the desired account." Then, use the `Finish` tool to conclude the execution.
 
-- **Step 5: Look Up Client Related Assets**
-  - Use the `Look up client's related assets` tool to retrieve the client’s related assets. Provide the `account_number` and `account_type` of the identified account as inputs.
-  - Apply Rule R5: List unique account relationships per product. Parse the `listaCollegamentoAccordo` field to collect unique records based on:
-    - `prodotto.codiceprodotto.codice` → Product Code
-    - `prodotto.descrizioneProdotto` → Product Description
-    - `datiCollegati.datirapportosecnew.tipo` → Type (secnew)
-    - `datiCollegati.datirapportosecnew.numero` → Number (secnew)
-  - If matches are found, use the `User Output` tool to display: "Found {N} unique account relationship(s):" followed by a numbered list of the unique relationships.
-  - If no matches are found, use the `User Output` tool to display: "No linked accounts found."
-  - If the tool fails to retrieve related assets, use the `User Output` tool to inform the user: "Unable to retrieve related assets. Please verify the account details and try again." Then, use the `Finish` tool to conclude the execution.
+- **Step 5: Look Up Client's Related Assets**
+  - Use the `Look up client's related assets` tool with the `account_number` and `account_type` of the identified account to fetch related assets.
+  - Apply **Rule R5: List unique account relationships per product**:
+    - If matches are found, use the `User Output` tool to inform the user: "Found {N} unique account relationship(s):" followed by a numbered list of the relationships.
+    - If no matches are found, use the `User Output` tool to inform the user: "No linked accounts found."
 
 - **Step 6: Check for Blocking Annotations**
-  - Use the `Look up Client's Annotations` tool to retrieve active annotations. Provide the `NDG` as input.
-  - Evaluate the `lista` field of the response to identify relevant annotations:
-    - Apply Rule R6.1: Block account closure if an active blocking annotation exists. Check for annotations with `codiceNota.codice` equal to 004, 056, 057, or 484, and `dataFineValidita` later than today.
-      - If blocking annotations are found, use the `User Output` tool to display: "Annotation check has not passed. Found {N} annotation(s):" followed by a numbered list of blocking reasons and their effective periods.
-      - Use the `Finish` tool to conclude the execution.
-    - Apply Rule R6.2: Annotation check passes if no active relevant notes are found. If no blocking annotations are found, use the `User Output` tool to display: "Status: Annotation check has passed. No blocking annotation found."
-  - If the tool fails to retrieve annotations, use the `User Output` tool to inform the user: "Unable to retrieve annotations. Please verify the NDG and try again." Then, use the `Finish` tool to conclude the execution.
+  - Use the `Look up Client's Annotations` tool with the `NDG` to fetch active annotations.
+  - Evaluate each element in the `lista` field of the response:
+    - Apply **Rule R6.1: Block account closure if an active blocking annotation exists**:
+      - If any annotation has a `codiceNota.codice` of 004, 056, 057, or 484 and `dataFineValidita` is after today's date, use the `User Output` tool to inform the user: "Annotation check has not passed. Found {N} annotation(s):" followed by a numbered list of the blocking reasons. Then, use the `Finish` tool to conclude the execution.
+    - Apply **Rule R6.2: Annotation check passes if no active relevant notes are found**:
+      - If no blocking annotations are found, use the `User Output` tool to inform the user: "Status: Annotation check has passed. No blocking annotation found."
 
 - **Step 7: Completion**
-  - If all steps are successfully completed and no blocking conditions are found, use the `User Output` tool to display: "The account is eligible for closure. All checks have passed."
+  - If all steps are successfully completed and no blocking conditions are found, use the `User Output` tool to inform the user: "The account is eligible for closure. All checks have passed."
   - Use the `Finish` tool to conclude the execution.
 ```</compiled_handbook>
         <description>Evaluate whether a customer's bank account can be closed by evaluating active loans, insurance policies, annotations, and account restrictions. 
@@ -86,6 +82,7 @@ Retrieve the following values from the request record:
 - Account Number for Balance Transfer
 
 #### Step 2: Verify Client Identity
+
 1. Look up the client using the client name and NDG provided in the request. 
 2. Execute Rule R2: Verify Client
    - If successful, proceed to the next step.  
@@ -93,15 +90,28 @@ Retrieve the following values from the request record:
 
 #### Step 3: Look up Client Assets
 1. Look up the client's assets using the client's NDG provided in the request.
-2. Parse the response and build the list of client assets by extracting from the `accordi` array:
-   - the value of `formatoGenerico` as `number`
-   - the value of `prodotto.descrizioneProdotto` as `description`
-   - apply Rule R1: Account Classification to set the value of `type`, based on the extracted `number`
-3. Store the list of client assets as JSON in ${client_assets}
-4. Display a message to the user listing the client's assets from ${client_assets} using this format:
-"The customer owns the following assets:
-- {description} ({number})
+
+2. For each item in the `accordi` array from the response:
+    - Extract `formatoGenerico` as `number`
+    - Extract `prodotto.descrizioneProdotto` as `description`
+    - Apply Rule R1: Account Classification to derive the `type` based on `number`
+
+
+3. Store the resulting list of client assets in ${client_assets}` as a JSON object with the following structure. Do not include any extra formatting or line breaks. This must be valid JSON, not markdown or formatted output. The structure is the following:
+
+
+3. Store the resulting list of client assets in `${client_assets}` as a valid JSON object with the following structure.  Do not include any extra formatting, markdown, or line breaks. This must be a valid machine-readable JSON.  The structure is:
+{ "products": [ { "number": "{number}", "description": "{description}", "type": "{type}"},
+...]}
+
+
+4. Communicate the following message to the user using the values from ${client_assets}: "The customer owns the following assets:
+- {type} {description} ({number})
 - ..."
+
+5. Add the client's assets to the request using:
+- `client_assets`: the array created in Step 3
+- `request_number`: the current request number
 
 #### Step 4: Evaluate Account Eligibility
 1. Apply Rule "R4: Account closure is not allowed if an active loan or policy exists" to the `${client_assets}` list.
@@ -130,10 +140,10 @@ Retrieve the following values from the request record:
 ##### Rule R1: Account Classification
 Given an input value `number` (i.e., the `formatoGenerico` field from the asset record), classify the asset type using the first two digits:
 
-- If `number` starts with `06` → return `type = "current_account"`
-- If `number` starts with `68` → return `type = "policy"`
-- If `number` starts with `11` → return `type = "loan"`
-- Otherwise return `type = "unknown"`
+- If `number` starts with `06` → return `type = "Current Account"`
+- If `number` starts with `68` → return `type = "Policy"`
+- If `number` starts with `11` → return `type = "Loan"`
+- Otherwise return `type = "Unknown"`
 
 
 ##### Rule R2: Verify Client
@@ -198,18 +208,15 @@ Then return the statement "Status: Annotation check has passed. No blocking anno
         <internal_name>global.x_mm_banking.Account Closure Evaluation Agent</internal_name>
         <name>Account Closure Evaluation Agent</name>
         <processing_message/>
-        <proficiency>- The agent is capable of analyzing customer accounts, linked financial products, blocks, and system annotations to determine whether an account can be closed or if it is blocked. It provides a structured result with clear reasons and supporting context for closure eligibility decisions.
-- The agent is capable of retrieving client details, including the client's name, NDG, account number to close, and account number for balance transfer, from the account closure request using the 'Get Account Closure request' tool.
-- The agent is capable of verifying the client's identity by searching for matching records in the 'datiAnagrafici' array using the 'Look up Client' tool. It ensures the client exists, matches the provided NDG, and resolves cases of multiple or missing entries.
-- The agent is capable of retrieving the client's assets using their NDG and summarizing them in a structured format. It classifies assets based on Rule R1 and presents a list of assets, including their descriptions and numbers, to the end user.
-- The agent is capable of evaluating account closure eligibility by applying Rule R4 to check for active loans or policies and Rule R3 to verify if the account is of type 0040. It provides detailed feedback on whether the account can be closed or not, along with reasons.
-- The agent is capable of retrieving and listing unique account relationships for the client by using the account number and account type. It applies Rule R5 to identify and summarize unique relationships per product.
-- The agent is capable of retrieving and evaluating active annotations for the client using their NDG. It identifies blocking annotations based on Rule R6.1 and confirms the absence of relevant notes as per Rule R6.2.
-- The agent is capable of searching for client records by name using the 'Look up Client' tool. This ensures accurate identification of the client and supports subsequent steps in the process.
-- The agent is capable of retrieving the client's financial products and assets using their NDG with the 'Look up Client's Assets' tool. This data is used to classify assets, check for active loans or policies, and determine closure eligibility.
-- The agent is capable of retrieving related assets for a client using the account number and account type with the 'Look up client's related assets' tool. It identifies unique relationships and summarizes them for further evaluation.
-- The agent is capable of retrieving active annotations for a client using their NDG with the 'Look up Client's Annotations' tool. It evaluates annotations to identify blocking conditions or confirm their absence.
-- The agent is capable of retrieving account closure request details, including the client's name, NDG, account number to close, and account number for balance transfer, using the 'Get Account Closure request' tool.</proficiency>
+        <proficiency>- The agent is an account closure eligibility expert capable of analyzing customer accounts, linked financial products, blocks, and system annotations to determine if account closure is possible or blocked. The agent ensures compliance with business rules, retrieves client data, presents a summary of assets, and provides structured results with clear reasons and supporting context for closure eligibility.
+- The agent can look up client details using the provided client name to retrieve relevant information for client verification. This capability ensures that the agent can confirm the identity of the client before proceeding with further steps in the account closure process.
+- The agent can retrieve a comprehensive list of the client's financial products and assets using the client's NDG. This capability enables the agent to classify assets, identify active loans or policies, and evaluate account closure eligibility based on business rules.
+- The agent can add the client's assets to the current account closure request, ensuring that the retrieved asset data is properly stored and associated with the request for further evaluation and decision-making.
+- The agent can retrieve and analyze active annotations associated with the client's NDG to identify any blocking conditions. This capability ensures that the agent can enforce business rules related to annotations and provide clear reasons for blocking or allowing account closure.
+- The agent can retrieve and list unique account relationships for a given account type and number. This capability ensures that the agent can identify dependencies and relationships that may impact account closure eligibility.
+- The agent can retrieve the details of an account closure request, including the client's name, NDG, account number to close, and account number for balance transfer. This capability ensures that the agent has the necessary context to begin the account closure evaluation process.
+- The agent can retrieve, classify, and store client assets in a structured format, enabling it to present a summary of the client's financial products and evaluate them against business rules for account closure eligibility.
+- The agent can evaluate both related assets and active annotations to identify dependencies and blocking conditions. This capability ensures a thorough assessment of all factors that may impact account closure eligibility.</proficiency>
         <record_type>custom</record_type>
         <role>You are an account closure eligibility expert. Your job is to analyze the customer's account, linked financial products, blocks, and system annotations to determine if closure is possible or blocked.  
 As part of this process, you must retrieve the client’s data and present a summary of those assets to the end user for review. Once asset visibility is provided, continue evaluating closure eligibility based on defined business rules, and return a structured result explaining whether the account can be closed or not, along with clear reasons and supporting context.</role>
@@ -219,13 +226,13 @@ As part of this process, you must retrieve the client’s data and present a sum
         <sys_created_on>2025-05-14 15:49:45</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>bc3528c9332da2104890955a7e5c7b90</sys_id>
-        <sys_mod_count>116</sys_mod_count>
+        <sys_mod_count>133</sys_mod_count>
         <sys_name>Account Closure Evaluation Agent</sys_name>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name>sn_aia_agent_bc3528c9332da2104890955a7e5c7b90</sys_update_name>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-18 22:07:28</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:09:49</sys_updated_on>
     </sn_aia_agent>
 </record_update>

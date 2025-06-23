@@ -2,6 +2,7 @@
     <element db_object_id="38e7678a3bf1aad0a1e7859a04e45aae" label="Product" max_length="40" name="x_mm_banking_product" type="collection">
         <element label="Account Request" max_length="32" name="account_request" reference="x_mm_banking_account_closure_request" type="reference"/>
         <element label="Number" max_length="40" name="number" type="string"/>
+        <element label="Type" max_length="40" name="type" type="string"/>
         <element label="Description" max_length="40" name="description" type="string"/>
         <index name="index">
             <element name="account_request"/>

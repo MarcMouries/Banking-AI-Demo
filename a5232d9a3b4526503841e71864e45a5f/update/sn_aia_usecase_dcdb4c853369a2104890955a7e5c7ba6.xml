@@ -2,16 +2,15 @@
     <sn_aia_usecase action="INSERT_OR_UPDATE">
         <base_plan>Always follow these steps to deliver the expected outcome:
 
-1. Review the Account Closure request and determine if the customer's bank account can be closed.
-2. If the account cannot be closed:
-   - Provide a clear explanation (e.g., active loans, blocks, policies).
-   - If incomplete customer info is detected, draft a follow-up message.
-3. Determine if there is a retention opportunity and if so, draft a retention letter.</base_plan>
-        <description>Assess whether a customer's bank account can be closed by checking dependencies such as dependent active loans or insurance policies, annotations, and account restrictions.
+1. Evaluate whether the customer's bank account can be closed.
+2. Based on the evaluation result, update the request and notify the customer.</base_plan>
+        <description>Handles customer requests to close a bank account. It uses a multi-step evaluation and coordination process to determine whether closure is allowed and how to communicate the outcome.
 
-Based on the findings, this workflow will either respond with a summary of the closure timeline or explain why closure is not currently possible.
+The process is managed by two AI Agents:
 
-It will draft a response for advisors to follow-up with the customer to explain the status of the request and if it makes sense it will draft a retention letter to the customer.</description>
+- **Account Closure Evaluation Agent**: Verifies client identity, retrieves account-related financial products, and applies business rules to assess whether the account can be closed. It checks for dependencies such as active loans, insurance policies, annotations, and account blocks, then returns a structured result explaining the outcome.
+
+- **Account Closure Coordination Agent**: Processes the evaluation result, updates the request accordingly, drafts a message to the customer explaining the request status, and prompts an advisor for approval before sending.</description>
         <execution_mode>copilot</execution_mode>
         <internal_name>global.x_mm_banking.Account Closure Assistant</internal_name>
         <name>Account Closure Assistant</name>
@@ -22,14 +21,14 @@ It will draft a response for advisors to follow-up with the customer to explain 
         <sys_created_on>2025-05-14 15:06:43</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>dcdb4c853369a2104890955a7e5c7ba6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Account Closure Assistant</sys_name>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name>sn_aia_usecase_dcdb4c853369a2104890955a7e5c7ba6</sys_update_name>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-14 15:43:32</sys_updated_on>
+        <sys_updated_on>2025-06-20 14:35:30</sys_updated_on>
         <team display_value="Account Closure Assistant">847d148933e9a2104890955a7e5c7b3c</team>
     </sn_aia_usecase>
 </record_update>

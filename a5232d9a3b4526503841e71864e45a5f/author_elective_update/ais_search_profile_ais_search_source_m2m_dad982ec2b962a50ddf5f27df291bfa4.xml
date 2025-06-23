@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="DELETE">
+        <exclude_attachments_in_now_assist_genius_results>false</exclude_attachments_in_now_assist_genius_results>
+        <exclude_in_now_assist_genius_results>false</exclude_in_now_assist_genius_results>
+        <exclude_in_regular_search>false</exclude_in_regular_search>
+        <profile display_value="Banking Rules">ded942ec2b962a50ddf5f27df291bf78</profile>
+        <search_source display_value="All Knowledge Articles">64ce118dc30101103f4fcd7b7940dd10</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-19 16:30:30</sys_created_on>
+        <sys_id>dad982ec2b962a50ddf5f27df291bfa4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Banking Rules.All Knowledge Articles</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_dad982ec2b962a50ddf5f27df291bfa4</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-19 16:30:30</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</application>
+        <file_path/>
+        <instance_id>bed3c2091b56b11ce84d2f8dee4bcbd7</instance_id>
+        <instance_name>marco</instance_name>
+        <name>ais_search_profile_ais_search_source_m2m_dad982ec2b962a50ddf5f27df291bfa4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m"><ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE"><exclude_attachments_in_now_assist_genius_results>false</exclude_attachments_in_now_assist_genius_results><exclude_in_now_assist_genius_results>false</exclude_in_now_assist_genius_results><exclude_in_regular_search>false</exclude_in_regular_search><profile display_value="Banking Rules">ded942ec2b962a50ddf5f27df291bf78</profile><search_source display_value="All Knowledge Articles">64ce118dc30101103f4fcd7b7940dd10</search_source><sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name><sys_created_by>Marc.Mouries</sys_created_by><sys_created_on>2025-06-19 16:30:30</sys_created_on><sys_id>dad982ec2b962a50ddf5f27df291bfa4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Banking Rules.All Knowledge Articles</sys_name><sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package><sys_policy/><sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope><sys_update_name>ais_search_profile_ais_search_source_m2m_dad982ec2b962a50ddf5f27df291bfa4</sys_update_name><sys_updated_by>Marc.Mouries</sys_updated_by><sys_updated_on>2025-06-19 16:30:30</sys_updated_on></ais_search_profile_ais_search_source_m2m></record_update>]]></payload>
+        <payload_hash>1701289554</payload_hash>
+        <record_name>Banking Rules.All Knowledge Articles</record_name>
+        <reverted_from/>
+        <source>4bfd511933e926104890955a7e5c7ba7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-19 16:30:30</sys_created_on>
+        <sys_id>ead982ec2b962a50ddf5f27df291bfbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19789070ed00000001</sys_recorded_at>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-19 16:30:30</sys_updated_on>
+        <type>AI Search Search Profile Search Source M</type>
+        <update_guid>ded982ec05962a5057899d3d727de7ba</update_guid>
+        <update_guid_history>ded982ec05962a5057899d3d727de7ba:1701289554</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Banking Rules.All Knowledge Articles">92db82e02bd62a50ddf5f27df291bf18</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-19 16:39:14</sys_created_on>
+        <sys_db_object display_value="" name="ais_search_profile_ais_search_source_m2m">ais_search_profile_ais_search_source_m2m</sys_db_object>
+        <sys_id>42a25249173840368eceec2be97dab04</sys_id>
+        <sys_metadata>dad982ec2b962a50ddf5f27df291bfa4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Banking Rules.All Knowledge Articles</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_scope_delete display_value="">7deed9a6ce4348c0874db603c55ec671</sys_scope_delete>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_dad982ec2b962a50ddf5f27df291bfa4</sys_update_name>
+        <sys_update_version display_value="ais_search_profile_ais_search_source_m2m_dad982ec2b962a50ddf5f27df291bfa4">ead982ec2b962a50ddf5f27df291bfbb</sys_update_version>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-19 16:39:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_suggestion_reader_group">
+    <sys_suggestion_reader_group action="INSERT_OR_UPDATE">
+        <click_in_mode>false</click_in_mode>
+        <context_config_id/>
+        <limit>5</limit>
+        <order>400</order>
+        <section_header>Suggested results</section_header>
+        <suggestion_type>Suggested Result Reader Group for Starter Workspace AI Search Configuration</suggestion_type>
+        <sys_class_name>sys_suggestion_reader_group</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 21:00:10</sys_created_on>
+        <sys_id>1a2114c53456a61035caaf2544823ed9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Suggested Result Reader Group for Starter Workspace AI Search Configuration</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_suggestion_reader_group_1a2114c53456a61035caaf2544823ed9</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:00:10</sys_updated_on>
+    </sys_suggestion_reader_group>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 21:00:18</sys_created_on>
+        <sys_id>9431d4c53356a6104890955a7e5c7b47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x.mm.banking-ai.*.x_mm_banking.account_closure_request_user</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_security_acl display_value="x.mm.banking-ai.*">1e2114c55056a610d16fdc999aff67d5</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_9431d4c53356a6104890955a7e5c7b47</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:00:18</sys_updated_on>
+        <sys_user_role display_value="x_mm_banking.account_closure_request_user" name="x_mm_banking.account_closure_request_user">26b34728336922104890955a7e5c7b47</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

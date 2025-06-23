@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_search_context_config_search_source">
+    <m2m_search_context_config_search_source action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <search_context_config display_value="Banking AI - Workspace Search">922114c50d56a610ebb4618501351cd6</search_context_config>
+        <source display_value="Banking AI - x_mm_banking_account_closure_request">2831d4c53356a6104890955a7e5c7b6f</source>
+        <sys_class_name>m2m_search_context_config_search_source</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 21:00:28</sys_created_on>
+        <sys_id>f6311cc53356a6104890955a7e5c7b9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>m2m_search_context_config_search_source_f6311cc53356a6104890955a7e5c7b9a</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:00:28</sys_updated_on>
+    </m2m_search_context_config_search_source>
+</record_update>

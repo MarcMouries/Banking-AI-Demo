@@ -4,7 +4,7 @@
         <auto_refresh>24</auto_refresh>
         <blocked_field/>
         <case_sensitive>false</case_sensitive>
-        <data_source>kb_knowledge,kb_knowledge</data_source>
+        <data_source>kb_knowledge</data_source>
         <derived>true</derived>
         <field/>
         <label>Banking Rules Default Spell Check Dictionary</label>
@@ -18,14 +18,14 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-19 16:30:30</sys_created_on>
         <sys_id>56d982ec2b962a50ddf5f27df291bfa7</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>x_mm_banking_banking_rules_default_spell_check_dictionary</sys_name>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name>ais_dictionary_56d982ec2b962a50ddf5f27df291bfa7</sys_update_name>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-19 16:33:45</sys_updated_on>
+        <sys_updated_on>2025-06-19 16:39:14</sys_updated_on>
         <type>SPELLCHECK</type>
     </ais_dictionary>
 </record_update>

@@ -2,13 +2,12 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>false</active>
+        <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,timeFromCreateToActivate=3308300000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>27000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build/>
         <copied_from>76a74ff2fba4a6507b04ff4655efdc4f</copied_from>
         <copied_from_name>Email processing</copied_from_name>
         <description/>
@@ -16,21 +15,20 @@
         <flow_priority/>
         <generation_source/>
         <internal_name>email_processing</internal_name>
-        <label_cache>[{"name":"5da4d737-6e4a-4a20-8ce8-6cb87401f06e.from","label":"4 - Get Email Details➛From","reference_display":"From","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["customer_email"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"275e4ef8-c5d3-46e9-b7bd-cf20b2e07e42"}},{"name":"flow_variable.account_number_for_balance_transfer","label":"Flow Variables➛Account Number For Balance Transfer","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["acct_num_for_transfer"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5eb70526-c288-4165-9f17-109878586b64"}},{"name":"flow_variable.account_number_to_close","label":"Flow Variables➛Account Number To Close","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["acct_num_to_close"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"010001bc-5289-4c91-ac57-7a7ef23fab3a"}},{"name":"flow_variable.ndg","label":"Flow Variables➛NDG","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["ndg"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"dfb503b9-68a5-48f8-b431-395522a177f4"}},{"name":"flow_variable.customer_name","label":"Flow Variables➛Customer Name","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["customer_name"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2b8e4e7a-7cad-42c1-a55a-33cdc9652c15"}},{"name":"flow_variable.skill_response","label":"Flow Variables➛Skill Response","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"e54030ef-ccf8-4529-b29f-9c3fb74a4352":["log_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"56ab0e02-baef-4006-8d56-73ee9142c357"}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.accountnumberforbalancetransfer","label":"7 - Execute Skill➛output➛AccountNumberForBalanceTransfer","reference_display":"AccountNumberForBalanceTransfer","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["acct_num_for_transfer"]},"attributes":{}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.accountnumbertoclose","label":"7 - Execute Skill➛output➛AccountNumberToClose","reference_display":"AccountNumberToClose","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["acct_num_to_close"]},"attributes":{}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.ndg","label":"7 - Execute Skill➛output➛NDG","reference_display":"NDG","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["ndg"]},"attributes":{}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.customername","label":"7 - Execute Skill➛output➛CustomerName","reference_display":"CustomerName","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["customer_name"]},"attributes":{}},{"name":"5da4d737-6e4a-4a20-8ce8-6cb87401f06e.email_body","label":"4 - Get Email Details➛Email Body","reference_display":"Email Body","type":"string","base_type":"string","usedInstances":{"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa":["email_body"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"4912ea6b-42a0-427d-a6ca-9cfbfa5fa70a"}},{"name":"cdd78c6c-911b-49a3-972d-43eaf30d7a8c.message_ids","label":"2 - Look Up Emails➛Message IDs","reference_display":"Message IDs","type":"array.string","base_type":"array.string","usedInstances":{"3747de8c-c33e-4f08-b5cb-6a677f648e5d":["items"]},"attributes":{"uiTypeLabel":"Array.String","co_type_name":"FDce4933bf60a800102494899fa1b6c0a6","child_label":"ID","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"id","child_uiUniqueId":"b5034f92-1018-4dc0-b0a6-53dc34919b24","uiUniqueId":"7797f6f5-1ede-4a27-8efa-8fe5d5897a8f"}},{"name":"flow_variable.username","label":"Flow Variables➛username","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"5da4d737-6e4a-4a20-8ce8-6cb87401f06e":["user_id"],"5ccd9cec-e970-4a8b-aa97-c0278e64be52":["user_email_id"],"476ae368-907e-498e-bf56-36c143ed82f7":["user_email_id"],"cdd78c6c-911b-49a3-972d-43eaf30d7a8c":["user_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"73b4aa75-81e9-4a34-925d-62fdfb4b46c1"}},{"name":"3747de8c-c33e-4f08-b5cb-6a677f648e5d.item","label":"3 - For Each➛ID","reference_display":"ID","type":"string","base_type":"string","usedInstances":{"5da4d737-6e4a-4a20-8ce8-6cb87401f06e":["message_id"],"5ccd9cec-e970-4a8b-aa97-c0278e64be52":["message_id"],"476ae368-907e-498e-bf56-36c143ed82f7":["message_id"],"3c359962-984e-4e3c-88fc-2bed70eb323e":["message_id"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"5da4d737-6e4a-4a20-8ce8-6cb87401f06e.status","label":"4 - Get Email Details➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"usedInstances":{},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d6a10c6a-0052-40e0-a0be-89627c7583b4"}},{"name":"5da4d737-6e4a-4a20-8ce8-6cb87401f06e.labels","label":"4 - Get Email Details➛Labels","reference_display":"Labels","type":"array.string","base_type":"array.string","usedInstances":{},"attributes":{"uiTypeLabel":"Array.String","co_type_name":"FD1fa22b8893d5c010e4131564c0f52da6","child_label":"Label ID","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"label_id","child_uiUniqueId":"6b24a02d-1d56-43a3-b464-8c247fbdb0a7","uiUniqueId":"3ff445a5-a40c-453a-a7e0-9ba40ffc03d5"}},{"name":"5da4d737-6e4a-4a20-8ce8-6cb87401f06e.subject","label":"4 - Get Email Details➛Subject","reference_display":"Subject","type":"string","base_type":"string","usedInstances":{"311acd90-7a42-4005-9048-db75cc885085":["log_message"],"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa":["email_subject"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"bd8f5a71-9a96-4ae5-abd8-3ae1d0223997"}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.intent","label":"7 - Execute Skill➛output➛intent","reference_display":"intent","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output","label":"7 - Execute Skill➛output","reference_display":"output","type":"dynamic_object","base_type":"dynamic_object","usedInstances":{},"attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ddde43cc-85e6-45cc-894e-fb6b89308158"}},{"name":"flow_variable.cleaned_email_body","label":"Flow Variables➛Cleaned Email Body","type":"string","base_type":"string","usedInstances":{"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa":["email_body"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"8c65ceb6-f2aa-4209-897b-392762bef80f"}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.response","label":"7 - Execute Skill➛output➛response","reference_display":"response","type":"string","base_type":"string","usedInstances":{"4da737e7-787e-406a-b5a6-bba7cd10342b":["skill_output-0","skill_response-0"]},"attributes":{}},{"name":"flow_variable.skill_output","label":"Flow Variables➛Skill Output","reference":"","reference_display":"","type":"json","base_type":"json","usedInstances":{"074a5cf5-becb-49ab-9d4a-4bee9d31c14e":["condition"],"9b540adb-3229-4d66-8190-1c9a4815e890":["email_intent-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b63826ea-8d2f-4c80-acd6-b76a1cc043bd"}},{"name":"flow_variable.email_intent","label":"Flow Variables➛Email intent","type":"string","base_type":"string","usedInstances":{"074a5cf5-becb-49ab-9d4a-4bee9d31c14e":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ea2b3b0a-22cf-41b4-9a39-a36d80487caf"}}]</label_cache>
-        <latest_snapshot/>
-        <master_snapshot/>
+        <label_cache>[{"name":"flow_variable.email_intent","label":"Flow Variables➛Email intent","type":"string","base_type":"string","usedInstances":{"074a5cf5-becb-49ab-9d4a-4bee9d31c14e":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ea2b3b0a-22cf-41b4-9a39-a36d80487caf"}},{"name":"flow_variable.skill_output","label":"Flow Variables➛Skill Output","reference":"","reference_display":"","type":"json","base_type":"json","usedInstances":{"074a5cf5-becb-49ab-9d4a-4bee9d31c14e":["condition"],"9b540adb-3229-4d66-8190-1c9a4815e890":["email_intent-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b63826ea-8d2f-4c80-acd6-b76a1cc043bd"}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.response","label":"7 - Execute Skill➛output➛response","reference_display":"response","type":"string","base_type":"string","usedInstances":{"4da737e7-787e-406a-b5a6-bba7cd10342b":["skill_output-0","skill_response-0"]},"attributes":{}},{"name":"flow_variable.cleaned_email_body","label":"Flow Variables➛Cleaned Email Body","type":"string","base_type":"string","usedInstances":{"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa":["email_body"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"8c65ceb6-f2aa-4209-897b-392762bef80f"}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output","label":"7 - Execute Skill➛output","reference_display":"output","type":"dynamic_object","base_type":"dynamic_object","usedInstances":{},"attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ddde43cc-85e6-45cc-894e-fb6b89308158"}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.intent","label":"7 - Execute Skill➛output➛intent","reference_display":"intent","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"5da4d737-6e4a-4a20-8ce8-6cb87401f06e.subject","label":"4 - Get Email Details➛Subject","reference_display":"Subject","type":"string","base_type":"string","usedInstances":{"311acd90-7a42-4005-9048-db75cc885085":["log_message"],"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa":["email_subject"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"bd8f5a71-9a96-4ae5-abd8-3ae1d0223997"}},{"name":"5da4d737-6e4a-4a20-8ce8-6cb87401f06e.labels","label":"4 - Get Email Details➛Labels","reference_display":"Labels","type":"array.string","base_type":"array.string","usedInstances":{},"attributes":{"uiTypeLabel":"Array.String","co_type_name":"FD1fa22b8893d5c010e4131564c0f52da6","child_label":"Label ID","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"label_id","child_uiUniqueId":"6b24a02d-1d56-43a3-b464-8c247fbdb0a7","uiUniqueId":"3ff445a5-a40c-453a-a7e0-9ba40ffc03d5"}},{"name":"5da4d737-6e4a-4a20-8ce8-6cb87401f06e.status","label":"4 - Get Email Details➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"usedInstances":{},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d6a10c6a-0052-40e0-a0be-89627c7583b4"}},{"name":"3747de8c-c33e-4f08-b5cb-6a677f648e5d.item","label":"3 - For Each➛ID","reference_display":"ID","type":"string","base_type":"string","usedInstances":{"5da4d737-6e4a-4a20-8ce8-6cb87401f06e":["message_id"],"5ccd9cec-e970-4a8b-aa97-c0278e64be52":["message_id"],"476ae368-907e-498e-bf56-36c143ed82f7":["message_id"],"3c359962-984e-4e3c-88fc-2bed70eb323e":["message_id"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"flow_variable.username","label":"Flow Variables➛username","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"5da4d737-6e4a-4a20-8ce8-6cb87401f06e":["user_id"],"5ccd9cec-e970-4a8b-aa97-c0278e64be52":["user_email_id"],"476ae368-907e-498e-bf56-36c143ed82f7":["user_email_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"73b4aa75-81e9-4a34-925d-62fdfb4b46c1"}},{"name":"cdd78c6c-911b-49a3-972d-43eaf30d7a8c.message_ids","label":"2 - Look Up Emails➛Message IDs","reference_display":"Message IDs","type":"array.string","base_type":"array.string","usedInstances":{"3747de8c-c33e-4f08-b5cb-6a677f648e5d":["items"]},"attributes":{"uiTypeLabel":"Array.String","co_type_name":"FDce4933bf60a800102494899fa1b6c0a6","child_label":"ID","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"id","child_uiUniqueId":"b5034f92-1018-4dc0-b0a6-53dc34919b24","uiUniqueId":"7797f6f5-1ede-4a27-8efa-8fe5d5897a8f"}},{"name":"5da4d737-6e4a-4a20-8ce8-6cb87401f06e.email_body","label":"4 - Get Email Details➛Email Body","reference_display":"Email Body","type":"string","base_type":"string","usedInstances":{"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa":["email_body"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"4912ea6b-42a0-427d-a6ca-9cfbfa5fa70a"}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.customername","label":"7 - Execute Skill➛output➛CustomerName","reference_display":"CustomerName","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["customer_name"]},"attributes":{}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.ndg","label":"7 - Execute Skill➛output➛NDG","reference_display":"NDG","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["ndg"]},"attributes":{}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.accountnumbertoclose","label":"7 - Execute Skill➛output➛AccountNumberToClose","reference_display":"AccountNumberToClose","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["acct_num_to_close"]},"attributes":{}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.accountnumberforbalancetransfer","label":"7 - Execute Skill➛output➛AccountNumberForBalanceTransfer","reference_display":"AccountNumberForBalanceTransfer","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["acct_num_for_transfer"]},"attributes":{}},{"name":"flow_variable.skill_response","label":"Flow Variables➛Skill Response","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"e54030ef-ccf8-4529-b29f-9c3fb74a4352":["log_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"56ab0e02-baef-4006-8d56-73ee9142c357"}},{"name":"flow_variable.customer_name","label":"Flow Variables➛Customer Name","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["customer_name"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2b8e4e7a-7cad-42c1-a55a-33cdc9652c15"}},{"name":"flow_variable.ndg","label":"Flow Variables➛NDG","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["ndg"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"dfb503b9-68a5-48f8-b431-395522a177f4"}},{"name":"flow_variable.account_number_to_close","label":"Flow Variables➛Account Number To Close","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["acct_num_to_close"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"010001bc-5289-4c91-ac57-7a7ef23fab3a"}},{"name":"flow_variable.account_number_for_balance_transfer","label":"Flow Variables➛Account Number For Balance Transfer","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["acct_num_for_transfer"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5eb70526-c288-4165-9f17-109878586b64"}},{"name":"5da4d737-6e4a-4a20-8ce8-6cb87401f06e.from","label":"4 - Get Email Details➛From","reference_display":"From","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["customer_email"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"275e4ef8-c5d3-46e9-b7bd-cf20b2e07e42"}}]</label_cache>
+        <master_snapshot>00357bf43352a6104890955a7e5c7bfd</master_snapshot>
         <master_snapshot_digest/>
         <name>Email processing</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id/>
+        <remote_trigger_id>b835bbf43352a6104890955a7e5c7be0</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
@@ -38,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4e9c4fe833a922104890955a7e5c7bb8</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>Email processing</sys_name>
         <sys_overrides/>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
@@ -46,13 +44,73 @@
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name>sys_hub_flow_4e9c4fe833a922104890955a7e5c7bb8</sys_update_name>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-18 16:44:29</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:33:33</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=4e9c4fe833a922104890955a7e5c7bb8"/>
     <sys_variable_value action="delete_multiple" query="document_key=4e9c4fe833a922104890955a7e5c7bb8"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <published_version/>
+        <run_period>1970-01-01 00:00:10</run_period>
+        <run_start>2025-06-23 12:00:00</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b835bbf43352a6104890955a7e5c7be0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:33:33</sys_updated_on>
+        <time/>
+        <timer_type>0</timer_type>
+        <trigger_definition/>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:b835bbf43352a6104890955a7e5c7be0^sys_idNOT IN7035bbf43352a6104890955a7e5c7be1"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:b835bbf43352a6104890955a7e5c7be0</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="Marc Mouries">ac13175b937142102494bcd97bba1041</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period>1970-01-01 00:00:10</run_period>
+        <run_start>2025-06-23 12:00:00</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('b835bbf43352a6104890955a7e5c7be0');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:59</sys_created_on>
+        <sys_id>7035bbf43352a6104890955a7e5c7be1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:33:33</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">b835bbf43352a6104890955a7e5c7be0</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=4e9c4fe833a922104890955a7e5c7bb8"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=4e9c4fe833a922104890955a7e5c7bb8"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=4e9c4fe833a922104890955a7e5c7bb8^sys_idNOT IN8a9c4fe833a922104890955a7e5c7bba"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -70,7 +128,7 @@
     <sys_hub_flow_input action="delete_multiple" query="model=4e9c4fe833a922104890955a7e5c7bb8"/>
     <sys_hub_flow_output action="delete_multiple" query="model=4e9c4fe833a922104890955a7e5c7bb8"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=4e9c4fe833a922104890955a7e5c7bb8"/>
-    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=4e9c4fe833a922104890955a7e5c7bb8^sys_idNOT INd29c4fe833a922104890955a7e5c7bfc"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=4e9c4fe833a922104890955a7e5c7bb8^sys_idNOT IN5ab794093396a6104890955a7e5c7b83"/>
     <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
@@ -80,14 +138,14 @@
         <published_version/>
         <remote_sys_id/>
         <sys_created_by>Marc.Mouries</sys_created_by>
-        <sys_created_on>2025-05-13 14:35:02</sys_created_on>
-        <sys_id>d29c4fe833a922104890955a7e5c7bfc</sys_id>
+        <sys_created_on>2025-06-20 21:28:49</sys_created_on>
+        <sys_id>5ab794093396a6104890955a7e5c7b83</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-18 16:44:28</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:33:20</sys_updated_on>
         <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
-        <trigger_inputs>H4sIAAAAAAAA/3VSXUvkQBD8KzLPa5jNerLm7eBYuAcVVHwRCZ2Zzm7DfN1kZjUn/vfrSeIiyoW8dHV3dVUxT2/CQIdGNOIuuzPvxEqQSxgdmIcxION7QxpbDQnbRBZ5wILj0sdRNClmXIk+evuANhgeEk0PZmDQR41RNGspV+IIJuP9OPzWTMgMDmyhjtm1VE5OfQZqWf84l5fnsj6T20ZK/rmrDmR0RCeap+eVCBB5OxXuty8tKvRXNfRKX12oTc2flPX2Yt1dbrp1rTeAuGXCb5a/6kn/s/7ZFL4mdBr1yfG3XCKCvnVmPE0cONs5AQuvA/3FhSpij+xC4dw8la2mgVMdZ1gdPCm8DYlY9IQk6Myyo7zJ1t3MRrjW2EM26XFJlpE8MB+GormoWCT19wf/cvdxcEduMrg0jVdgThWkFKnLCYcSPRq0TNRaCIHcvg3RH2laZi22mrKreuNf+OhAe1eBKsIrjgiqHeO/JvgRIhUX10zDy++T+/ZPLndnH4vidjbNA0soO0KzvKdBRQrpJx84fjzA9+d/09zDi9wCAAA=</trigger_inputs>
+        <trigger_inputs>H4sIAAAAAAAA/3VSXUvkQBD8KzLPa5jNerLm7eBYuAcVVHwRCZ2Zzm7DfN1kZjUn/vfrSeIiyoW8dHV3dVUxT2/CQIdGNOIuuzPvxEqQSxgdmIcxION7QxpbDQnbRBZ5wILj0sdRNClmXIk+evuANhgeEk0PZmDQR41RNGspV+IIJuP9OPzWTMgMDmyhjtm1VE5OfQZqWf84l5fn9eZMbhsp+eeuOpDREZ1onp5XIkDk7VS43760qNBf1dArfXWhNjV/Utbbi3V3uenWtd4A4pYJv1n+qif9z/pnU/ia0GnUJ8ffcokI+taZ8TRx4GznBCy8DvQXF6qIPbILhXPzVLaaBk51nGF18KTwNiRi0ROSoDPLjvImW3czG+FaYw/ZpMclWUbywHwYiuaiYpHU3x/8y93HwR25yeDSNF6BOVWQUqQuJxxK9GjQMlFrIQRy+zZEf6RpmbXYasqu6o1/4aMD7V0FqgivOCKodoz/muBHiFRcXDMNL79P7ts/udydfSyK29k0Dyyh7AjN8p4GFSmkn3zg+PEA35//ARljGbvcAgAA</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>run_once</trigger_type>
         <updation_source/>
@@ -108,10 +166,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-13 14:35:02</sys_created_on>
         <sys_id>1e9c4fe833a922104890955a7e5c7bfa</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-13 16:13:55</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:28:50</sys_updated_on>
         <ui_id>5da4d737-6e4a-4a20-8ce8-6cb87401f06e</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1Ty2rcMBT9laK1bTzj9+wKIRBoGmiabEIwelzNCGTZkeVJpsP8e6/GdkKGtE1LF10UrXTuuY9zpHu3J0qQFak4r6qiTLNEZDxexDwVUggAKQu2WHJJAmJoA8gcerA15gRkS/Xgkf1e6vax3lKrKNMQeYYnHw5IEqrvNN3dvofLN0oLC4as7u4D0lGLAQeWrPYnIbfroNaUgcaS184qs8b09wqZE2+w94eLs7ek+QYI9HPp1go/xyIg8OTACMBWkuoeAtJQI6hr7Y6snB0QsEDFldG7Z8ZGGYfFiOc+9eobVi7jOPZMCaiJwxh9vtaTaSPMN63icNU51ZoRcd66KdjqoTGfx/m93SDpoN1sNyIoqhbQ+aH9GNNM8nrTPn6ZG54rc9Q3BXXLqX6+UYcusMFB7x9iUF9PvBmRT6evARoa7Fg3tOsQqTvbbtWxCw7dRGuNl+j4GQT0am0iyr3CCM2k0TniZ0f4dvopl1gGk327G6MeBrjwr01ZArzkVciLAsI0lzJkizgN5VKwLGbLgiaSHI7W1g+DFzWaNNlRj44ioedWde4jjrCFSfkhmHej/NmXEtnLB2qg7+kaTtcjKdJCQMlDniQ4pYzLkGWchTnNi0LmaQmZiJSD5u2N+b30v7JEv1Y8J16Okl/t0SsbfrBKy/+r9G+tUsnjJE+zOGR5ycI0XbKwrDgNCwYVzRKJh/3xKt1/B1VzMLtoBgAA</values>
@@ -131,13 +189,13 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-13 14:35:02</sys_created_on>
         <sys_id>529c4fe833a922104890955a7e5c7bf9</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-13 16:13:55</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:28:50</sys_updated_on>
         <ui_id>cdd78c6c-911b-49a3-972d-43eaf30d7a8c</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+2Y227bOBCGX8XQdRiQIkWRuWsTFCiwTYBN25sgEHgYJtqVJVeW0maDvPuSknyIk7jepnHdheEba8TDz5lvSI4u7qLcRkeRIthh4qjVsXYpxoI6FTsMWEtOpGPRQVSqMfiW7RTqzPc5iG5U0QbL3Z0rqq/ZjapzpQs4DC1C4/t738jm00mhbj9v0tZc54WtoYyOLi4Poomq/YsG6ujobuVVczuBrFAaCj/keVPn5ZXvvulCZh0/+blH70+eWlqYwBums6Gr2gYd5CCCbw2UFvxUThVTOIjGqrSqqerb6KipW2+oQdmzsridt7jOy8YPFoW236b5P35kgTEOLR34NRno384fs8FpvdlcV7mBs0mTV2VvaYLrhpdV0Y7L015/cDc41RbNzN3e4heVWZgE0UHGoMmdX1df/5xN+C4vu/UNL4vKqGL+pBrvBd02MA2BaPOPK77pLX+sRgMKGPsZs7GaTLwlm9TVTd7N4kWPD68K/3DYwWBhml+Vh8qEFR56Z6rDd95+0pk/D6R88MP4zmG6T2X+pYX3IdoSnDZcU4Sl4IhxxZDE3P/TloGjIF2aRveda7MvbVhU76TBHVnvUd9gaup80rzxEm5gWPn9wZAbXK5FSi4AaqpsKS8e0/+TGN9A0Kzjx2pV3TNox+vRHix7trfHNsZOa5UoBDYmiFnNkLLEICqkEdQKAOZem21Y0OPqarwLdMMS3e+8pscKnyGc7gnfMcJ5qpVOLEEJ09jv2UCRD3aKuFUypkoxF4ufQjh7FidMF/wo51F9JcRPVAPLgH9H0azbmyDpCYUD4l0YMtuPPWDOfhrm7HeH/IF7HoI+xGMrmGuXSG6IRCSmzl9SuEYaJxpZHjMGhGtI+Isxj8k6qEiygEiDq2rYAucbSJp1e9tpekrjGtKTPek7RnostBCcxSjFid/QuXBIaxkjATRNE0qN0a9OulpQ1NHlC7oV1teQbW9919yEv3k5aZv3G07YC7Pr2tHAe+/UftSES6awsJr635OX+E6CD/TF3VKtPcRlqFW7uvkJb629YaWES/Hs1Fjta+T/0y0rjROjfawRj5MEMYaNv2WlMbKJZdIpaglPNkjKyzm9ZRO+2RSDQ4eUyfoQZH7f7qmbznE/N1XvjTK7Gqu8yKaT6m8IU647SPphR8fdsBseKcvkds5+gO7ydjDA+1D8AmL+y46WPt1ni0BodFqVMELo4RY2yMQhKgPOx/+9OwndV1KHLOXOGH5F9sz34CjsFVs7ugxllIRTK7U+S0gMSCSGIU10ImRiiFHxy2uRZO0JwResTlv9F5hmK/X290XNO85VPZL5zGmQ7ovuHTsOqDVOcp4iRTlBzEiOFKYCSSlTEMoaps2LQU/XM6UXBBmzlY9KGwiadTw+XlX3DNtiz/aOsZ1oSbRgDFHiUsRE7JBIbYxiS8AlVJpUv3wTX48Sw0tV7E7A3SmaF9rLdOu1eMs93juGt9IyVTimyMaeccZjjRT4O71LNSUGUrBcvjbeSx+SfHzzcTvOynasfVFYuaxqG1+xLiFP8GPoO9uPYR9Kj6vOL5tKnfX80GsdnXZaR2dudDbT+v3VDAmSz2ef3Z/xb5cifUB628kTcXmt/Fn47mECLSK6lQwiSiqBtUbYGoGYJhxJX/6iVIS8Ioxy+PHLz+W/nkbkv00hAAA=</values>
+        <values>H4sIAAAAAAAA/+2YWW/bOBDHv4qh5zAgRYoi87TdZAsU2CZA2/QlCASeiXZ1uLKUNhvku+/o8JnE8TaN6y4Mv1gjDvnnzG946OIuSG1wFCiCPSaeWh1qH2MsqFehxw5ryYn0LDgICpU7aNlMXJWAz0Fwo7KmtViXl/ktmG9S4ya/XeUqzQ5NmUMTm07Gmbr9/HxLc51mtnJFcHRxeRCMVQWj1a4Kju5WXtW3Y5dkSrsMOvxYV2lxBe6bTmLqeA4iRu9OHptWOwAYJtOuy8q2OshB4L7VrrAOhvIqm7iDIFeFVXVZ3QZHddWAoXLKnhXZ7azFdVrU0FnQtv02Sf+BngXGuG3pHczJuP7t7DEZQtabzXUJkTob12lZ9JZa6WzwMWXW5MVpr78NtvOqyeppsMECk0qsG7eiWxmDJv/xuvz6YTrg27To5je8zEqjstmTqiEKuqndpE1Ek35aiU1v+XM1Gy5zOYyY5Go8BksyrsqbtBsFROeHVxk8HPqs/ArqJulVcahMO8NDCKY6fAv2k878WVVpO9330A04t8OdF+mXxr1rsy2d14ZrirAUHDGuGJKYwz9tmfPUSR/HwX0X2uRL006qD9IQjqSPKDSYmCod129Awo0bZn5/MNQFl2uRknOA6jJZqImH7P8gxjcQNHX8VK6qewLtcD3ag2XP9vbYxthrrSKFnA0JYlYzpCwxiAppBLXCOeZfm203p8dXZb4LdLsFut9W3b6xovAJwume8B0jnMda6cgSFDGNYc12FEGyY8StkiFVivlQ/BDC2ZM4YTrnR3lA9ZUQP1G1WwT8GUVTtzetpEcUDoh3aUhs3/eAOfthmLNfHfKl8CyDPuRjK5hrH0luiEQkpB4OKVwjjSONLA8Zc4RrF/EXYx6SdVCRaA6Rdr6s3BY430DS1O33TtNjGteQHu1J3zHSQ6GF4CxEMY5gQefCI61liISjcRxRaox+ddLVnKKOLrjQLbJ+fvrhjzcnD4mf2ddwb2+h49S0f9Ni3NTvNpTTy7br2tG2GvqQ971GXDKFhdUUfo8e8TsJgMHF3Wxyd3dD1oab7P198Ggs156/YsKleHJorPY36P/TGSwOI6Mh14iHUYQYwwbOYHGIbGSZ9IpawqMNSvZyRm8BxVKobAjoUDJJn4IEVvWeuskM94+m7KNRJN23oGQyLv927ZDrtpm+29Fx1+2GG84iuV2wl9BdXCwGeJfFzyHmP23j6ct9OgmERqdl4UYILW/mg0zcZmXA+fi/u5PWfaV0yELt5O5nVM9sDQ7atWJrG5uhjJJ2T4stVAkJHRKRYUgTHQkZGWJU+PKbSrR2h+BzVieN/suZeiu38edFzRxnqh7IfGI3iPdX8h3bDqg1XnIeI0U5QcxIjhSmAkkpYyeUNUybF4Mer2dKzwkyZiufnDYQNHU8Pl5V9wTbYs/2jrEdaUm0YAxR4mPEROiRiG2IQkucj6g0sX75Ir4eJYYX7rg7AXenaHYNX6Rbr8Vb7vHeMbyVlrHCIUU2BMYZDzVSDs70PtaUGBc7y+Vr473wmQnym+ZNnhRNruFSWPqkbGq4sS4gT/BD6Dvb92HfXj2uurhsKnXq+b7XOjrttI7O/OhsqvX52QwFks5Gn56f8S9XIn1CetvJI3l5rfqZx265gOYZ3UoFESWVwFojbI1ATBOOJFx/USzauiKMcvf9h5/LfwGRckH7ZyEAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Remove Label From Email">ba9b75b0db6fb30091042f0e0b961947</action_type>
@@ -154,10 +212,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-13 14:35:02</sys_created_on>
         <sys_id>5e9c4fe833a922104890955a7e5c7bfb</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-05-13 16:13:55</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:28:50</sys_updated_on>
         <ui_id>3c359962-984e-4e3c-88fc-2bed70eb323e</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1WWW/cNhD+K4aelwtKpCjKTw3gBjDQOEAc58UxBB6jNVFd0bHJduH/3qGkXcdHNtukMFogb+Jwzo/zzeh6GzgbnAYsSnUSa2q1yDWjNA0pj3IKVKciTLkKFkGlSkDNoYM2g1K5IkPLRbBWxeDlFsq63ODl2hnoflt5jaWpS1SxrmsKtfnwfU1z6wrbQhWcXt8sgka1GLOHNjjdPrrqNw1khdJQoMPLvnXVCs2PLWVneIVJnJyffbs4HwbF3S5A3VqfTbgI4EsPlQUMmKuig0VQqsqqvm43wWnfDihoQdm3VbHZa9y6qkdngdf90rm/0LOklHrNHLAyA9Pt/pjNwE1ic1sjXm+b3tXVJOmVLmYbUxdDWV1MVXjIIVdD0e8gRwmWlllofNI+jTmn/PK2/vxuF/C1q8b65suiNqrYn1SPKOihh84/x+DeP8Jmkvzx+E2ggBIjZqVqGpRkTVuv3RgFky6XqwIPy7yoP2N2nVtVS2V8hUsEUy1fo/xsFH9QrfPlvkE3aOzDXVXu0wDn45uHIld5SAmT1hAuqSDaWiAmtYZLSbUUPLgboc0+Db6oCaQZjmxCFBU607qmf4UprGGu/G4xcyRKY5OHnIfaosuQSiOx0dIEQ2ij9VccKaHr1AoeEmS7ZQlPLEhDDGNAeE4l0bHRRCiRJLngEmK7dD2Ud3dPWfNPzf8NKh1R8c7wzVTyAzY9gOEbVIp+Uem/RaWUaStEyElorSJcgCWaS0FCBRRAxCqN4aepFPIwDKWyfkaz5PGMVvy+h1pcFuu5P7NRds+oq4t3v786+zhQyqxvlKekeUbjAC/sBgM44z9d1Qz9+ZGpjiXZg3o6Rr3pOSav1mgmwWsz9mRJ5cJ79Slgg1xvvxoh84s+2FMj3Z9B+/CWpGEkgAqrI/Z0S8b8u1vy1378H5Ga2VyaJJZE8EgSTnlCUisiZDZwaiWwPE6PIPXNvocrpEylihnQiZ0zfTLcQPgqPew7/tLUExRVNv7sZV1T/zkOkQOb6GzydvL+3tuxo2PnYsT65GIaGgfmydzFz+Q/9zM73M+z5OUaesz6xVt6Px6DeZS+SOtGUsRgDP7rhCkjPI4owRUliFIqlzZJIx7nP7yPbv4GnGyl+wANAAA=</values>
@@ -167,7 +225,7 @@
         <action_type_parent display_value="Execute Skill">d88205df7f521210f465c3b76d866563</action_type_parent>
         <attributes/>
         <comment>Extract Intent and Data from the Email</comment>
-        <compiled_snapshot/>
+        <compiled_snapshot>30468d977f921210f465c3b76d8665c1</compiled_snapshot>
         <display_text/>
         <flow display_value="Email processing">4e9c4fe833a922104890955a7e5c7bb8</flow>
         <generation_source/>
@@ -177,10 +235,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-13 16:13:55</sys_created_on>
         <sys_id>8333a7282b692210ddf5f27df291bf45</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-09 15:12:37</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:28:50</sys_updated_on>
         <ui_id>d7d0337d-43ef-4e8a-adaa-1702cb8e44fa</ui_id>
         <updation_source/>
         <values>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</values>
@@ -190,7 +248,7 @@
         <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
         <display_text/>
         <flow display_value="Email processing">4e9c4fe833a922104890955a7e5c7bb8</flow>
         <generation_source/>
@@ -200,10 +258,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-13 19:08:33</sys_created_on>
         <sys_id>fc3b4430336162104890955a7e5c7b00</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-13 20:51:29</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:28:50</sys_updated_on>
         <ui_id>924211e1-9a78-4c2d-ad05-488902edabb9</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VTW/bMAz9K4XPTuY0H05zGzDkthbYhu7QdQIt04lQWXIlOW0W5L+PsuwkXdcuKwZ0Awb4In48PZJP9NUmEnk0izAdwmQ4HI+HgyQZ0pcVg/xskJwhH0/TMY/iSEGJFOnA3jAHmUSyrUDW3njPypJloG6EWjDgXNfKMS61rQ0yg7c1WkfhubCVhPXl72XxpZC5QRXNrq7jqAJDRByaaLb5weXWFTIJGUoC/+Qpnpx70vHRNT5IfqJmf0tjoyNTAV+b3BNK4gjvHaoc6b4CpMU4KkHl4LRZRzNnajIYhPxCyfUuYimUI8DIx95b8Y3Qp4mPK5BK4xh8uyNruxjMfKkFx4vKCa2CJfAMTi3rUp2HInz/sYBauq7/ZKkt4WHlKXsSLaPi41LffegunAvVVNc6peYgdydwzoisdmj9PDIgvI6A7xpdgRJLAmclVJUfdGX0SjSAxK/sLyQd+oXUd0TEioXqA/fF9Klr0J+T/V1jvgQjPPB7gqHkbdMRdlt7LqG2tgoWGkEBlhtRubcEt8KW8DZuBX/6rBgm2X74hUCZs0bp9kDyvLZOl2gaCXypCSHfbJoyVi3T/oOQ7faryhc/DyQHuekFOKbqkjndvIInULuHQpEZYXfBhwCFJrsBZWmCR4H4hAwkeHl1iQS4KwBLELJDGucwytNh2pvgCHojOE16U47T3oRn03SUDIpkQgM1utxuH7/5/207rm0vXHpYUrMdnoR2x0drvQOYe7GHbPvkE+g2YHtZcOy34OD5LdhajlmDk3GSvNImDLv6xYvwdZbewX/qF+uvKJ6TRJruZ38Hwh2sveTxk26QXy5ZavSbeQtxLLcu+XMg95BqK89Ma4mg9ro8/WO6HP2jv+e/61d8/R0CGfeifQoAAA==</values>
@@ -228,10 +286,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-13 14:35:02</sys_created_on>
         <sys_id>169c4fe833a922104890955a7e5c7bf7</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-18 16:44:28</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:33:21</sys_updated_on>
         <ui_id>3747de8c-c33e-4f08-b5cb-6a677f648e5d</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6VSTW/bMAz9Lzonhj+CJM6twFCgh61AV/QyFAYt0YkwWdL0kdQz/N9HxU429LqTzUfy8T2RIzMx2Bj8q3nwXh41O/x4XzGpE0b/I9PQIzswGbD3bMXOoGKKx5ELsdvzLV/XRdGuNzVU63pXivWmQuiqXOxgz7MevYcjNlL4aaJ2Ib1VMLz9Hws/SSUcLmItONIY0LHD+CkVBouNghYVDXtBbpxIJqSgsKhFVxd5zatyW5V5Xu43Rbut2qIUFaDYUt2t82kx/+ktEjuF7s5Ln6SizFcMPwJqgTSoA+VxxXrQAoJxAzsEFwlwCOJZq+FecZI6EB1LtR9e/ibuIs9TYYfkiOOcvIfN8pgzzE9Gcny2QRo9IwFatfRwo2Kvv83y0xqwg6jCbQ2ERE98aJPmpGKR1H0/mcvLbeCj1Fd/S1IZDuoeQQhOtjGgT2tAhT0RNT1YK/Wxsc6c5bWZtPTZUVGQdcpcaGg6uwx4Ep7RE0H2SPiXK/wGTiYXX4mGmqer++ZXTHNnH4viZjZNBZ47acMD0Z1xETe9p7udmfx8GAK59DTwNWFPt2tPiYGWLPm/0MW4n0nqX2z6A/n6Ab43AwAA</values>
@@ -255,10 +313,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-04 12:03:28</sys_created_on>
         <sys_id>60ec3fe333b5e6104890955a7e5c7bc1</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-18 16:44:28</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:33:21</sys_updated_on>
         <ui_id>81961053-0f49-411f-961a-24ca4e0e77a7</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VS28aMRD+K8inVoLNljfkUKWPSJHaRmpoLt3I8tqzYNVrb7w2hCL+e8f7AESl9NgLXLC/eX3zeUa7I8a7wrtyYW7KUi41mf986hKpA4bnHdEsBzInXAHTICjkTCqaGrElXbJmygcjHoUsC8W2j0eEr6QSFpqMBbOYyIEl892ZyW0LoIqloDDwwVmplxguBd7GQ+CDDAaDQTqC8bt4OJ3Fs9GITWDEJykbol8b+LEm2PkcCHY+1ARfIx/Koq1sCxorAru4S+DFgRaABDKmSuiSnGnBnLHbA2KBiXutjsBKalf3nbOXUv7G1NM4joNnBtgqb1Q5XGmjWCuWkRzuCyeNrhHHUtUqaZTP9be6l6A1ZMwrd6K1LzEfFIF1oNFwyh5WZvO9LXgrddVgY1SGM3W4MYcypN5BGd7Hy8WZODXy5fyRQEGOFWnOigIRWlizllUVJJ1HS4WXKFNmg+zCdEWMhw4jVJNFt4h/quBHZmVo9yumweBQ7oeWzx7uwhBM+XjEIR33sj5jvWE/nvWms0naG8z6k3E/hWwaZ2RfSUuffWiqFqmRg9aKokPJrSzcDVJYY3POemixaij/HhJEX4vB+bedo3sn8XE8EJ1M0Ko/OqR0Ca5JKMDhXxkd/a8TbcF5q09yRBZwKDi8uUoS+z5J9NWyW+XtTxL86fr49prs9/unsIC1cPWqVivzj6m/rOxlZS8r+x9XVgCXJQq6COrdtd/ZYNji6Et+Cm2M/RWe4ojt/wAuURLbsQcAAA==</values>
@@ -282,10 +340,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-04 20:22:31</sys_created_on>
         <sys_id>ba1fedb72bb16210ddf5f27df291bfa6</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-18 16:44:28</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:33:21</sys_updated_on>
         <ui_id>29a12dd2-2272-45e4-aaf5-943eb2ae7900</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1WTW/bMAz9K4JOLZYYjtMlXXoqMBTosDVA0/WyFIYs0YlWWXIluW0W+L+P8kebdF/AzrmZFPn4+EQR3lJT+bLy7sacOydXms6+3Q2o1MGH31uqWQF0Rt29VCptg+mAPjJVBTd+CulKxTa3rx6+lkpY6LBKZhHCg6Wz7ZsjvykhVSwDhYmfFvMrTJYCv3MBWTKajpMsG02SUSxE/j5PpiJPPoyyPM8xrk9bBGJk3hP7Pd1QCL3fndFoGSsCm3hA4dmDFoAlc6YcDGjBtGDe2M2LxwITc61eHWupfdtnwZ6d/IHAJ3Ech8gcsDXeqfBipp1CvThGcpiXXiKXxuNZpnrljKoKfdX2ELSFnFXK72hbOcSDMrAONDpO+WJtnq77ghdSNw12h8pwpl4s5r2VWeXBhfuo5M2eNK39ef9KQEGB1dKClaXUq7S05lE2FZBwEa0UGlGuzBMyCzMUMR66i1BJFl2g/2PjvmVWhla/IAwmh2JftXyo4DJceTYZnyYTYMNTkeTDE34aDxkXk2E2nbAR5/HJOBO0bmRNH6rQUCtQJ0XaqokBjltZ+nOk8IiNeVtB7wsN7w1GsP8SjVNuSZNwDa402sHCW7Ks4ngsSC7Spr90mqbwDBwVTZvYqAWPbJdzttS/4AxIYQSodmoxwNsN2S412Y/qS4VriPAZOTh6y+b4LGTtgP0rJ2piOwFCdk0483xNjuC4pWDBV1aTLQFrjZ2RJb1gUoEg3pAGsCVJ+v5CBHlHEBmcYysgdUBd6g5nt1Fa1/VdWB7tILQLpnnwf3y5h0VzWDSHRXNYNP+1aARw6XBAbsI0XPb/NOFgg89X8l3Xk7H3YbReffVPuh19uh0JAAA=</values>
@@ -309,10 +367,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-13 14:35:02</sys_created_on>
         <sys_id>d69c4fe833a922104890955a7e5c7bf5</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-18 16:44:28</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:33:21</sys_updated_on>
         <ui_id>41e14e38-14ff-44af-8bc6-811110258397</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VW2vbMBT+L3pOjOPYTZynFkah0K6wZn0ZxRxLx4mYLLmSnDQL+e878iUt2WDvo2/Wp6PzXXSEj8y0vmm9W5sb5+RGs9WPlwmTOmD0fWQaamQr1jq03eeE7UC1ARJYm/pA+E5ydNebGqSKuKmpREjXKDg8/7uSb6USFgfeBixxeLRsdbzY8ocGCwUlKmr45K3UGzouBa14kvO0wuV8DnmSzOJ0mcd5lsECM74o+YzqxoMfbPxpLFAQ4sbmxoqgJJ4wfPOoBRJZBcrhhNWgBXhjD2fEIohHrd6BrdSeurFQ/ObkL2q9jOM4VFZItjj2u+dlMaTWw3xrKKzHxkuje8RDqYYz3Ki21l97ByFvrKBVfsybELJVCGyC6iBj0FQ9bc3+20h4K3VncNhUhoM6r8BTDGXr0YW7aOX6Ipweub+8EFRYE2NRQ9MQUjTW7GTHQqLraKNoEVXK7EldmLcIeHAYUZoQ3RL+pYOfwcpg94Ha0OFA913L1xbvwoUv5mUKsMimyxnm0xTm6TRPMjG9SipRlWmZXtGln7poi9c2mOpDGuIo+kSpwHErG39DEnY4OD+9hAnv2fsX0M3YXwfm8yV8voT/+yUI5NKRqnWQcDf+FcLGgUZF8o/Q3tifwc87dvoNM61M2F8GAAA=</values>
@@ -336,10 +394,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-13 19:06:28</sys_created_on>
         <sys_id>eebac4fc332162104890955a7e5c7ba3</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-18 16:44:29</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:33:21</sys_updated_on>
         <ui_id>074a5cf5-becb-49ab-9d4a-4bee9d31c14e</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1U22rbQBD9laBnIXSJTOO3kBIotA00IS9tEKPdkb10tavuxY5r9O+d1cU2jUNL6GPftGd2Zs45e9A+0t513tkHfW2tWKlo+fUpjoQKGH3vIwUtRsuIacWFE1pVAxBHG5A+FOiTC9tJ2D0eEbYWkhucpnVgqMehiZb730pu12EloUZJjffOCLWidsHp1KTQZFcsY0W+KPI0zd9dZvWiqLOcF4BQ0L258WYmd/FxQOJXWYd9hNt5kzY80MrSOMJnh4ojrW5AWoyjFhQHp83ugBgEfqfkEVgL5UbFLTxb8ZNm52UZLjZIGtlkx+FYTVbNLmnB8K4LBEfEQS1nC7X0rfo86ggmYwNeuhOTvaV52AXSgcVEqblf6+2XeeGtUIPAqSg1A3k4gSMbau/QhodBiS0NqlroOjKn6ozeiKGZuLTJStIhaaTe0tKQlARYIJ6QR5DcEv5+gB/BiKDiE42h5pFmDVawakgVjXOGJPSDLdUPHwiNAicp1egGXbDMiM5d054NTqz7+GUkT9K43w8MNxOJBFsQkhbT07q+/+bTtODAmPbKXTCprTf4MsBvG/IvMn8FZVNmaXk+85eLc5k/k/bXg57/Iejhaf4y52ma/g/6adCFrcbATtqG5W/O+VMI9bjBjrnhyIQlIg8B+zD/oUNhRwEQ7BTaavM9SDhi/S8kmYrQ6wUAAA==</values>
@@ -363,10 +421,10 @@
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-04 20:50:13</sys_created_on>
         <sys_id>fc7539b32bf16210ddf5f27df291bf56</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-18 16:44:29</sys_updated_on>
+        <sys_updated_on>2025-06-20 21:33:21</sys_updated_on>
         <ui_id>9b540adb-3229-4d66-8190-1c9a4815e890</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+2abW/bNhDHv4qh16ahR0vKXmXtMhTYUmD1+mYIhCNFJkQpUaWopFng776jHmzXaDxs8Lpm0zvxRN7973g/wDr4ydOdbTrbbvRl28rb2rv47WbpydrZ8PnJq6Hi3oXHK5CqkLXltfWW3j2ozpnxsZRto+Dx/d7C7qQqDR99NWDQheXGu3g6emUfG14ooFzhwXfWyPoWj8vSxcvSJMppFFIRrMPAL0uRiDAtRZgHVIQU900Hf3DSFjtpXxbsQqG1nYJoUzpF/tLjn3BLyTGoANXypVdBXYLV5nFnMRzKt7XaG+7Q75BrBZ9a+Tu6znzfdzsFx/TYWIndshirNBVIS8bfNlbqerBYoGqqnlZdVV8PWbj6cgGdsgf17Vr0xxun2skYNYl3d/rhlynglaz7BMeXSjNQuxVYLAPtLG/dnXRyc1ScwfLT8cVwxSuMWFTQNGgpGqPvZR8FRVerW4WLlVD6AdW5XloBcxmusJqwukL76978Hox06f6MbvCwC/drLT92/E1/8RDSiPpAwpAJEgc0JjlEOYFoXWZ+nKUMhLftS1t87FxSQ5HGchRDRXFDy4xs7CVKuMfkrOn4ZHNJf9YeuD61G2PZztQLURZ9Kn2K92BW7QepVDEQtBp8fedtt9vlDhvWtVZX3BT9+mtww05yww+4eTVqW1wP2p6RPJPzQsgJacZjngJBREoShywgkCRAooiVLF8naEjOQM7n/XEWdKZOdFd3BBAwpjsUV3cVxZhWF0zp9uug5J9CKQoPULocVC6ue5WLjV68GlX+aRozXi8ELz/AQgaUkSTMchKzHPFiSUpSSLkIIwE0gjPg9VynnAW0sU+HNt3ovklPAye0KSgocK1iDdSt6Cvzz8MXn4QveR6+K20W3w+KF5u94r+U3gzlC4Ey4TT1k3BNWJhl+GtxnZBcBCkJ/DxLsyRb03V8fii/2DXnBxQ7eWzkqY+PWK3L23//WyzKDli8fv3jnrVB3szSC2GpFDTxI5qTdQYJiTORERpHAYnyJAlDCNJUnIMl1xVnYQUd9TzcOASGxIaRRd+0z04C5tHFDNA8ujgxujjCZx5hzATNI4y/M8I4AmkeZcyYfRuY/ddHGafBm0caM5zfMJz/05HGEbPzaGNmah5t3DgRTLaY8MZl92b6X4Z78Yi9KNmh6UGbD87h3rb9A/rJYGThIQAA</values>
@@ -1123,6 +1181,1143 @@
     </sys_hub_flow_variable>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4e9c4fe833a922104890955a7e5c7bb8"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4e9c4fe833a922104890955a7e5c7bb8"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=4e9c4fe833a922104890955a7e5c7bb8"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>76a74ff2fba4a6507b04ff4655efdc4f</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>email_processing</internal_name>
+        <label_cache>[{"name":"flow_variable.email_intent","label":"Flow Variables➛Email intent","type":"string","base_type":"string","usedInstances":{"074a5cf5-becb-49ab-9d4a-4bee9d31c14e":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ea2b3b0a-22cf-41b4-9a39-a36d80487caf"}},{"name":"flow_variable.skill_output","label":"Flow Variables➛Skill Output","reference":"","reference_display":"","type":"json","base_type":"json","usedInstances":{"074a5cf5-becb-49ab-9d4a-4bee9d31c14e":["condition"],"9b540adb-3229-4d66-8190-1c9a4815e890":["email_intent-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b63826ea-8d2f-4c80-acd6-b76a1cc043bd"}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.response","label":"7 - Execute Skill➛output➛response","reference_display":"response","type":"string","base_type":"string","usedInstances":{"4da737e7-787e-406a-b5a6-bba7cd10342b":["skill_output-0","skill_response-0"]},"attributes":{}},{"name":"flow_variable.cleaned_email_body","label":"Flow Variables➛Cleaned Email Body","type":"string","base_type":"string","usedInstances":{"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa":["email_body"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"8c65ceb6-f2aa-4209-897b-392762bef80f"}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output","label":"7 - Execute Skill➛output","reference_display":"output","type":"dynamic_object","base_type":"dynamic_object","usedInstances":{},"attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ddde43cc-85e6-45cc-894e-fb6b89308158"}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.intent","label":"7 - Execute Skill➛output➛intent","reference_display":"intent","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"5da4d737-6e4a-4a20-8ce8-6cb87401f06e.subject","label":"4 - Get Email Details➛Subject","reference_display":"Subject","type":"string","base_type":"string","usedInstances":{"311acd90-7a42-4005-9048-db75cc885085":["log_message"],"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa":["email_subject"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"bd8f5a71-9a96-4ae5-abd8-3ae1d0223997"}},{"name":"5da4d737-6e4a-4a20-8ce8-6cb87401f06e.labels","label":"4 - Get Email Details➛Labels","reference_display":"Labels","type":"array.string","base_type":"array.string","usedInstances":{},"attributes":{"uiTypeLabel":"Array.String","co_type_name":"FD1fa22b8893d5c010e4131564c0f52da6","child_label":"Label ID","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"label_id","child_uiUniqueId":"6b24a02d-1d56-43a3-b464-8c247fbdb0a7","uiUniqueId":"3ff445a5-a40c-453a-a7e0-9ba40ffc03d5"}},{"name":"5da4d737-6e4a-4a20-8ce8-6cb87401f06e.status","label":"4 - Get Email Details➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"usedInstances":{},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d6a10c6a-0052-40e0-a0be-89627c7583b4"}},{"name":"3747de8c-c33e-4f08-b5cb-6a677f648e5d.item","label":"3 - For Each➛ID","reference_display":"ID","type":"string","base_type":"string","usedInstances":{"5da4d737-6e4a-4a20-8ce8-6cb87401f06e":["message_id"],"5ccd9cec-e970-4a8b-aa97-c0278e64be52":["message_id"],"476ae368-907e-498e-bf56-36c143ed82f7":["message_id"],"3c359962-984e-4e3c-88fc-2bed70eb323e":["message_id"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"flow_variable.username","label":"Flow Variables➛username","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"5da4d737-6e4a-4a20-8ce8-6cb87401f06e":["user_id"],"5ccd9cec-e970-4a8b-aa97-c0278e64be52":["user_email_id"],"476ae368-907e-498e-bf56-36c143ed82f7":["user_email_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"73b4aa75-81e9-4a34-925d-62fdfb4b46c1"}},{"name":"cdd78c6c-911b-49a3-972d-43eaf30d7a8c.message_ids","label":"2 - Look Up Emails➛Message IDs","reference_display":"Message IDs","type":"array.string","base_type":"array.string","usedInstances":{"3747de8c-c33e-4f08-b5cb-6a677f648e5d":["items"]},"attributes":{"uiTypeLabel":"Array.String","co_type_name":"FDce4933bf60a800102494899fa1b6c0a6","child_label":"ID","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"id","child_uiUniqueId":"b5034f92-1018-4dc0-b0a6-53dc34919b24","uiUniqueId":"7797f6f5-1ede-4a27-8efa-8fe5d5897a8f"}},{"name":"5da4d737-6e4a-4a20-8ce8-6cb87401f06e.email_body","label":"4 - Get Email Details➛Email Body","reference_display":"Email Body","type":"string","base_type":"string","usedInstances":{"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa":["email_body"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"4912ea6b-42a0-427d-a6ca-9cfbfa5fa70a"}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.customername","label":"7 - Execute Skill➛output➛CustomerName","reference_display":"CustomerName","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["customer_name"]},"attributes":{}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.ndg","label":"7 - Execute Skill➛output➛NDG","reference_display":"NDG","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["ndg"]},"attributes":{}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.accountnumbertoclose","label":"7 - Execute Skill➛output➛AccountNumberToClose","reference_display":"AccountNumberToClose","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["acct_num_to_close"]},"attributes":{}},{"name":"d7d0337d-43ef-4e8a-adaa-1702cb8e44fa.output.accountnumberforbalancetransfer","label":"7 - Execute Skill➛output➛AccountNumberForBalanceTransfer","reference_display":"AccountNumberForBalanceTransfer","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["acct_num_for_transfer"]},"attributes":{}},{"name":"flow_variable.skill_response","label":"Flow Variables➛Skill Response","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"e54030ef-ccf8-4529-b29f-9c3fb74a4352":["log_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"56ab0e02-baef-4006-8d56-73ee9142c357"}},{"name":"flow_variable.customer_name","label":"Flow Variables➛Customer Name","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["customer_name"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2b8e4e7a-7cad-42c1-a55a-33cdc9652c15"}},{"name":"flow_variable.ndg","label":"Flow Variables➛NDG","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["ndg"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"dfb503b9-68a5-48f8-b431-395522a177f4"}},{"name":"flow_variable.account_number_to_close","label":"Flow Variables➛Account Number To Close","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["acct_num_to_close"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"010001bc-5289-4c91-ac57-7a7ef23fab3a"}},{"name":"flow_variable.account_number_for_balance_transfer","label":"Flow Variables➛Account Number For Balance Transfer","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["acct_num_for_transfer"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5eb70526-c288-4165-9f17-109878586b64"}},{"name":"5da4d737-6e4a-4a20-8ce8-6cb87401f06e.from","label":"4 - Get Email Details➛From","reference_display":"From","type":"string","base_type":"string","usedInstances":{"924211e1-9a78-4c2d-ad05-488902edabb9":["customer_email"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"275e4ef8-c5d3-46e9-b7bd-cf20b2e07e42"}}]</label_cache>
+        <master>true</master>
+        <name>Email processing</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Email processing">4e9c4fe833a922104890955a7e5c7bb8</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>00357bf43352a6104890955a7e5c7bfd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:33:29</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=00357bf43352a6104890955a7e5c7bfd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=00357bf43352a6104890955a7e5c7bfd"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=00357bf43352a6104890955a7e5c7bfd"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=00357bf43352a6104890955a7e5c7bfd^sys_idNOT IN80357bf43352a6104890955a7e5c7bfe"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>00357bf43352a6104890955a7e5c7bfd</id>
+        <name>Email processing</name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:57</sys_created_on>
+        <sys_id>80357bf43352a6104890955a7e5c7bfe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 18:57:57</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=80357bf43352a6104890955a7e5c7bfe"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=00357bf43352a6104890955a7e5c7bfd"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=00357bf43352a6104890955a7e5c7bfd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=00357bf43352a6104890955a7e5c7bfd"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=00357bf43352a6104890955a7e5c7bfd^sys_idNOT IN2c35bbf43352a6104890955a7e5c7b7d"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</flow>
+        <generation_source/>
+        <name>Run Once</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:58</sys_created_on>
+        <sys_id>2c35bbf43352a6104890955a7e5c7b7d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:33:28</sys_updated_on>
+        <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/3VSXUvkQBD8KzLPa5jNerLm7eBYuAcVVHwRCZ2Zzm7DfN1kZjUn/vfrSeIiyoW8dHV3dVUxT2/CQIdGNOIuuzPvxEqQSxgdmIcxION7QxpbDQnbRBZ5wILj0sdRNClmXIk+evuANhgeEk0PZmDQR41RNGspV+IIJuP9OPzWTMgMDmyhjtm1VE5OfQZqWf84l5fn9eZMbhsp+eeuOpDREZ1onp5XIkDk7VS43760qNBf1dArfXWhNjV/Utbbi3V3uenWtd4A4pYJv1n+qif9z/pnU/ia0GnUJ8ffcokI+taZ8TRx4GznBCy8DvQXF6qIPbILhXPzVLaaBk51nGF18KTwNiRi0ROSoDPLjvImW3czG+FaYw/ZpMclWUbywHwYiuaiYpHU3x/8y93HwR25yeDSNF6BOVWQUqQuJxxK9GjQMlFrIQRy+zZEf6RpmbXYasqu6o1/4aMD7V0FqgivOCKodoz/muBHiFRcXDMNL79P7ts/udydfSyK29k0Dyyh7AjN8p4GFSmkn3zg+PEA35//ARljGbvcAgAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>run_once</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=00357bf43352a6104890955a7e5c7bfd^sys_idNOT IN1c35bbf43352a6104890955a7e5c7b5f,2435bbf43352a6104890955a7e5c7b7c,5035bbf43352a6104890955a7e5c7b61,a035bbf43352a6104890955a7e5c7b62,a435bbf43352a6104890955a7e5c7b7d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Emails">250f01f3db2bf70083fa2f0e0b9619f3</action_type>
+        <action_type_parent display_value="Look Up Emails">6af8383bdba7f70083fa2f0e0b9619a4</action_type_parent>
+        <attributes/>
+        <comment>Look up Unread Emails</comment>
+        <compiled_snapshot>250f01f3db2bf70083fa2f0e0b9619f3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:58</sys_created_on>
+        <sys_id>1c35bbf43352a6104890955a7e5c7b5f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 18:57:58</sys_updated_on>
+        <ui_id>cdd78c6c-911b-49a3-972d-43eaf30d7a8c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Y227bOBCGX8XQtRmQIkWJudpssgECbBOgaXpTBAKPiXZ1cHVI6zXy7qUOlhXbdeJF7Aap4RtrRGp+zsynEfll5kTKOXY4ggYig5VwhfEhDLDhroEaCkYRM8QZOylPtB1ZFToP7Zyx88DjqrYonWTJ1JofIqmLP+4SHsVHMkvsEBUVk5hPPz8/Ut5Hscp16hx/uR07E55bb6XOnePZ0q2Xyo250LEdemPdjS7O1i2gnE5qQ1HmUXrXXf/dTbueG7Nc1TLQ2NHfS50qbf0bHhd67CQ8VbzM8qlzXOaVNeSaq6s0nvYj7qO0tA9z6rHfi+g/6y6AENYjjbZLkrq921+GXcRasznjJbdKKllWeTdU3md18NpgKG14FZenQ1s74GpSRlnaTim5iOezs7hK0ss2Ek7/gHmCrMWGJ1R6Uq+01t4txFzfZ98+zlWeR2kTlO5mnEke91e8tKETVVnrmTlV9Gkpyq1lJc461on1GCZ8MrGWcJJnD1HjxYpOju5ie3Fk4uybVVdEd+kRl/UKj2wG+NG5tZ815s88j+rlfrCPsZNrdzdp9LXSF3XdMG2EpAIDyAIKCOUEMEjtP6GINlgz4/vO49gppsVpzItiESibofBrVS+zDVsXoLCNcT1F5tGkPLGiHnQXi8dxRxdlG8uVLYqzzMIBWasEbU3KC1zPSfmULevYBhB3MyCd5UDIGycEQiME9zjQykWAKEEAV0gCHDAZYBVoTcz+CdGLyjR5luyXET1g5DxvutWSlm04wQdO3gMn1BdceAoBjwho+4fGwJaND6jizMWcE+MGO+KE/LRUIV7UJje24HcAyjPe56Cc1O7XqOlQaZIQ2ojrJVzOWlMHC3k1WMhvicqTMD/FpQv0XmARxmNUIgaQi4397KICCOgJoKhLiEZUaI/uABYXbSpX5C3KU2iT5fqVaXmB+zktfzb+1+nZjhfvwMt74MUNRBBQ4gIfera50MAAIZgLAo1938NYSvELeOGL+mzq1m6ih8TcXH786+RslZvevoEeNbUPjmT9N0onVXnxQjmtbLVpHK45a5PQPtWjjHAYKIHtb+2GqJFQF+qsX9xs1uWxOz14fFxd6Noxa+LdyfYRZcFPhUB+OMN4c6+HN/Hl6bueFLZqAHU9DxACpf3y9F2gPEWY4Vgh6v2vl8Ntz0lqsUx53M3s4AzbpIS2M4VNYRY9WNcya+OThs2ZXlhMsn91LWL7tjis+ybATwp/+OLpSv+pvOX22N4cnc5vdijQN9coZ/2qARhdZqkeAfD0e6STDh/XQfPi6ehxlS80ACzRvwKxvgE49Vtob31WYoJR3WJ9ZVFCrgaBJwkQSHgB8ySS3N3FJs7b2LDootyLSvyjZfnKu7jn3c9r6br3vyJom8bjH8483kPnwUoaRqkPOKYIEMko4BAHgDHm64ArSYTcAS7+5noVi+qU8pW3cC9wPUfl9HRZxzaEBAdC3gMhnmBIBIQAjIwPSOAaEPjKBa5C2niYSV/soqFsLlMCBwcLe0ak8d2fcgwZEdtDwg6QvAdIuGA+hy4GyrWkEOoKwLXdyhhfYCS1rxVl+4dkcBpoyyRKqiRMq0TYfXZmwqwqJ9XwMwzBVXQa26vCMzwi/NCKGl02okZXZnQ1F/W87I4yC4K+axIyxOyit863CPD3AK1NYms7W5PLXVG4SMNTDBeJ2AuHiDMeQCEAVDIARCAKGKIe8IOaTkQw1a/5OXf7A+R+6J5sJAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Execute Skill">30468d977f921210f465c3b76d8665c1</action_type>
+        <action_type_parent display_value="Execute Skill">d88205df7f521210f465c3b76d866563</action_type_parent>
+        <attributes/>
+        <comment>Extract Intent and Data from the Email</comment>
+        <compiled_snapshot>30468d977f921210f465c3b76d8665c1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>3747de8c-c33e-4f08-b5cb-6a677f648e5d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:58</sys_created_on>
+        <sys_id>2435bbf43352a6104890955a7e5c7b7c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 18:57:58</sys_updated_on>
+        <ui_id>d7d0337d-43ef-4e8a-adaa-1702cb8e44fa</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Email Details">1cc9978453d5c010c4dfddeeff7b12ce</action_type>
+        <action_type_parent display_value="Get Email Details">c799538453d5c010c4dfddeeff7b1268</action_type_parent>
+        <attributes/>
+        <comment>Get Emails Content</comment>
+        <compiled_snapshot>1cc9978453d5c010c4dfddeeff7b12ce</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>3747de8c-c33e-4f08-b5cb-6a677f648e5d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:58</sys_created_on>
+        <sys_id>5035bbf43352a6104890955a7e5c7b61</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 18:57:58</sys_updated_on>
+        <ui_id>5da4d737-6e4a-4a20-8ce8-6cb87401f06e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Ty27bMBD8lYJnSZAtyZJ9KxIECNA0QNPkEgTCklzaBKhHKMqJa/jfu7Rk59GgTYCeikInDme1s8Od2y3Tki3YXIj5PC/SLJGZiCexSKWSElGpnE+mQrGA1VAhMfsObUk1AVuD6T2y3SrTPJRrsBq4wcgzPHm3I5LUXWtgc/MerlhpIy3WbHF7F7AWLF04tGyxfXX1XskGOBqiXlOXT+enbw3hNq0HOmd1vRzPX8ayqwPYWOllTAKGjw5ridRfgekwYBXUElxjN2zhbE+ARZCXtdkcGStdO/oZ89zHTv+gdkUcx56pkEYSONwej+Xo2QCrU3BASnrhejtSxarRArvBDIkKeuNOnmMD4bJ1uqmHEuftHqsb01f118EJdvzB4YkIIXtKia2f1GsfB1FXq+bh20Hlma73poyXphFgjidwZB3vndezZb3+/srlAfnFZzRYUceygrYlpGxts9b7LiS6ipaGDtF+gSR2ellHIPyEEb0ARGeEn+7hm3G7Lug3VOzbXdf6vsdzvzfAExSFmIcizzFMZ0qFfBKnoZpKnsV8mkOi2C5g3aY7MdB1T0bRC5X3vR9zsG00qBw89iXC6tZ9JlFrHL3YBYeEFb9bV5k9LWeFXQdLfB2yJE9ziYUIRZKQbhUXIc8ED2cwy3M1SwvMZKQdVm/n7mPlH4zin2c7RPFiGO5FGl8M/JFATv8H8h8IZCHiZJZmcchnBQ/TdMrDYi4gzDnOIUsUffwvBvLuJw1Zw4X0BgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Remove Label From Email">ba9b75b0db6fb30091042f0e0b961947</action_type>
+        <action_type_parent display_value="Remove Label From Email">d31bf970db6fb30091042f0e0b96198f</action_type_parent>
+        <attributes/>
+        <comment>Mark Emails as READ</comment>
+        <compiled_snapshot>ba9b75b0db6fb30091042f0e0b961947</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>3747de8c-c33e-4f08-b5cb-6a677f648e5d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:58</sys_created_on>
+        <sys_id>a035bbf43352a6104890955a7e5c7b62</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 18:57:58</sys_updated_on>
+        <ui_id>3c359962-984e-4e3c-88fc-2bed70eb323e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1W227bOBD9lUDPlkFJFEXlaYt4CwRoU6Bp+tINBF5GDrG6VaLcukb+vUNJdi520qRoi2K3b+LwDGfmkGdGHzae0d6xF4WpTGJJtGS5jAhJA0LDnACRKQtSKryZV4kSENl30GZQClNk6DnzVqLonV1DWZdr3FwZBd1fS4eYq7pEiDZdU4j1+28j1ZUpdAuVd/zhcuY1osWYFlrveHNv66lJF0JCgdALDHd0uni4DLtunLmzramW0/rV5Hy+NdatdskEMw8+W6g0YBa5KDqYeaWotLB1u/aObdujoQWh31TFeoe4MpXFwzyH/dyZLxiOE0IcMgcsTMG4u1tmE2+jOV8IKzCTXtm+naDqqnYUjpRoyEVf2JPbthHwprGmrkYXK2Sx9a6LvqzORj683QHba0ILkpRpaFylLvepkPz8qv70dpvlS1MNpEybRa1EsVsJi9TJ3rp8Nl5v3t1jebTs8QwFlBgxK0XToCVr2nplhiiYdDlfFriY50X9CbPrzLKaC+UqnOMNiPlLtC8G83vRGlfuazwGnV24i8p87OF0eD0By0UeED/iWvmUE+ZLrcFXqVaUcyI5o971zOvW3Ukhuu6GKLyh7GPvyhxpmwjKRo6di2pNY19gUiuYuLieTUoL01jlAaWB1BgkIFxxfMRpgkGlkvKW0kroOrGEuzLbbKKEJhq48lUUgU9zwn0ZK+kzwZIkZ5RDrOfGQnl9va+957o/T5BPqG0ryNdjcXc0eafg5wgy/CPI/4Ag00hqxgLqB1oLnzLQvqSc+YEAAsBikcbwEwQZ0CAIuNBuikTJ/Ski6M37bHFwrSAbnnA22G50eXH29u8Xi396QiLt3tu+9A4gHlGXXmMAo9ynqZrenj4x1aEk/ShOxogbL2g8VSsZcXDoKNobozlzp7oU3BPe3GpE0x3fmaSHe86DyAP3sp3tJAgZEKZlGO3P9ph+c7b/mer/yyYS6ZyrJOY+oyH3KaGJn2oWYicBSjSHKI/T72oilzvNVCjRShST59gNJrlmODfxci3sFHau6pGcKht+dLOuqf8d2tiB+fkEfW8f/cDu0dnYhB7pT5MCDuR3WwuLcfvo3c32pIrocVVMlt9cFgMTv1wYuxbuTe3+lwgg5CwGpfCvLkgjn8Yh8XGwMl8IkXOdpCGN8x84RS+/ApUJPddCDgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>074a5cf5-becb-49ab-9d4a-4bee9d31c14e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:58</sys_created_on>
+        <sys_id>a435bbf43352a6104890955a7e5c7b7d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 18:57:58</sys_updated_on>
+        <ui_id>924211e1-9a78-4c2d-ad05-488902edabb9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Wy27bMBD8lYBn25XjZ3wrEvjUJkBTpIc0FVbUyiZCkQpJOXEN/3uXomQ7zzptDwlQwBftYzS7HI58uWIiZROGox4Me73BoNeNoh79kqybHnWjI+SD8WjAWYspyJEqHdjr2EEikWILkKUP3sV5HiegroWaxcC5LpWLudS2NBgbvCnROipPhS0kLC9e18XnQqYGFZtcXrVYAYaIODRssnqQ2ncSCQlKKv1aT/HUZG5ZhBg9xlVBiH3a7T04DQltUs8najG8c6hSJCIZSIstloNKwWmzZBNnSgoYhPRMyeWmYi6UI0Dma++s+EmvHUe+LkOajGPIbR7jeokhnJ2Ag3NC5o6WFmJ8rgVHG3aSYgaldMe7sVBwVjihVWgJU4duLctcnYaVsA1Ac2YUKS2RwMLP6ZnXY2Tnc337pWE5FapaSZ2UmoPcPIFzRiSl83xWLAHCawj4M6BXoMScwOMcisKLozB6ISpA4pd3ZpIeOpnUt0TEipnqAPfDdGjV0JlS/KQKX4ARHvgzwVDzusXs0h5LsHY7Hy02vik9uzBtPVccVuNbuBGF+0gvWGA9wrpVX5vDF8U2TLbiygTKNK7ui925OLy0TudoKol9LwkhXa2qwRY19869kvX6h0pnTxdSgtJ0j1ysyjx2urpLz6A2140qE8JuincBMk1xA8rSme4F4hsSkOBV2jQS4GYAzEHIBmmQQj8d9UbtIfah3YfDqD3mOG4PeTIe9aNuFg3piI3O1+vHzvF/bfut7XXWuYeaG+ucejkfXDRyflrkjYdiTmfnMCQe+midDFhbL+2+7KV1ZB8zHQ6i6D35afhM/LGdvhXr3Pma/sZEs+wl2Y1GW33dgnA75hk9NoYK+dXC34NBI/xvgcJ9QrXQE60lgnqocDrPD9OaV63uw3+m7v57kvbf/lV4K9p+TtFXvwBa5JJnTwsAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=00357bf43352a6104890955a7e5c7bfd"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=00357bf43352a6104890955a7e5c7bfd^sys_idNOT IN1035bbf43352a6104890955a7e5c7b59,1035bbf43352a6104890955a7e5c7b5a,5035bbf43352a6104890955a7e5c7b5d,5435bbf43352a6104890955a7e5c7b5b,d035bbf43352a6104890955a7e5c7b5c,dc35bbf43352a6104890955a7e5c7b5d"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dccbdb76fb28a6507b04ff4655efdcf7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</flow>
+        <flow_variables_assigned>username</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:58</sys_created_on>
+        <sys_id>1035bbf43352a6104890955a7e5c7b59</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:33:29</sys_updated_on>
+        <ui_id>41e14e38-14ff-44af-8bc6-811110258397</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9Lzo7hpM4TZxTixYFCmwrsGa9DIVBS3QiTJZcfSTNgvz3UbGTdO1hh11zEx9J8fGJhHbMBN8G7xbmxjm51Gz+8yVhUkeMzjsmBZszljANDdIpOLSHY8LWoEKEBDam2RK+lhzd9bIBqVJuGgoR0rUKts//juQrqYTFvn4Llmp4tGy+++A68OGjguc1zsZjKEajYZbPiqyYTGCKEz6t+JAuVFCh+pvw5xb8to2I81bqZW9/6ROfjqCxIhLJEoZvHrVAYlCDcpiwBrQAb+z2hFgE8ajVGVhJ7TsFG3hz8jfVm2VZFiNrpK44dt6TWfaidXB9Bx6ISuA+2D6Ur0zUr9NDYA1B+dv3WBfw2HppdJfioVLHbKNCo791WrDTBcc3IoQEKgW2sdXIvW+kflqZzfcjy3upD6r0TmU4qJMFnrSrgo98dizIxQeZO+ST0KiwoYplA21LSNlas5aHKkS6SZeKjLRWZkPs4qymwGOHKT0BpPeE3x3gZ7AytvuVrqHkWO6Hlq8BH+LoTMdVDjCdDGZDLAY5jPNBMZqIwdWoFnWVV/kVjc8+YW7rbhU4dxaKXqh8DbHNTrZeoLLTOKZwK1t/Q6TW2Guxf4l70vG57NNlny779P/7JJBLRzwXkdTD8aeKji2NoeTvoY2xv2KHZ2z/BwjVxSzzBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5c4b9f36fb28a6507b04ff4655efdc34</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:58</sys_created_on>
+        <sys_id>1035bbf43352a6104890955a7e5c7b5a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:33:29</sys_updated_on>
+        <ui_id>3747de8c-c33e-4f08-b5cb-6a677f648e5d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VTy27bMBD8F55lQQ/DtnwLEgQI0DZAEuRSBMKKXNlEKVIlKTuq4H/v0nokyDUnaYe7szMjamCm823n3Yu5cU4eNNv/fouY1AGj94FpaJDtmfTYOBaxE6gu1MPAhdju+IavijStVusC8lWxzcRqnSPUeSK2sONxg87BAUsp3OVC40K6VkH/+j0WfpRKWJzEtmBJo0fL9sOXIyloSVqIukiTgufZJs+SJNut02qTV2kmckCxIUIFFSpqfZhcfjHt+zaUFrmxYgZ+TDNPC0qPICJLIobvHrVAWl+DchixBrQAb2zP9t52BFgE8ahVv3QcpfZEx0Lvu5P/aGOaJKGxRjLEcTxcynLKcoTrO/DwTNTcd3Zq5UcjOboxCoE1dMrffsbGhsfWS6PHEQ+VmqeN6hr9a0yCLQTzpyOkcyQC22A0SJ981M9Hc36aVd5LfQ1lOlSGg1oq8N7KqvNBz8BQYUNEZQNtK/WhbK05yeswaWnig6IirpU509JwVWPgQXhMuUJ8T/jdFX4FK4OLn0RDw5eIud7dKnDuwwuFWP7tgpLR2eShHGMII9zK1t/QghNOci9v4faP3EumXDqS8BKwh/mfCQc93SDJP0NnY/8E8R/Y5T+8tFflfQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f07539b32bf16210ddf5f27df291bf56</block>
+        <comment>Set the values of the variables from the model response</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</flow>
+        <flow_variables_assigned>email_intent,customer_name,account_number_to_close,account_number_for_balance_transfer,ndg</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>3747de8c-c33e-4f08-b5cb-6a677f648e5d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:58</sys_created_on>
+        <sys_id>5035bbf43352a6104890955a7e5c7b5d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:33:29</sys_updated_on>
+        <ui_id>9b540adb-3229-4d66-8190-1c9a4815e890</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2aXW/bNhSG/4qha9PQpyVlV1myDAW2FFi93gyFcEiRCVFKVEUqqRf4v+9Qkj+a1tkGON3a6M58RR6+5+g8gH3gB093tumsWelzY+RN7Z398W7uydpp+PnBk6V35nlzr4aK4ydegVSFrC2vLap3oDo+bCilaRSs3+4VditV2fIxZgMthrC89c4eHj3q7+BZmkQ5jUIqgmUY+GUpEhGmpQjzgIqQYkAFlCvc+pMzMduZ+LI1u26camwr65tx/csY4M1W1G3pDPlzj3/EcyVHJwKU4XOvgroEq9v1Tmk5lK9rtRdu8bIh1Qo+Gvkn3pf5vu92Co7ZsbEQu2UxFmmQxSVYQCsds127q5mWjJuhLiUX0Cl7cagNG143Vup6OGKBqu1prbqqvh7q4e0CHLyTzqAJ3rhUnfcxEfHmVt//tnV5Jeu+KuNDpRmo3Qos1o521vl58Dq5elTmQfms0FzxCm8sKmgaVIqm1XeyvwVNV4sbhYuFUPoe3bk+XABzGS7wFcDiCvXLXn4LrXTp/oph8LC77vdafuj4q76FIKQR9YGEIRMkDmhMcohyAtGyzPw4SxkIbzP3zNpcKDBmXyh8Q8WHzqU5lG0sUDHU2B1hrWzsOZq6wyP4zvhWc2X4pPVw/dRuvAtfdz0TZdEn1yd9B+3CvJdKFQOPiyHWD95ms5l/BiHrjNUVb4t+fVoK2ZMU8gMKL0YXs+vBxRFzE4cvjsOQZjzmKRAEriRxyAICSQIkiljJ8mWCQvIsHH7aeycBcdvlzuMRHIEx3aHJuqso3m11wZQ2pwbTfwrMKDwA83zwM7vu/cxWenYx+vlbwxOsLw5WP8DqB5SRJMxyErMcYWVJSlJIuQgjATSCZ4H1WBeeBNuRgQGBle4B+Gf4Ct0WFBS4zrMt1Eb0NTslyvGTKCfHUb7S7ezHwdtstff2rxKZEH9xiCecpn4SLgkLswy/Fy8TkosgJYGfZ2mWZEu6jL8G4l/syNPjjpSMkGwZOUJ+Xd58zd+wUXZA9vXlz4+NTGS+ODJLQRM/ojlZZpCQOBMZoXEUkChPkjCEIE3F85DpOu4k5GGgnq53DqQh1WlwNGH4bWE4DY6mwdHE4X/P4TQ4mgZHE6zfCKzT4GgaHE2If9eIT4OjaXA0kfl/JPO7GhyVnEmDJVi5fF9t/3vkHqyxzyU7lO51+94F3GubvwAx/eTixSQAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">64ec3fe333b5e6104890955a7e5c7bc0</block>
+        <comment>Clean up the email body</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</flow>
+        <flow_variables_assigned>cleaned_email_body</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>3747de8c-c33e-4f08-b5cb-6a677f648e5d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:58</sys_created_on>
+        <sys_id>5435bbf43352a6104890955a7e5c7b5b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:33:29</sys_updated_on>
+        <ui_id>81961053-0f49-411f-961a-24ca4e0e77a7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V207cMBD9lZWfWmk3pHtfeKgoFAmpLVKhvDQomtiTxarjBF+A7Wr/veM4exFI/EDZl7XP3M4czyhrVnvXeGdv6lNr5VKz4993fSZ1wOi8ZlKwY8b6TEOFdOIKQaPIsQKp8qIWK7I9gvIY3YS0jYLV7R7h91IJg13mBgwlcmjY8fqFqa00HSMflTgajYoJTj+l4/kiXUwmMMMJnxUwpoQKClTkehap9L4GKr0vkcpbNN2qCTbrjNTL7v6tS3a9BWsjArm0z/DZoRZIrEpQFvusAi3A1Wa1QwyCuNJqD9xL7WLbFTxb+ZfqzdM0DZ4lUqe8E2V3zTvBIlyegwOi4rnzZqdfLTnaqJHAErxyZ4dYdLhqnKx1DHFQqG10rXylf0RV2C7Bwft4SySwCa0G7l0j5fV9/fRzy/JC6laVzqhqDmp3A0faFd4FPmvm5c0LmSPySmhUWFHFvIKmISRvTP0o2ypEukqWii5JqeonYhcmMwEeOkzoCSC5IPy8hW/ByNDud0pDwaHcLy0fPF6GcZrz6YRjMR2UQ4DBeJguBvPFrBiMFsPZdFhgOU9Ltukzu7JnCqzdC0UvlD/40GaUrRMojxqHEG5k406J1COF0JvhFmtH+/UAEvpWDG2R6e3de5lP05HolSJvO87Heb5E1yUU6OjPJnv/k0wbpKnRBzkSgzRbHD8cZZn5nGX6aNlv8w5nGf10PH48YZvN5i6scZTyffHfF/998f+jxRfIpSWJb4Kel9tvfzCsaK0kP4SeavMnPM4e2/wDHC6hzEUIAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">be1fedb72bb16210ddf5f27df291bfa5</block>
+        <comment>Extract output from the model response</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</flow>
+        <flow_variables_assigned>skill_output</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>3747de8c-c33e-4f08-b5cb-6a677f648e5d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:58</sys_created_on>
+        <sys_id>d035bbf43352a6104890955a7e5c7b5c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:33:29</sys_updated_on>
+        <ui_id>29a12dd2-2272-45e4-aaf5-943eb2ae7900</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WTU8bMRD9K5ZPoCarTUITGk4IhETVEolQLg1aee3ZxMVrL7YXSKP8947Xmw9o1V57yG3neT7ePI9Hu6Km9lXt3Z05d07ONR1/f+hQqQOG3ysqBR1T2qGalYBf7lEqlcUgRJ+ZqiE6COkqxZb3O4QvpBIW2pwVs5jCg6Xj1bujpkYhIO/3RoN+nveG/V4qRPGx6I9E0f/Uy4uiwISK5aDQdRpIkMmGxJ+p+WUV0B/O6Nb60oZ/nk5uEDJWBDJph8KrBy0AWRRMOejQkmnBvLHLLWKBiYlWO2AhtY9tluzVyZ9Y6yRN0+BZAHbGWxG2ZtYKFOHiknk29bbmvrZbvYzk4KImAgpWK3+xj0WHSeUl9tSEeJarTbRRdalvohZ0m2DvPmqHJKAKrQbubSPFdGFebjcsr6RuVGkPleFMbS3mvZV57QOfFa3l3RuJo/1OZFBQYrWsZFUl9TyrrHmWTQUkXCZzhUZSKPOCzML8JYyH7hKUnyVXiF828D2zMrT6FdNgcCj2TcunGq7D6OTDwWl/CKx7KvpF94Sfpl3GxbCbj4asx3l6MsgFXXeoW7oLxZzbiYS3kz3VocUoWStOFvUNIdzKyp8jqWcMwfuCDRYkeDNywf6LN74VS5qAW3CV0Q7w+smsTtOBIIXImo6zUZbBK3DUOGt8k5g8sW3M2Uz/lqdDSiNAxfeADt4uyWqmyVuvTalwMQk+RgdH79kcn4WovWT/ikka31aAEL0mnHm+IEdwHClYwPnWZEXAWmPHZEavmFQgiDekSRhJkk1/wYN8IJgZnGNzIOuQdabbPPuN0vV6/RBWUByNw7o6rKvDujqsq/98XQng0uHI3IX5uN78Z4WDJS4GyfehF2Mfw7DtsPUvixXe67EJAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a2bac4fc332162104890955a7e5c7ba3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id>3747de8c-c33e-4f08-b5cb-6a677f648e5d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:58</sys_created_on>
+        <sys_id>dc35bbf43352a6104890955a7e5c7b5d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:33:29</sys_updated_on>
+        <ui_id>074a5cf5-becb-49ab-9d4a-4bee9d31c14e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0XPxvijCWveSkph0K2wlr5sxVzLciMmS54+kmYm/31XluKENmPrtse9WUe6V+cc3YMHopztnTX36tIY/iTJ4vNjQrj0GH4PRELHyIJQJRtuuZLVCCRkDcL5DfxsuOkFbB8OCF1x0WgWu/WgscYyTRbDiy3eYEGbQZtf0JyWxbwssqx4d57X87LOi6YEBiU2FFAzgUeXexpnNyOS/JSf3fYeN1Zz+RTXN7HL3R5UuvGs8iwh7Nky2TDk04IwLCEdyAas0tsJ0QyaWykOwIpLGwR38Gz4d7ywmM38wZahRBrdmJZVdCrA7RVYQCqOWqcn4xSnzARzGtaCE3Z5jIUDt72XGkos1GJfrYTr5MfgCJkaHD2MM0iC9V6ppx51tHcrtfm0Z3nN5ehK3BSKgphWYNG72lnPZyBMsA4bVR30PTpa9Vqt+ViMXLr0SeAibYXa4KV+ulKgnniKxkJ6jfjVCD+A5l7FB2yDxYFmDYbTapxEbIc2MbJLiNmapQBjDiLR3eqb8xSD5CiuCv74Eqp5by/x5jWLOnbJ68E+mulhGDmvI62UdcAFUsEJsbvdF5dlZQOUKiftGRXK+Od7FYM/a/K25FzArJ3l2ex0cs7np5JzIjNvjEvxi7j4t/rNtGRZ9j8ufx0Xbqow5FHbePk/TMujj0a4c/KacoPU7j32fv+38BtbHC5Oj6GN0l+9qAO2+wE/PPN/dwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=00357bf43352a6104890955a7e5c7bfd"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=00357bf43352a6104890955a7e5c7bfd^sys_idNOT IN1035bbf43352a6104890955a7e5c7b2c,1435bbf43352a6104890955a7e5c7b25,5835bbf43352a6104890955a7e5c7b42,9435bbf43352a6104890955a7e5c7b2f,9835bbf43352a6104890955a7e5c7b28,9c35bbf43352a6104890955a7e5c7b21,d035bbf43352a6104890955a7e5c7b3f,d435bbf43352a6104890955a7e5c7b1d,dc35bbf43352a6104890955a7e5c7b45"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5eb70526-c288-4165-9f17-109878586b64</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>account_number_for_balance_transfer</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Account Number For Balance Transfer</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</model>
+        <model_id>00357bf43352a6104890955a7e5c7bfd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_00357bf43352a6104890955a7e5c7bfd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:57</sys_created_on>
+        <sys_id>1035bbf43352a6104890955a7e5c7b2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 18:57:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=73b4aa75-81e9-4a34-925d-62fdfb4b46c1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>username</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>username</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</model>
+        <model_id>00357bf43352a6104890955a7e5c7bfd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_00357bf43352a6104890955a7e5c7bfd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:57</sys_created_on>
+        <sys_id>1435bbf43352a6104890955a7e5c7b25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 18:57:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2b8e4e7a-7cad-42c1-a55a-33cdc9652c15</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>customer_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Customer Name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</model>
+        <model_id>00357bf43352a6104890955a7e5c7bfd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_00357bf43352a6104890955a7e5c7bfd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:58</sys_created_on>
+        <sys_id>5835bbf43352a6104890955a7e5c7b42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 18:57:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ea2b3b0a-22cf-41b4-9a39-a36d80487caf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>email_intent</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Email intent</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</model>
+        <model_id>00357bf43352a6104890955a7e5c7bfd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_00357bf43352a6104890955a7e5c7bfd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:57</sys_created_on>
+        <sys_id>9435bbf43352a6104890955a7e5c7b2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 18:57:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=010001bc-5289-4c91-ac57-7a7ef23fab3a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>account_number_to_close</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Account Number To Close</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</model>
+        <model_id>00357bf43352a6104890955a7e5c7bfd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_00357bf43352a6104890955a7e5c7bfd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:57</sys_created_on>
+        <sys_id>9835bbf43352a6104890955a7e5c7b28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 18:57:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=56ab0e02-baef-4006-8d56-73ee9142c357</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>skill_response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Skill Response</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</model>
+        <model_id>00357bf43352a6104890955a7e5c7bfd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_00357bf43352a6104890955a7e5c7bfd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:57</sys_created_on>
+        <sys_id>9c35bbf43352a6104890955a7e5c7b21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 18:57:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dfb503b9-68a5-48f8-b431-395522a177f4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ndg</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>NDG</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</model>
+        <model_id>00357bf43352a6104890955a7e5c7bfd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_00357bf43352a6104890955a7e5c7bfd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:57</sys_created_on>
+        <sys_id>d035bbf43352a6104890955a7e5c7b3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 18:57:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=8c65ceb6-f2aa-4209-897b-392762bef80f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>cleaned_email_body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Cleaned Email Body</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</model>
+        <model_id>00357bf43352a6104890955a7e5c7bfd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_00357bf43352a6104890955a7e5c7bfd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:57</sys_created_on>
+        <sys_id>d435bbf43352a6104890955a7e5c7b1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 18:57:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=b63826ea-8d2f-4c80-acd6-b76a1cc043bd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>skill_output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Skill Output</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Email processing">00357bf43352a6104890955a7e5c7bfd</model>
+        <model_id>00357bf43352a6104890955a7e5c7bfd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_00357bf43352a6104890955a7e5c7bfd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:58</sys_created_on>
+        <sys_id>dc35bbf43352a6104890955a7e5c7b45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 18:57:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_00357bf43352a6104890955a7e5c7bfd"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_00357bf43352a6104890955a7e5c7bfd"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>4e9c4fe833a922104890955a7e5c7bb8</sys_id>
+        <latest_snapshot>00357bf43352a6104890955a7e5c7bfd</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch4-05-14-2025_06-04-2025_1836.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=4e9c4fe833a922104890955a7e5c7bb8^sys_idNOT IN3835bbf43352a6104890955a7e5c7be3"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"3835bbf43352a6104890955a7e5c7be3","name":"plan","plan_signature":null}}</plan>
+        <plan_id>4e9c4fe833a922104890955a7e5c7bb8</plan_id>
+        <snapshot>00357bf43352a6104890955a7e5c7bfd</snapshot>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 18:57:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3835bbf43352a6104890955a7e5c7be3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:33:33</sys_updated_on>
+        <trigger display_value="">b835bbf43352a6104890955a7e5c7be0</trigger>
+    </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=4e9c4fe833a922104890955a7e5c7bb8"/>
 </record_update>

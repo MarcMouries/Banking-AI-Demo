@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">8441dcc53356a6104890955a7e5c7b0c</canvas>
+        <component display_value="Heading">1f6e0643eca7a637e36bd7833549ec9e</component>
+        <component_props>{"variant":"header-primary","label":"Happening Now","wontWrap":false,"hasNoMargin":false,"level":"1","filterConfigurations":[],"noDebounce":"","contextMenuActions":[]}</component_props>
+        <h>3</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 21:00:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c041dcc53356a6104890955a7e5c7b32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>par_dashboard_widget_c041dcc53356a6104890955a7e5c7b32</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:00:33</sys_updated_on>
+        <visualization/>
+        <w>47</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</application>
+        <file_path/>
+        <instance_id>bed3c2091b56b11ce84d2f8dee4bcbd7</instance_id>
+        <instance_name>marco</instance_name>
+        <name>par_dashboard_widget_c041dcc53356a6104890955a7e5c7b32</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">8441dcc53356a6104890955a7e5c7b0c</canvas><component display_value="Heading">1f6e0643eca7a637e36bd7833549ec9e</component><component_props>{"variant":"header-primary","label":"Happening Now","wontWrap":false,"hasNoMargin":false,"level":"1","filterConfigurations":[],"noDebounce":"","contextMenuActions":[]}</component_props><h>3</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>Marc.Mouries</sys_created_by><sys_created_on>2025-06-20 21:00:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c041dcc53356a6104890955a7e5c7b32</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package><sys_policy/><sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope><sys_update_name>par_dashboard_widget_c041dcc53356a6104890955a7e5c7b32</sys_update_name><sys_updated_by>Marc.Mouries</sys_updated_by><sys_updated_on>2025-06-20 21:00:33</sys_updated_on><visualization/><w>47</w><widget_props/><x>0</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>1925789678</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>4bfd511933e926104890955a7e5c7ba7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 21:00:33</sys_created_on>
+        <sys_id>0841dcc53356a6104890955a7e5c7b59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1978f24a7fb0000001</sys_recorded_at>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:00:33</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>0c41dcc56f56a610b5f15aae5ae87558</update_guid>
+        <update_guid_history>0c41dcc56f56a610b5f15aae5ae87558:1925789678</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">5441dcc53356a6104890955a7e5c7b9e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 21:00:34</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>2a552b6868fb42c899826fab2fd63361</sys_id>
+        <sys_metadata>c041dcc53356a6104890955a7e5c7b32</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_scope_delete display_value="">7deed9a6ce4348c0874db603c55ec671</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_c041dcc53356a6104890955a7e5c7b32</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_c041dcc53356a6104890955a7e5c7b32">0841dcc53356a6104890955a7e5c7b59</sys_update_version>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:00:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="7731d8c53356a6104890955a7e5c7be3" sys_domain="global" table="x_mm_banking_account_closure_request" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2025-06-20 21:00:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bf319cc53356a6104890955a7e5c7b25</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_mm_banking_account_closure_request" name="x_mm_banking_account_closure_request" sys_domain="global" view="962114c58256a610969071cae135b2d5">7731d8c53356a6104890955a7e5c7be3</sys_ui_form>
+            <sys_ui_section caption="Account Closure Request" display_value="Account Closure Request" name="x_mm_banking_account_closure_request" sys_domain="global" view="962114c58256a610969071cae135b2d5">7b319cc53356a6104890955a7e5c7b23</sys_ui_section>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2025-06-20 21:00:32</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2025-06-20 21:00:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f319cc53356a6104890955a7e5c7b2b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_mm_banking_account_closure_request" name="x_mm_banking_account_closure_request" sys_domain="global" view="962114c58256a610969071cae135b2d5">7731d8c53356a6104890955a7e5c7be3</sys_ui_form>
+            <sys_ui_section caption="Customer" display_value="Customer" name="x_mm_banking_account_closure_request" sys_domain="global" view="962114c58256a610969071cae135b2d5">3b319cc53356a6104890955a7e5c7b2a</sys_ui_section>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2025-06-20 21:00:32</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2025-06-20 21:00:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>73319cc53356a6104890955a7e5c7b63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_mm_banking_account_closure_request" name="x_mm_banking_account_closure_request" sys_domain="global" view="962114c58256a610969071cae135b2d5">7731d8c53356a6104890955a7e5c7be3</sys_ui_form>
+            <sys_ui_section caption="Form data" display_value="Form data" name="x_mm_banking_account_closure_request" sys_domain="global" view="962114c58256a610969071cae135b2d5">3f319cc53356a6104890955a7e5c7b61</sys_ui_section>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2025-06-20 21:00:32</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2025-06-20 21:00:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>73319cc53356a6104890955a7e5c7b66</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_mm_banking_account_closure_request" name="x_mm_banking_account_closure_request" sys_domain="global" view="962114c58256a610969071cae135b2d5">7731d8c53356a6104890955a7e5c7be3</sys_ui_form>
+            <sys_ui_section caption="Details" display_value="Details" name="x_mm_banking_account_closure_request" sys_domain="global" view="962114c58256a610969071cae135b2d5">3f319cc53356a6104890955a7e5c7b64</sys_ui_section>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2025-06-20 21:00:32</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_mm_banking_account_closure_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2025-06-20 21:00:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7731d8c53356a6104890955a7e5c7be3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_mm_banking_account_closure_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+            <sys_update_name>sys_ui_form_sections_7731d8c53356a6104890955a7e5c7be3</sys_update_name>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2025-06-20 21:00:32</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace Banking AI 0" name="workspace-banking-ai-0">962114c58256a610969071cae135b2d5</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m">
+    <ais_search_profile_ais_dictionary_m2m action="INSERT_OR_UPDATE">
+        <dictionary display_value="x_mm_banking_banking_ai_search_profile_default_spell_check_dictionary">0f311cc53356a6104890955a7e5c7bd5</dictionary>
+        <dictionary_reference_qualifier/>
+        <marked_for_deletion>false</marked_for_deletion>
+        <profile display_value="banking-ai Search Profile">1a2114c5f956a610f861832d66b96bdd</profile>
+        <sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 21:00:29</sys_created_on>
+        <sys_id>c7311cc53356a6104890955a7e5c7bd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_mm_banking_banking_ai_search_profile_default_spell_check_dictionary.banking-ai Search Profile</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_c7311cc53356a6104890955a7e5c7bd9</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:00:29</sys_updated_on>
+    </ais_search_profile_ais_dictionary_m2m>
+</record_update>

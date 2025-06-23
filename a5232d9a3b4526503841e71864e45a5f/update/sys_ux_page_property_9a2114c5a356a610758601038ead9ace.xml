@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>globalSearchDataConfigId</name>
+        <page display_value="Banking AI">da2114c59b56a610127e582b1f8ca2dd</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 21:00:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>9a2114c5a356a610758601038ead9ace</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>globalSearchDataConfigId</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_ux_page_property_9a2114c5a356a610758601038ead9ace</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 21:00:29</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_mm_banking.da2114c59b56a610127e582b1f8ca2dd.root.global.globalSearchDataConfigId</unique_name>
+        <value>1a2114c5b956a6105b0f3028a21474d6</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=9a2114c5a356a610758601038ead9ace"/>
+</record_update>

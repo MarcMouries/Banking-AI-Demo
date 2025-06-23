@@ -8,14 +8,14 @@
 	return false;
 })(current);]]></condition_script>
         <roles>now_assist_panel_user</roles>
-        <skill_id display_value="Assess whether a customer's bank account can be closed by checking dependencies such as dependent active loans or insurance policies, annotations, and account restrictions.&#10;&#10;Based on the findings, this workflow will either respond with a summary of the closure timeline or explain why closure is not currently possible.&#10;&#10;It will draft a response for advisors to follow-up with the customer to explain the status of the request and if it makes sense it will draft a retention letter to the customer.">150fdc4d33e9a2104890955a7e5c7b33</skill_id>
+        <skill_id display_value="Handles customer requests to close a bank account. It uses a multi-step evaluation and coordination process to determine whether closure is allowed and how to communicate the outcome.&#10;&#10;The process is managed by two AI Agents:&#10;&#10;- **Account Closure Evaluation Agent**: Verifies client identity, retrieves account-related financial products, and applies business rules to assess whether the account can be closed. It checks for dependencies such as active loans, insurance policies, annotations, and account blocks, then returns a structured result explaining the outcome.&#10;&#10;- **Account Closure Coordination Agent**: Processes the evaluation result, updates the request accordingly, drafts a message to the customer explaining the request status, and prompts an advisor for approval before sending.">150fdc4d33e9a2104890955a7e5c7b33</skill_id>
         <sys_class_name>sys_gen_ai_skill_applicability</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-05-14 15:13:39</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>710f108d33e9a2104890955a7e5c7b2f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>150fdc4d33e9a2104890955a7e5c7b33</sys_name>
         <sys_overrides/>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
@@ -23,6 +23,6 @@
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name>sys_gen_ai_skill_applicability_710f108d33e9a2104890955a7e5c7b2f</sys_update_name>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-10 19:44:08</sys_updated_on>
+        <sys_updated_on>2025-06-20 18:49:13</sys_updated_on>
     </sys_gen_ai_skill_applicability>
 </record_update>

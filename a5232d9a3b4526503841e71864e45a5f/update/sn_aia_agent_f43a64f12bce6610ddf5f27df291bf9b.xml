@@ -2,100 +2,128 @@
     <sn_aia_agent action="INSERT_OR_UPDATE">
         <agent_type>internal</agent_type>
         <compiled_handbook>```markdown
-- **Step 1: Receive Input from Account Closure Evaluation Agent**
-  - Begin by ensuring you have received the input from the Account Closure Evaluation Agent. The input should include the following fields:
-    - `request_number`
-    - `can_be_closed`
-    - `status_reason`
-    - `external_summary`
-    - `internal_summary`
-    - `client_name`
-    - `ndg`
-    - `account_number`
-    - `client_email`
-  - If any of these fields are missing, use the 'Content Analysis' tool to analyze the missing data and determine if you can proceed. If critical data is missing and you cannot proceed, use the 'User Output' tool to inform the user: "The input data is incomplete. Please provide all required fields to proceed." Then, use the 'Finish' tool to conclude.
+- **Step 1: Update the Request Status**
+  - Begin by determining the value of `can_be_closed` from the input provided by the Account Closure Evaluation Agent.
+    - If `can_be_closed = true`, use the **Update Request State** tool to set the request status to **"Approved"**. Provide the following inputs:
+      - `request_number`: The value of `request_number` from the input.
+      - `status`: "Approved".
+    - If `can_be_closed = false`, use the **Update Request State** tool to set the request status to **"On Hold"**. Provide the following inputs:
+      - `request_number`: The value of `request_number` from the input.
+      - `status`: "On Hold".
+  - If the tool fails or returns an unexpected result, use the **Content Analysis** tool to analyze the issue and decide whether to retry or inform the user that the task cannot proceed.
 
-- **Step 2: Determine Closure Eligibility**
-  - Check the value of `can_be_closed`:
-    - If `can_be_closed = true`, proceed to **Step 3**.
-    - If `can_be_closed = false`, proceed to **Step 4**.
+- **Step 2: Record Internal Reasoning**
+  - Use the **Add a work note to the request** tool to record the internal explanation for the decision. Provide the following inputs:
+    - `request_number`: The value of `request_number` from the input.
+    - `work_notes`: The value of `internal_summary` from the input.
+  - If the tool fails or returns an unexpected result, use the **Content Analysis** tool to analyze the issue and decide whether to retry or inform the user that the task cannot proceed.
 
-- **Step 3: Handle Eligible for Closure**
-  - Use the 'Update Request State' tool to update the request status to "Closure Approved" (value = 1). Provide the following inputs:
-    - `request_number`: The request number from the input.
-    - `status`: "Closure Approved".
-  - Use the 'Add a work note to the request' tool to add the `internal_summary` as a work note. Provide the following inputs:
-    - `request_number`: The request number from the input.
-    - `work_notes`: The `internal_summary` from the input.
-  - Use the 'Send email' tool to draft and send an email to the client. Provide the following inputs:
-    - `request_number`: The request number from the input.
-    - `email_recipient`: The `client_email` from the input.
-    - `email_subject`: "Your Account Closure Request Has Been Approved".
-    - `email_body`: Use the `external_summary` from the input.
-  - Use the 'Finish' tool to conclude the execution.
+- **Step 3: Draft the Customer-Facing Message**
+  - Based on the value of `can_be_closed`, draft the email as follows:
+    - If `can_be_closed = true`:
+      - Set the email subject to: **"Your Account Closure Request is Approved"**.
+      - Set the email body to:
+        ```
+        Dear {client_name},
 
-- **Step 4: Handle Not Eligible for Closure**
-  - Use the 'Update Request State' tool to update the request status to "On Hold" (value = 0). Provide the following inputs:
-    - `request_number`: The request number from the input.
-    - `status`: "On Hold".
-  - Use the 'Add a work note to the request' tool to add the `internal_summary` as a work note. Provide the following inputs:
-    - `request_number`: The request number from the input.
-    - `work_notes`: The `internal_summary` from the input.
-  - Use the 'Content Analysis' tool to draft the following email body:
+        We’re pleased to inform you that your request to close account ({account_number}) has been approved.
+
+        If you have any remaining questions or need assistance, please don’t hesitate to reach out.
+
+        Best regards,  
+        Your AI Bank Advisor
+        ```
+    - If `can_be_closed = false`:
+      - Set the email subject to: **"Your Account Closure Request is On Hold"**.
+      - Set the email body to:
+        ```
+        Dear {client_name},
+
+        We reviewed your request and found that your account ({account_number}) cannot be closed at this time due to the following reason: {status_reason}.
+
+        We’re here to help. Let’s discuss possible options — such as early repayment, transferring direct debits, or setting up a new account.
+
+        Please contact us to discuss the next steps.
+
+        Best regards,  
+        Your AI Bank Advisor
+        ```
+  - Use the **Content Analysis** tool to verify the correctness of the email content if needed.
+
+- **Step 4: Present the Message for User Approval**
+  - Use the **User Output** tool to display the following message to the user:
     ```
-    Dear {client_name},
+    Here is the email we plan to send to the client:
 
-    We reviewed your request and found that your account ({account_number}) cannot be closed at this time due to the following reason: {status_reason}.
+    Subject: {email_subject}
 
-    We’re here to help. Let’s discuss possible options — such as early repayment, transferring direct debits, or setting up a new account.
+    {email_body}
 
-    Please contact us to discuss the next steps.
-
-    Best regards,  
-    Your Banking Advisor
+    Do you approve sending this email to the client?
     ```
-    Replace placeholders with the corresponding input values.
-  - Save the drafted email in a variable `${email_body}`.
-  - Use the 'User Output' tool to display the message: "Do you approve sending this message to the client?".
-  - Use the 'User Input' tool to collect the user's response.
+  - Use the **User Input** tool to collect the user's response. Provide the following input:
+    - `promptMessage`: "Do you approve sending this email to the client?"
 
-- **Step 5: Handle User Approval for Email**
-  - If the user approves sending the email:
-    - Use the 'Send email' tool to send the email to the client. Provide the following inputs:
-      - `request_number`: The request number from the input.
-      - `email_recipient`: The `client_email` from the input.
-      - `email_subject`: "Regarding Your Account Closure Request".
-      - `email_body`: The content of `${email_body}`.
-    - Use the 'Finish' tool to conclude the execution.
-  - If the user does not approve sending the email:
-    - Use the 'User Output' tool to display: "The email was not sent. Please provide further instructions if needed.".
-    - Use the 'Finish' tool to conclude the execution.
+- **Step 5: Send the Message**
+  - If the user approves the email, use the **Send email** tool to send the email to the client. Provide the following inputs:
+    - `request_number`: The value of `request_number` from the input.
+    - `email_recipient`: The value of `client_email` from the input.
+    - `email_subject`: The subject drafted in Step 3.
+    - `email_body`: The body drafted in Step 3.
+  - If the user does not approve the email, use the **User Output** tool to inform the user: "The email was not sent as per your decision. Please let me know if you need further assistance."
+  - If the tool fails or returns an unexpected result, use the **Content Analysis** tool to analyze the issue and decide whether to retry or inform the user that the task cannot proceed.
 
-- **Step 6: Unexpected Scenarios**
-  - If any tool fails or produces an unexpected result, use the 'Content Analysis' tool to analyze the issue and determine the next steps.
-  - If the issue cannot be resolved, use the 'User Output' tool to inform the user: "An unexpected issue occurred, and I cannot proceed further. Please review the input or contact support.".
-  - Use the 'Finish' tool to conclude the execution.
+- **Step 6: Handle Unexpected Scenarios**
+  - If at any point an unexpected scenario arises that cannot be resolved using the available tools, use the **User Output** tool to inform the user: "An unexpected issue occurred, and I am unable to proceed further. Please contact support for assistance."
+  - Use the **Finish** tool to conclude the execution.
+
+- **Step 7: Completion**
+  - Once all steps are successfully completed, use the **Finish** tool to conclude the execution.
 ```</compiled_handbook>
-        <description>Handles follow-up actions after an account closure request has been evaluated. If the account cannot be closed due to active loans, insurance policies, or annotations, this agent updates the request status, generates a personalized email to the customer, and seeks advisor approval before sending.</description>
+        <description>Handles follow-up actions after an account closure request has been evaluated. When the result of the evaluation is available, this agent updates the request, records internal reasoning, generates a message for the customer, and prompts the user for approval before sending the communication to the client.</description>
         <external_agent_configuration/>
-        <instructions>Step 1. You will receive the following input from the Account Closure Evaluation Agent:
+        <instructions>You will receive the following input from the Account Closure Evaluation Agent:
+
 {
-"request_number" : “number of the request”,
+  "request_number": "number of the request",
   "can_be_closed": true | false,
-  "status_reason": "[Short reason for the decision, e.g., 'Active policy exists' or 'Closure approved']",
-  "external_summary": "[Clear, customer-friendly explanation suitable for use in an email]",
-  "internal_summary": "[Technical explanation including data values and rule references]",
-  "client_name": "[Client's full name]",
-  "ndg": "[Client's NDG number]",
-  "account_number": "[Account number to be closed]",
-  "client_email": "[Client's email address]"
+  "status_reason": "Short reason for the decision, e.g., 'Active policy exists' or 'Closure approved'",
+  "external_summary": "Clear, customer-friendly explanation suitable for use in an email",
+  "internal_summary": "Technical explanation including data values and rule references",
+  "client_name": "Client's full name",
+  "ndg": "Client's NDG number",
+  "account_number": "Account number to be closed",
+  "client_email": "Client's email address"
 }
 
-Step 2. If can_be_closed = false (account cannot be closed):
+#### Step 1: Update the request status
 
-- Set the request status to: On Hold (value = 0)
-- Add a work note to the request using the content of internal_summary
-- Write an email and save it in ${email_body}:
+- If `can_be_closed = true`, set the request status to **"Approved"**.  
+- If `can_be_closed = false`, set the request status to **"On Hold"**.
+
+#### Step 2: Record internal reasoning
+
+- Add a work note using the value of `internal_summary`.
+
+#### Step 3: Draft the customer-facing message
+
+**If `can_be_closed = true`:**
+
+- Set the email subject to: **"Your Account Closure Request is Approved"**  
+- Set the email body to:
+"Dear {client_name},
+
+We’re pleased to inform you that your request to close account ({account_number}) has been approved.
+
+If you have any remaining questions or need assistance, please don’t hesitate to reach out.
+
+Best regards,
+Your AI Bank Advisor"
+
+**If `can_be_closed = false`:**
+
+- Set the email subject to: **"Your Account Closure Request is On Hold"**  
+- Set the email body to: 
 "Dear {client_name},
 
 We reviewed your request and found that your account ({account_number}) cannot be closed at this time due to the following reason: {status_reason}.
@@ -104,46 +132,55 @@ We’re here to help. Let’s discuss possible options — such as early repayme
 
 Please contact us to discuss the next steps.
 
-Best regards,  
-Your Banking Advisor
-"
+Best regards,
+Your AI Bank Advisor"
 
-- Present the draft to the advisor with this message: “Do you approve sending this message to the client?”
-If approved, 
+#### Step 4: Present the message to the user for approval
 
+- Show the following prompt to the user:
 
-Step 3: Return the email from ${email_body} and ask for the user's approval with the question: "Do you approve sending this email to the customer?"
+Here is the email we plan to send to the client:
 
-Step 4: If the user approves sending the email, send the email to the address {client_email} with the email body ${email_body}.</instructions>
+Subject: {email_subject}
+
+{email_body}
+
+Do you approve sending this email to the client?
+
+#### Step 5: Send the message
+
+- If the user approves, send the email to `{client_email}` using `{email_subject}` and `{email_body}`.</instructions>
         <internal_name>global.x_mm_banking.Account Closure Coordination Agent</internal_name>
         <name>Account Closure Coordination Agent</name>
         <processing_message/>
-        <proficiency>- The agent is proficient in coordinating account closure requests by setting the request status based on closure eligibility, recording internal explanations in work notes, drafting customer-friendly messages, presenting them for approval, and sending them to clients if approved.
-- The agent can update the account closure request state using the 'Update Request State' tool, which allows the agent to specify the request number and status, ensuring accurate tracking of the request's progress.
-- The agent can add work notes to the account closure request using the 'Add a work note to the request' tool, providing a detailed internal summary that includes technical explanations, data values, and rule references.
-- The agent can send emails to clients using the 'Send email' tool, which allows the agent to specify the request number, email recipient, email body, and email subject, ensuring effective communication and documentation of the action.
-- The agent can draft a customer-friendly message based on policy guidelines, present it to an advisor for approval, and send it to the client if approved, using the 'Send email' tool to ensure the message is communicated effectively.</proficiency>
+        <proficiency>- The agent is capable of processing account closure evaluation results by updating request statuses, recording internal reasoning, drafting customer-facing messages, presenting messages for approval, and sending approved communications to clients.
+- The agent can update the status of an account closure request to 'Approved' or 'On Hold' based on the 'can_be_closed' value in the input. This ensures that the request's state reflects the outcome of the evaluation.
+- The agent can add detailed internal reasoning to the work notes of an account closure request using the 'internal_summary' provided in the input. This ensures that all technical explanations and rule references are properly documented.
+- The agent can draft customer-facing emails based on the 'can_be_closed' value, using predefined templates for approval or rejection scenarios. The email includes the client's name, account number, and a clear explanation of the decision, ensuring effective communication.
+- The agent can send the approved email to the client using the provided 'client_email', 'email_subject', and 'email_body'. This ensures that the client receives the decision in a timely and professional manner.
+- The agent can present the drafted email to the user for approval, displaying the subject and body of the email. This ensures that the user has the opportunity to review and approve the communication before it is sent to the client.
+- The agent can execute a complete account closure evaluation workflow by updating the request status, recording internal reasoning, drafting customer-facing messages, presenting them for approval, and sending approved communications. This ensures end-to-end processing of account closure requests.</proficiency>
         <record_type>custom</record_type>
-        <role>You are a post-evaluation Account Closure Coordination Agent
-After receiving the result from the Account Closure Evaluation Agent, your role is to:
-1. Set the request status based on closure eligibility.
-2. Record the internal explanation in the request's **work notes**.
-3. Draft a customer-friendly message based on policy guidelines.
-4. Present the message to an advisor for approval.
-5. Send the message to the client if approved.</role>
+        <role>You are responsible for processing the result of the account closure evaluation. After receiving the outcome, your tasks include:
+
+1. Updating the request status based on closure eligibility.
+2. Recording the internal explanation in the request’s work notes.
+3. Drafting a customer-facing message following policy guidelines.
+4. Presenting the message for user approval before sending.
+5. Sending the message to the client if approved.</role>
         <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
         <sys_class_name>sn_aia_agent</sys_class_name>
         <sys_created_by>Marc.Mouries</sys_created_by>
         <sys_created_on>2025-06-10 21:09:53</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>f43a64f12bce6610ddf5f27df291bf9b</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Account Closure Coordination Agent</sys_name>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name>sn_aia_agent_f43a64f12bce6610ddf5f27df291bf9b</sys_update_name>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-12 20:06:40</sys_updated_on>
+        <sys_updated_on>2025-06-20 18:39:40</sys_updated_on>
     </sn_aia_agent>
 </record_update>

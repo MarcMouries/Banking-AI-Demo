@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Account Closure Evaluation Agent">bc3528c9332da2104890955a7e5c7b90</agent>
+        <description>Adds the client's assets to an existing account closure request using as inputs:
+- request_number: The number of the current account closure request.
+- client_assets: A JSON array of product objects. Each object must include:
+  - number: The asset number (e.g., "06 010 00 0000022")
+  - description: A short label for the product (e.g., "Zurich Bank Conto Welcome")
+  - type: The product type  (e.g., "current_account", "policy", "loan")</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Add Client's Asset to the Request</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <pre_message>Add Client's Asset to the Request</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-20 20:28:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e9d9c8c13316a6104890955a7e5c7b6e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add Client's Asset to the Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_e9d9c8c13316a6104890955a7e5c7b6e</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-20 20:28:09</sys_updated_on>
+        <tool display_value="Add Client's Asset to the Request">9dd9c8c13316a6104890955a7e5c7b69</tool>
+        <tool_attributes>{}</tool_attributes>
+    </sn_aia_agent_tool_m2m>
+</record_update>
