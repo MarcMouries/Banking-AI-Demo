@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=31170232000,viewActivatedIn=diagramming</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-Mon_Feb_13_11_50_57_IST_2023.zip</compiler_build>
+        <copied_from>e0b9ab9feb702110f2549bf12a5228e6</copied_from>
+        <copied_from_name>Task Processing Flow Template</copied_from_name>
+        <description>DocDataExtractor Flow Template for processing a task</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>docintel_task_processing_flow__extract_account_closure_form_data__process_task_extract_account_closure_for</internal_name>
+        <label_cache>[{"name":"Created_1.table_name","label":"Trigger - Record Created➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident","column_name":"sys_id"},{"name":"6e1fa36a-f09d-4993-afc2-b4d3ade21307.task_id","label":"1 - DocIntel - Create a Document Task➛Task ID","reference_display":"Task ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a7335496-1038-4dd2-8efb-a38349d0513f"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>DocIntel Task Processing Flow - Extract Account Closure Form Data - Process Task Extract Account Closure For</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-25 22:23:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>55245a262b526690ddf5f27df291bfff</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>DocIntel Task Processing Flow - Extract Account Closure Form Data - Process Task Extract Account Closure For</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_hub_flow_55245a262b526690ddf5f27df291bfff</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-25 22:23:21</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=55245a262b526690ddf5f27df291bfff"/>
+    <sys_variable_value action="delete_multiple" query="document_key=55245a262b526690ddf5f27df291bfff"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=55245a262b526690ddf5f27df291bfff"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=55245a262b526690ddf5f27df291bfff^sys_idNOT INdd245a262b526690ddf5f27df291bfff"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>55245a262b526690ddf5f27df291bfff</id>
+        <name>DocIntel Task Processing Flow - Extract Account Closure Form Data - Process Task Extract Account Closure For</name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-25 22:23:19</sys_created_on>
+        <sys_id>dd245a262b526690ddf5f27df291bfff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-25 22:23:19</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=dd245a262b526690ddf5f27df291bfff"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=55245a262b526690ddf5f27df291bfff^sys_idNOT IN11249a262b526690ddf5f27df291bf05,5d249a262b526690ddf5f27df291bf08"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Task Processing Flow - Extract Account Closure Form Data - Process Task Extract Account Closure For">55245a262b526690ddf5f27df291bfff</model>
+        <model_id>55245a262b526690ddf5f27df291bfff</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_55245a262b526690ddf5f27df291bfff</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-25 22:23:20</sys_created_on>
+        <sys_id>11249a262b526690ddf5f27df291bf05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-25 22:23:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=11249a262b526690ddf5f27df291bf05"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Task Processing Flow - Extract Account Closure Form Data - Process Task Extract Account Closure For">55245a262b526690ddf5f27df291bfff</model>
+        <model_id>55245a262b526690ddf5f27df291bfff</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_55245a262b526690ddf5f27df291bfff</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-25 22:23:20</sys_created_on>
+        <sys_id>5d249a262b526690ddf5f27df291bf08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-25 22:23:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5d249a262b526690ddf5f27df291bf08"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=55245a262b526690ddf5f27df291bfff"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=55245a262b526690ddf5f27df291bfff"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=55245a262b526690ddf5f27df291bfff^sys_idNOT IN2d249a262b526690ddf5f27df291bf3c"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Extract Account Closure Form Data - Process Task Extract Account Closure For">55245a262b526690ddf5f27df291bfff</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-25 22:23:21</sys_created_on>
+        <sys_id>2d249a262b526690ddf5f27df291bf3c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-25 22:23:23</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VY2W7jNhT9FUFPLZACWrxEeZvaGdRAmmkdT/sQpARFkbYQifJIlBJP4H/vpTbLsuR4Sdqx82LAlxR5z+G5C3n/oorQnU5pOOKRwJzQu0U0ctQrVTP7To91TWrbmqHrGjO6HctmuoG7hnHZ0dQL1cM29WDqBNsehf8uFzTk2Jss5hTMQpoRx74c8zF3sAjChXolwpheqCwM/An15x4WMJlhLwJjEDo0VK/0CzX9LF8DPk+wF8v/z8j3kY35o8unCBMSxFwg4gVRHFIU0m8xjQRMd9wIFl78lX814sR1KJcjcxzCykLu8lI6fOPyR5gGw2Tmek5IuXp1/wCAJBGEEWwZVCOmbhqGpgF43e6Ztm44JqZaExE150UDH9J2U/1Muc0GVhTQZ0G5Q52SnQ0OQ4qdL9xblDNmgCgD4uPnyP0O215qch6jAIrQbKz8i3KeMjMbYoHvYGUigM2Cj8AlNMrocCjDsScGVVs24ctcuAHPPslQZ18HXuzz24wNtVygOBawxBE4QecSp/Q8h8HuZsHTuPDys8tTSvJBLyDYK/9hAfq1YyH9eVGZ68GJoozpKIjDFPL4evBlPER/f5oMfrseo/H13WQ8Gkyuh+ryQo0W0cDDUbTyEuhB32K5R+Zz7h3KAC5LdX12qScFwmPfBv9gKRK6c/GJCDcpJL28eIsAGwTccVOGN4KMFENR1deK+CqiKdjdFnmaVsqXVHYt4u+f6z83wysz7h9ZvR7GDsUtkWWzFgYa3BMNZFQjbFAdqELdFmO5ZZcg62jaKYVZnoEPjTI/cKg3rGotUzhy+TwWkuInzEWERICw46DKqcip4NP+YZehXb5jjIUxh61QKYjNSEuPoDysGxcqzdU95JyC59QZecCF6sYxVwJQDvwoJA6BZqEUYclGPp7myNkfReik9Ob6TnCIkI+AKDSLbbTGMepbl5beawudPlljMA1eKSRVfVjKc6ceJaIievY1qv773Y0iqK8VekuM6fFtQCzRQfAoBYMZ1Oi0sD4ckzA3JZTUpFFLnNsEsn861XXGbMoMrS9Z0jUThK71tS5mjqlpxNgq9lYIoqb+tbRaGN8lpb5NQn0pQW9ju35QBSApfm8frSfrgZKvYyyb8vqP41qtvJh71ZdS3Jl5uLvG37j7w04ik79zeJl59wrDvOAJ0toB1cXG5HEawn3HqedfuabicmU1Q/kpP4ufTyv7VisNC0K6He/6jNNBeXSNWYmoCGnMF5vVJTPuX0dMptsW7VANyocJlcPuWpZNsMFYv9enht4q6UYXz6t+vBJrSVOwtiXsRh0nTfLfo4r8/w4eVUtyITdWkmzs49WMpxnlCGCHyHPT161a6Zh6rkOLseMyy8ZWyeoOWcsuB6UWdmmRrt7vkz6kWEgtrENtrHeMLrb6PfOy+xryba6KBjaqyeYmM/0nt39ZZKRvLUnnazb0A7wEfJTwiagQsgTv33dxuA6l3+DMvUozInWhpIkyCJXbgP8yWs1T7igU/fRx6oRak2oDtgtoKWTlrFDbgZhtNJyA9FewryGVd6yWM/9obx61CEvWqWx48ziE0APeQ2jnsmsxs7nYMGt7nmjHdz4d7Y4JLGlNhU2d464JImnMM2UnWe9FD5BMTYj50uYrXfTHJeWozr2I9tZHoEOc/aDdStrWHtOySG8pCli1kg0DBQYU2ERxmZJ7Sx3FXihiRuF4PLjuwYaK3P3ESli1gm8iL4PvrHFn1+ONxgXMSn4VOSFgb9OT1OJo62tZA1/7txzU6eNu12y531r1p7MmJ1/BcD7Nx975KGlKb1uL7X7r1tdsLLcVeazLacfu4oxRv9vDX4MXJ9MYPPwLp9n/3mInAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=55245a262b526690ddf5f27df291bfff^sys_idNOT IN6d249a262b526690ddf5f27df291bf2e,a5249a262b526690ddf5f27df291bf3c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="DocIntel - Create a Document Task">dc85af9beb702110f2549bf12a5228d6</action_type>
+        <action_type_parent display_value="DocIntel - Create a Document Task">bea253dbeb302110f2549bf12a522840</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>dc85af9beb702110f2549bf12a5228d6</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Extract Account Closure Form Data - Process Task Extract Account Closure For">55245a262b526690ddf5f27df291bfff</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-25 22:23:21</sys_created_on>
+        <sys_id>6d249a262b526690ddf5f27df291bf2e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-25 22:23:24</sys_updated_on>
+        <ui_id>6e1fa36a-f09d-4993-afc2-b4d3ade21307</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="DocIntel - Process a Document Task">1ca82b5feb702110f2549bf12a522896</action_type>
+        <action_type_parent display_value="DocIntel - Process a Document Task">5fe85713eb702110f2549bf12a522824</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>1ca82b5feb702110f2549bf12a522896</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Extract Account Closure Form Data - Process Task Extract Account Closure For">55245a262b526690ddf5f27df291bfff</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-25 22:23:21</sys_created_on>
+        <sys_id>a5249a262b526690ddf5f27df291bf3c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-25 22:23:21</sys_updated_on>
+        <ui_id>62bbfafa-512d-49be-b197-e341f1b0c8cb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/3VTW2+bMBT+K5WfIQJC0iRvU6NIkbZVWrq+tBU62MeJNWOobdKyKP99x4CyTO3e4PO5fBf76cSAe1WbrXEeDMdd57aCrdh8hjzL5gmWeZqlaSKzWb4sZZrBLMsW2YxFTIU6D+5XQV8RM1DhP8ARdBuQ02mOqYTpHGKZLEWcL5fTGCTP4jIXUxCYpdPkdjI2ns/UKpRrNHSP4wRCGrA036NlqxPjB6WFRcNWTy8jD75ADpj9hy9yGqGhRE2lD7ToZrv+jLLvmgBYlEjjOY7Q17HzxxVeWxHIpBHDd49GILGQoB1GrAIjwNe2YytvWwIsgrg3urtUHJTxg64K3p36TUunWXS1d8Vc5wqhisCNXZ0UozVUsa55W6HxNw9DjVyDhx1t5L61o238UCuObjBKoIRW+7trbCi4b8IdGFo8lPojAV7rtjLfB8PYZdZVQq0jctgEK4K4UancHeq3i28bZXrXxkNdc9BXpQiWHzYKdUh0FFr0IUUMvLeqbH0gfmKtevgY1QB+FhZqDE4VFTSNMvuisfVR9UxIWDXZa/qZSF2/kQKn9mYyPIoJxQiTDeHrHn4Eq4I732gMNYeNP416bbF/MjPO88UikXFyKyHOeS7jRc5FjAKklPkyL7lg5ygYe6fBub9mkojitQ1WDHeRzFVG9Qw4NFAqrXz33CbJVIiaF4FVQbfOEsva9mGMthdDiGEJt6rxX0jGEUeHzy9/AGetoWTuAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=55245a262b526690ddf5f27df291bfff"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=55245a262b526690ddf5f27df291bfff"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=55245a262b526690ddf5f27df291bfff"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=55245a262b526690ddf5f27df291bfff"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_55245a262b526690ddf5f27df291bfff</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-25 22:23:20</sys_created_on>
+        <sys_id>51249a262b526690ddf5f27df291bf0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-25 22:23:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_55245a262b526690ddf5f27df291bfff</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-25 22:23:20</sys_created_on>
+        <sys_id>9d249a262b526690ddf5f27df291bf07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-25 22:23:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_55245a262b526690ddf5f27df291bfff"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_55245a262b526690ddf5f27df291bfff"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=55245a262b526690ddf5f27df291bfff"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=55245a262b526690ddf5f27df291bfff"/>
+</record_update>

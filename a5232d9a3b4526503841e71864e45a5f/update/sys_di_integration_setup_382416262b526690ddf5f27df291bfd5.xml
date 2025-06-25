@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_di_integration_setup">
+    <sys_di_integration_setup action="INSERT_OR_UPDATE">
+        <condition/>
+        <create_flow>true</create_flow>
+        <flow display_value="DocIntel Task Processing Flow - Extract Account Closure Form Data - Process Task Extract Account Closure For">55245a262b526690ddf5f27df291bfff</flow>
+        <flow_conditions/>
+        <mluc_id/>
+        <name>Process Task Extract Account Closure For</name>
+        <sys_class_name>sys_di_integration_setup</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2025-06-25 22:23:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>382416262b526690ddf5f27df291bfd5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Process Task Extract Account Closure For</sys_name>
+        <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
+        <sys_update_name>sys_di_integration_setup_382416262b526690ddf5f27df291bfd5</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2025-06-25 22:23:24</sys_updated_on>
+        <target_table>x_mm_banking_account_closure_request</target_table>
+        <task_definition display_value="Extract Account Closure Form Data">becfa9af2b256250ddf5f27df291bfae</task_definition>
+        <trigger>x_mm_banking_account_closure_request</trigger>
+        <type>process_task</type>
+    </sys_di_integration_setup>
+</record_update>
