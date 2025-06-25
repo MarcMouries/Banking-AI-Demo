@@ -6,7 +6,7 @@
         <created_by_user display_value="Marc Mouries">ac13175b937142102494bcd97bba1041</created_by_user>
         <created_on>2025-06-20 21:00:33</created_on>
         <dashboard display_value="Banking AI">0c419cc53356a6104890955a7e5c7b9f</dashboard>
-        <edit_locked/>
+        <edit_locked>{"sysId":"ac13175b937142102494bcd97bba1041","name":"Marc Mouries","avatar":"5dbec626fb641a907b04ff4655efdc76.iix?t=small","lockedOn":"1750865491530"}</edit_locked>
         <enable_data_cache>false</enable_data_cache>
         <include_custom_insights>true</include_custom_insights>
         <include_key_contributors>true</include_key_contributors>
@@ -32,7 +32,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>88419cc53356a6104890955a7e5c7ba7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
@@ -40,7 +40,7 @@
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name>par_dashboard_user_metadata_88419cc53356a6104890955a7e5c7ba7</sys_update_name>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-20 21:00:35</sys_updated_on>
+        <sys_updated_on>2025-06-25 15:31:31</sys_updated_on>
         <updated_by_user display_value="Marc Mouries">ac13175b937142102494bcd97bba1041</updated_by_user>
         <use_custom_tab_colors>false</use_custom_tab_colors>
     </par_dashboard_user_metadata>
