@@ -15,7 +15,7 @@
         <mobile_title>KB Articles</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>kb_knowledge</name>
-        <order/>
+        <order>1002</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7633bebc2bd2aa50ddf5f27df291bf98</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>AI Agent Business Rules</sys_name>
         <sys_overrides/>
         <sys_package display_value="Banking AI Demo" source="x_mm_banking">a5232d9a3b4526503841e71864e45a5f</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="Banking AI Demo">a5232d9a3b4526503841e71864e45a5f</sys_scope>
         <sys_update_name>sys_app_module_7633bebc2bd2aa50ddf5f27df291bf98</sys_update_name>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2025-06-20 21:07:55</sys_updated_on>
+        <sys_updated_on>2025-08-15 14:10:32</sys_updated_on>
         <timeline_page/>
         <title>AI Agent Business Rules</title>
         <uncancelable>false</uncancelable>
